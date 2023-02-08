@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  min-height:240px;
+  background-color:#2B4EC4;
+}
+
+.headerVector {
+  width:100%;
+  height:auto;
+}
+
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.logo {
+  display:inline-block;
+}
+
+.vector {
+  width:100%;
+}
+
+.menuBtn {
+  text-decoration:none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 5px;
+  position: fixed;
+  background: #2EB8F6;
+  border: 2px solid #2B126D;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  color:#2B126D;
+  font-size:18px;
+  letter-spacing:.1rem;
+  z-index: 2;
+  right: 5px;
+  top: 20px;
+}

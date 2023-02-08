@@ -1,0 +1,17 @@
+.buttonLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 15px;
+  gap: 5px;
+  background: #2B3CAA;
+  border: 1px solid #C7FFFF;
+  border-radius: 22px;
+  text-decoration:none;
+}
+
+.text {
+  color: #c7ffff;
+  font-size: 18px;
+  letter-spacing: 0.02rem;
+}
