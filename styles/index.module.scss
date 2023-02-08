@@ -6,6 +6,20 @@
 .aboutSection{
     background: linear-gradient(180deg, #2B4EC4 0%, #2B1E7E 100%);
     padding: 50px 0 70px;
+    position: relative;
+}
+
+.rocks  {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.aboutContent {
+    position: relative;
+    z-index:1;
     display: flex;
     flex-direction: column;
     gap: 20px;

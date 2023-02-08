@@ -11,7 +11,7 @@ export default function Footer() {
 
             <div className={styles.smokeContainer}>
 
-                <Image src="/images/smoke-footer.svg" alt="Bad Contact Footer Smoke" title="Bad Contact  Footer Smoke" width={219} height={137} layout="responsive" objectFit="contain"/>
+                <Image src="/images/smoke-footer.svg" alt="Bad Contact Footer Smoke" title="Bad Contact  Footer Smoke" width={219} height={137}/>
 
             </div>
 

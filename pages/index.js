@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import ButtonLink from '../components/buttonLink'
 import fonts from '../helpers/fonts'
 import singleBgIllustration from '../public/images/singleIllustration.svg'
+import rocks from '../public/images/rocks.svg'
 import coverArtworkImg from '../public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg'
 export default function Home() {
 
@@ -21,24 +22,29 @@ export default function Home() {
 
           <Header/>
 
-
           <section className={styles.aboutSection}>
 
-            <h1 className={` ${styles.title} ${fonts.voltec.className}`}>
-              <span className={styles.glitch}><span>80'S</span> HEAVY ROCK</span>
-              <span className={styles.glitch}>80'S HEAVY ROCK</span>
-              <span className={styles.glitch}>80'S HEAVY ROCK</span>
-            </h1>
+            <Image className={styles.rocks} src={rocks} alt="Heavy Rock" />
 
-            <div className={styles.line}/>
+            <div className={styles.aboutContent}>
 
-            <h2 className={styles.subtitle}>
-              Bad Contact from Athens Greece, is a band formed to create a rousing impassioned music of heavy rock, reflecting the sound of the 80's era by combining music elements of the beloved motivational bands we grew up with, integrating a rock n roll attitude and conveying positive vibes through our art.
-            </h2>
+              <h1 className={` ${styles.title} ${fonts.voltec.className}`}>
+               <span className={styles.glitch}><span>80'S</span> HEAVY ROCK</span>
+               <span className={styles.glitch}>80'S HEAVY ROCK</span>
+               <span className={styles.glitch}>80'S HEAVY ROCK</span>
+              </h1>
 
-            <div className={` ${styles.btn} ${fonts.voltec.className}`}>
-              <Image src="/images/metal.svg" alt="Heavy Rock Metal Sign" width={22}  height={22} />
-              Learn More About Us
+              <div className={styles.line}/>
+
+              <h2 className={styles.subtitle}>
+               Bad Contact from Athens Greece, is a band formed to create a rousing impassioned music of heavy rock, reflecting the sound of the 80's era by combining music elements of the beloved motivational bands we grew up with, integrating a rock n roll attitude and conveying positive vibes through our art.
+              </h2>
+
+              <div className={` ${styles.btn} ${fonts.voltec.className}`}>
+               <Image src="/images/metal.svg" alt="Heavy Rock Metal Sign" width={22}  height={22} />
+               Learn More About Us
+              </div>
+
             </div>
 
           </section>
