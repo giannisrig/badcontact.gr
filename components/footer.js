@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import styles from '../styles/Footer.module.scss'
-import logo from '../public/images/logo.svg'
-import fonts from '../helpers/fonts'
-import footerIllustration from '../public/images/footerIllustration.svg'
+import styles from '@/styles/components/Footer.module.scss'
+import logo from '@/public/images/logo.svg'
+import fonts from '@/helpers/fonts'
+import footerIllustration from '@/public/images/footerIllustration.svg'
 export default function Footer() {
 
 

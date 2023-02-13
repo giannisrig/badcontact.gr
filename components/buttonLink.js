@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import styles from '../styles/ButtonLink.module.scss'
-import fonts from '../helpers/fonts'
+import styles from '@/styles/components/ButtonLink.module.scss'
+import fonts from '@/helpers/fonts'
 
 export default function ButtonLink({href, text, image}) {
 

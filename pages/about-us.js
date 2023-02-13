@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 import styles from "@/styles/AboutUs.module.scss";
 import fonts from "@/helpers/fonts";
 

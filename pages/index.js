@@ -1,14 +1,14 @@
 import Head from 'next/head'
-import styles from '../styles/index.module.scss'
+import styles from '@/styles/index.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import ButtonLink from '../components/buttonLink'
-import fonts from '../helpers/fonts'
-import singleBgIllustration from '../public/images/singleIllustration.svg'
-import rocks from '../public/images/rocks.svg'
-import coverArtworkImg from '../public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
+import ButtonLink from '@/components/buttonLink'
+import fonts from '@/helpers/fonts'
+import singleBgIllustration from '@/public/images/singleIllustration.svg'
+import rocks from '@/public/images/rocks.svg'
+import coverArtworkImg from '@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg'
 export default function Home() {
 
     return (
