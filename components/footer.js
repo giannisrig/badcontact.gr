@@ -23,7 +23,7 @@ export default function Footer() {
                 </a>
 
                 <h5 className={styles.title}>
-                    80’s inspired Heavy Rock from Athens, Greece
+                    80’s inspired Heavy Metal/Rock from Athens, Greece that will bring you feelings of nostalgia.
                 </h5>
 
                 <div className={styles.socialLinks}>

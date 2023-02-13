@@ -42,7 +42,7 @@ export default function Home() {
 
               <div className={` ${styles.btn} ${fonts.voltec.className}`}>
                <Image src="/images/metal.svg" alt="Heavy Rock Metal Sign" width={22}  height={22} />
-               Learn More About Us
+               Learn more about us
               </div>
 
             </div>
