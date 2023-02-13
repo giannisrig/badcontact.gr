@@ -154,6 +154,21 @@
     flex-wrap: wrap;
 }
 
+.readMore {
+    display: flex;
+    gap: 5px;
+    background-color: #2B44B5;
+    padding: 7px 30px;
+    color: #d1d8f9;
+    border: 2px solid #1D359F;
+    border-radius: 40px;
+    font-size: 19px;
+    letter-spacing: 0.1rem;
+    line-height: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
 .glitch {
     text-align: center;
     color: #fff;
