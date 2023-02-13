@@ -31,15 +31,15 @@ export default function Home() {
 
                 <div>
                     <h1 className={` ${styles.title} ${fonts.voltec.className}`}>
-                        <span className={styles.glitch}><span>80'S</span> HEAVY</span>
-                        <span className={styles.glitch}>80'S HEAVY</span>
-                        <span className={styles.glitch}>80'S HEAVY</span>
+                        <span className={styles.glitch}><span>80'S</span> INSPIRED</span>
+                        <span className={styles.glitch}>80'S INSPIRED</span>
+                        <span className={styles.glitch}>80'S INSPIRED</span>
                     </h1>
 
                     <h2 className={` ${styles.title} ${fonts.voltec.className}`}>
-                        <span className={styles.glitch}>METAL/ROCK</span>
-                        <span className={styles.glitch}>METAL/ROCK</span>
-                        <span className={styles.glitch}>METAL/ROCK</span>
+                        <span className={styles.glitch}>HEAVY METAL/ROCK</span>
+                        <span className={styles.glitch}>HEAVY METAL/ROCK</span>
+                        <span className={styles.glitch}>HEAVY METAL/ROCK</span>
                     </h2>
 
                 </div>
