@@ -11,17 +11,16 @@ import rocks from '../public/images/rocks.svg'
 import coverArtworkImg from '../public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg'
 export default function Home() {
 
-
-  return (
-      <div className={styles.container}>
+    return (
+        <div className={styles.container}>
         <Head>
           <title>Bad Contact - 80s Heavy Rock Band from Athens Greece</title>
           <link rel="icon" href="/images/favicon.png" />
         </Head>
 
-        <main className={fonts.grava400.className}>
+        <Header/>
 
-          <Header/>
+        <main className={fonts.grava400.className}>
 
           <section className={styles.aboutSection}>
 
@@ -70,23 +69,21 @@ export default function Home() {
 
             <div className={styles.content}>
 
-              <div className={styles.artworkCover}>
+                <Link href="/discography/out-of-the-blue" className={styles.artworkCover}>
+                    <Image src={coverArtworkImg} alt="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" title="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" width={315} height={315} quality={100} />
+                </Link>
 
-                <Image src={coverArtworkImg} alt="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" title="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" width={315} height={315} quality={100} />
+                <div className={styles.contentContainer}>
 
-              </div>
-
-              <div className={styles.contentContainer}>
-
-               <div className={styles.titleContainer}>
-                   <h3 className={` ${styles.singleTitle} ${fonts.voltec.className}`}>
+                <div className={styles.titleContainer}>
+                    <h3 className={` ${styles.singleTitle} ${fonts.voltec.className}`}>
                        OUT OF THE BLUE <span>(2023)</span>
-                   </h3>
+                    </h3>
 
-                   <h4 className={styles.feat}>
+                    <h4 className={styles.feat}>
                        Featuring Andreas Lagios from <a href={'https://nightstalkerband.com/'} rel="noreferrer" target={'_blank'}>Nightstalker</a> as a guest star on the bass.
-                   </h4>
-               </div>
+                    </h4>
+                </div>
 
                 <div className={styles.buttonsContainer}>
 
@@ -104,11 +101,10 @@ export default function Home() {
 
           </section>
 
-
         </main>
 
         <Footer/>
 
-      </div>
-  )
+        </div>
+    )
 }
