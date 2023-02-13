@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/index.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import ButtonLink from '../components/buttonLink'
@@ -40,10 +41,10 @@ export default function Home() {
                Bad Contact from Athens Greece, is a band formed to create a rousing impassioned music of heavy rock, reflecting the sound of the 80's era by combining music elements of the beloved motivational bands we grew up with, integrating a rock n roll attitude and conveying positive vibes through our art.
               </h2>
 
-              <div className={` ${styles.btn} ${fonts.voltec.className}`}>
-               <Image src="/images/metal.svg" alt="Heavy Rock Metal Sign" width={22}  height={22} />
-               Learn more about us
-              </div>
+                <Link href="/about-us" className={` ${styles.btn} ${fonts.voltec.className}`}>
+                    <Image src="/images/metal.svg" alt="Heavy Rock Metal Sign" width={22}  height={22} />
+                    Learn more about us
+                </Link>
 
             </div>
 
