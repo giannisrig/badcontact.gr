@@ -90,7 +90,7 @@
     display:flex;
     flex-direction: column;
     align-items:center;
-    gap:15px;
+    gap:20px;
 }
 
 .content {
@@ -119,6 +119,28 @@
 
 .singleTitle span {
     color:#F1A2FD;
+}
+
+.feat {
+    font-weight: 400;
+    color: #c7ffff;
+    font-size: 15px;
+
+    a {
+        color:inherit;
+        text-decoration: none;
+    }
+
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    border-bottom: 2px solid #2fbaf5;
+    padding-bottom: 20px;
 }
 
 .buttonsContainer {

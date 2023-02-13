@@ -61,17 +61,21 @@ export default function Home() {
 
               <div className={styles.artworkCover}>
 
-                <Image src={coverArtworkImg} alt="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" title="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" width={315} height={315} />
+                <Image src={coverArtworkImg} alt="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" title="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" width={315} height={315} quality={100} />
 
               </div>
 
               <div className={styles.contentContainer}>
 
-                <h3 className={` ${styles.singleTitle} ${fonts.voltec.className}`}>
-                  OUT OF THE BLUE <span>(2023)</span>
-                </h3>
+               <div className={styles.titleContainer}>
+                   <h3 className={` ${styles.singleTitle} ${fonts.voltec.className}`}>
+                       OUT OF THE BLUE <span>(2023)</span>
+                   </h3>
 
-                <div className={styles.line}/>
+                   <h4 className={styles.feat}>
+                       Featuring Andreas Lagios (<a href={'https://nightstalkerband.com/'} target={'_blank'}>Nightstalker</a>) on bass.
+                   </h4>
+               </div>
 
                 <h4 className={styles.subtitle}>
                   “Out of the Blue” is our first single and official release.
