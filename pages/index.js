@@ -77,11 +77,6 @@ export default function Home() {
                    </h4>
                </div>
 
-                <h4 className={styles.subtitle}>
-                  “Out of the Blue” is our first single and official release.
-                  Listen to it on all the streaming platforms:
-                </h4>
-
                 <div className={styles.buttonsContainer}>
 
                   <ButtonLink href="#" image="/images/spotify.svg" text="SPOTIFY" />
