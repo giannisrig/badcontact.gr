@@ -96,7 +96,7 @@ export default function Home() {
                     </div>
 
                     <Link href="/discography/out-of-the-blue" className={` ${styles.readMore} ${fonts.voltec.className}`}>
-                       More information
+                       more information
                     </Link>
 
                   </div>
