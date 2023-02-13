@@ -12,8 +12,10 @@ export default function AboutUs() {
                 <link rel="icon" href="/images/favicon.png" />
             </Head>
             <main className={fonts.grava400.className}>
-
                 <Header/>
+                <h1>
+                    About the Band
+                </h1>
                 <Footer/>
             </main>
         </div>

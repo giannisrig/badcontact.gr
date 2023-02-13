@@ -29,11 +29,21 @@ export default function Home() {
 
             <div className={styles.aboutContent}>
 
-              <h1 className={` ${styles.title} ${fonts.voltec.className}`}>
-               <span className={styles.glitch}><span>80'S</span> HEAVY ROCK</span>
-               <span className={styles.glitch}>80'S HEAVY ROCK</span>
-               <span className={styles.glitch}>80'S HEAVY ROCK</span>
-              </h1>
+                <div>
+                    <h1 className={` ${styles.title} ${fonts.voltec.className}`}>
+                        <span className={styles.glitch}><span>80'S</span> HEAVY</span>
+                        <span className={styles.glitch}>80'S HEAVY</span>
+                        <span className={styles.glitch}>80'S HEAVY</span>
+                    </h1>
+
+                    <h2 className={` ${styles.title} ${fonts.voltec.className}`}>
+                        <span className={styles.glitch}>METAL/ROCK</span>
+                        <span className={styles.glitch}>METAL/ROCK</span>
+                        <span className={styles.glitch}>METAL/ROCK</span>
+                    </h2>
+
+                </div>
+
 
               <div className={styles.line}/>
 
