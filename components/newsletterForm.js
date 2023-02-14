@@ -43,7 +43,7 @@ export default function NewsletterForm() {
             <div className={styles.message}>
                 {message
                     ? message
-                    : `We'll only send you emails when there's something new to rock about.`}
+                    : `We'll only send you emails when there's something awesome and new to rock about.`}
             </div>
             <form onSubmit={subscribe} className={` ${styles.form} ${fonts.grava400.className}`}>
                 <label htmlFor="email-input" className={styles.label}>{'Email Address'}</label>
@@ -56,7 +56,7 @@ export default function NewsletterForm() {
                     type="email"
                     className={styles.input}
                 />
-                <button type="submit" className={` ${styles.btn} ${fonts.voltec.className}`}>{'SUBSCRIBE'}</button>
+                <button type="submit" className={` ${styles.btn} ${fonts.voltec.className}`}>{'SUBSCRIBE NOW'}</button>
             </form>
         </div>
     );

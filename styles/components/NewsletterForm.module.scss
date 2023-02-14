@@ -12,11 +12,10 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  max-width: 300px;
 }
 
 .formTitle  {
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 0.04rem;
 }
 
@@ -31,7 +30,7 @@ display: none;
 
 .input {
   border: 0;
-  height: 40px;
+  height: 45px;
   outline: none;
   padding:0 20px;
   background-color: #2b4cc2;
@@ -39,9 +38,24 @@ display: none;
   font-family: inherit;
   flex-grow: 1;
   font-weight: 400;
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c7ffff;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c7ffff;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c7ffff;
+  }
+
 }
 
 .btn {
+  width: fit-content;
   border: 0;
   background-color: #2eb8f6;
   color: #2b126d;
