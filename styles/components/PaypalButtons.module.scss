@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.defaultAmountsContainer {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:10px;
+}
+
+.defaultAmount {
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #1A277E;
+  width: 60px;
+  height: 30px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.input {
+  width:100%;
+  font-family: inherit;
+  height: 45px;
+  background-color: #1A277E;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  color: #fff;
+  outline: none;
+  border-radius: 20px;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+.buttons {
+  width:100%;
+}

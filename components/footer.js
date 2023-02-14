@@ -5,6 +5,7 @@ import fonts from '@/helpers/fonts'
 import footerIllustration from '@/public/images/footerIllustration.svg'
 import SocialLinks from "@/components/socialLinks";
 import NewsletterForm from "@/components/newsletterForm";
+import PaypalDonate from "@/components/paypalDonate";
 export default function Footer() {
 
 
@@ -33,6 +34,7 @@ export default function Footer() {
                 <div className={styles.newsletter}>
                     <NewsletterForm />
                 </div>
+
 
 
                 <div className={styles.copyright}>
