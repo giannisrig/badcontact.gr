@@ -6,6 +6,7 @@ import Link from 'next/link'
 import logo from '@/public/images/logo.svg'
 import {useEffect, useRef} from "react";
 import Image from "next/image";
+import HeaderVector from "@/public/images/HeaderVector.svg";
 
 export default function MobileMenu() {
 
@@ -26,6 +27,8 @@ export default function MobileMenu() {
 
     return (
         <header className={` ${styles.mobileMenu} ${fonts.grava400.className}`} ref={header}>
+
+            <Image className={styles.headerVector} src={HeaderVector} alt="Bad Contact Header Illustration" title="Bad Contact Header Illustration"/>
 
             <div className={styles.mobileTopContainer}>
 

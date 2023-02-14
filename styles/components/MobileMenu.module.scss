@@ -1,4 +1,5 @@
 .mobileMenu  {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -10,10 +11,20 @@
   background: linear-gradient(135deg, #262e74 0%, #2c5ed8 50%, rgb(38, 43, 110) 100%);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 80px;
+}
+
+.headerVector {
+  width: 170%;
+  height: auto;
+  position: absolute;
+  left: -60%;
+  top: -18%;
 }
 
 .mobileTopContainer {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +56,7 @@
 
 .logo {
   display:inline-block;
-  width: 150px;
+  width: 180px;
 
   img {
     width:100%;
@@ -55,7 +66,10 @@
 }
 
 .menu {
+  position: relative;
+  z-index: 1;
   list-style: none;
+  text-align: center;
 
   li {
 
