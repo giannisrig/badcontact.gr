@@ -4,6 +4,7 @@ import logo from '@/public/images/logo.svg'
 import fonts from '@/helpers/fonts'
 import footerIllustration from '@/public/images/footerIllustration.svg'
 import SocialLinks from "@/components/socialLinks";
+import NewsletterForm from "@/components/newsletterForm";
 export default function Footer() {
 
 
@@ -27,7 +28,12 @@ export default function Footer() {
                     80’s inspired Heavy Metal/Rock from Athens, Greece that will bring you feelings of nostalgia.
                 </h5>
 
-               <SocialLinks />
+                <SocialLinks />
+
+                <div className={styles.newsletter}>
+                    <NewsletterForm />
+                </div>
+
 
                 <div className={styles.copyright}>
                     <div>Bad Contact ©2023, All rights reserved.</div>
