@@ -9,7 +9,6 @@ export default function OutOfTheBlueLyrics() {
         <div className={styles.container}>
             <Head>
                 <title>Lyrics | Out of the Blue (2023) - Bad Contact</title>
-                <link rel="icon" href="/images/favicon.png" />
             </Head>
             <main className={fonts.grava400.className}>
                 <Header/>

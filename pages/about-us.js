@@ -9,7 +9,6 @@ export default function AboutUs() {
         <div className={styles.container}>
             <Head>
                 <title>About the Band - Bad Contact</title>
-                <link rel="icon" href="/images/favicon.png" />
             </Head>
             <main className={fonts.grava400.className}>
                 <Header/>

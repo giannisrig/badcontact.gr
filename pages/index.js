@@ -15,7 +15,6 @@ export default function Home() {
         <div className={styles.container}>
         <Head>
           <title>Bad Contact - 80s Heavy Rock Band from Athens Greece</title>
-          <link rel="icon" href="/images/favicon.png" />
         </Head>
 
         <Header/>

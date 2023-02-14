@@ -9,7 +9,6 @@ export default function OutOfTheBlue() {
         <div className={styles.container}>
             <Head>
                 <title>Out of the Blue (2023) feat Andreas Lagios - Bad Contact</title>
-                <link rel="icon" href="/images/favicon.png" />
             </Head>
             <main className={fonts.grava400.className}>
                 <Header/>

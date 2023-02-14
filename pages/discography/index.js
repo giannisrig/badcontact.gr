@@ -9,7 +9,6 @@ export default function Discography() {
         <div className={styles.container}>
             <Head>
                 <title>Complete Discography - Bad Contact</title>
-                <link rel="icon" href="/images/favicon.png" />
             </Head>
             <main className={fonts.grava400.className}>
                 <Header/>
