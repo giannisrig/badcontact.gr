@@ -3,6 +3,7 @@ import styles from '@/styles/components/Footer.module.scss'
 import logo from '@/public/images/logo.svg'
 import fonts from '@/helpers/fonts'
 import footerIllustration from '@/public/images/footerIllustration.svg'
+import SocialLinks from "@/components/socialLinks";
 export default function Footer() {
 
 
@@ -26,39 +27,7 @@ export default function Footer() {
                     80’s inspired Heavy Metal/Rock from Athens, Greece that will bring you feelings of nostalgia.
                 </h5>
 
-                <div className={styles.socialLinks}>
-
-                    <a href="https://www.facebook.com/badcontact" className={styles.socialLink}>
-
-                        <Image
-                            src="/images/fb.svg"
-                            alt="Bad Contact Official Facebook Page"
-                            width={20}
-                            height={20}
-                        />
-                    </a>
-
-                    <a href="https://www.instagram.com/badcontactband/" className={styles.socialLink}>
-
-                        <Image
-                            src="/images/instagram.svg"
-                            alt="Bad Contact Official Instagram Page"
-                            width={20}
-                            height={20}
-                        />
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UCteG81-C-AzgqcLJSWbMUnw" className={styles.socialLink}>
-
-                        <Image
-                            src="/images/youtube.svg"
-                            alt="Bad Contact Official YouTube Page"
-                            width={20}
-                            height={20}
-                        />
-                    </a>
-
-                </div>
+               <SocialLinks />
 
                 <div className={styles.copyright}>
                     <div>Bad Contact ©2023, All rights reserved.</div>

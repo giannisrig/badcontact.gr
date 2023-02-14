@@ -7,6 +7,7 @@ import logo from '@/public/images/logo.svg'
 import {useEffect, useRef} from "react";
 import Image from "next/image";
 import HeaderVector from "@/public/images/HeaderVector.svg";
+import SocialLinks from "@/components/socialLinks";
 
 export default function MobileMenu() {
 
@@ -70,6 +71,14 @@ export default function MobileMenu() {
                     </Link>
                 </li>
             </ul>
+
+            <div className={styles.social}>
+                <h4 className={` ${styles.socialTitle} ${fonts.grava400.className}`}>
+                    Find us on social media
+                </h4>
+                <SocialLinks />
+            </div>
+
 
         </header>
     );
