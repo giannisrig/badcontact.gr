@@ -26,3 +26,45 @@
   font-size: 15px;
   line-height: 20px;
 }
+
+.subtitle {
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 0.04rem;
+}
+
+.donationItems {
+  margin-top:20px;
+  width: 100%;
+  display: flex;
+  gap:15px;
+  justify-content: center;
+}
+
+
+.donationItem  {
+  display: flex;
+  align-items: center;
+  background-color: #1a277e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 4px 10px 4px 6px;
+  border-radius: 25px;
+  gap: 5px;
+  font-size: 12px;
+  letter-spacing: 0.01rem;
+}
+
+.icon {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 4px;
+
+  svg {
+    fill: #1a277e;
+    width: 100%;
+    height: auto;
+  }
+
+}
