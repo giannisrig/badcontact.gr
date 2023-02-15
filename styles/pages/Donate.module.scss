@@ -1,0 +1,28 @@
+.section {
+  padding: 30px 0 120px;
+  background: linear-gradient(180deg,#2b4ec4,#2a4cc1);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.text {
+  color: #C7FFFF;
+  font-size: 15px;
+  line-height: 20px;
+}

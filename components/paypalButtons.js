@@ -9,7 +9,7 @@ const PaypalButtons = () => {
     const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
     const {push} = useRouter();
     const [amount, setAmount] = useState(1);
-    const defaultAmounts = [1, 5, 10, 20];
+    const defaultAmounts = [1, 2, 5, 10];
 
     function reloadPaypal(){
         dispatch({
