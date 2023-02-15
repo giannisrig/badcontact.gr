@@ -52,6 +52,9 @@
   transition: 0.2s ease-in;
   border: 2px solid #1A277E;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus,
