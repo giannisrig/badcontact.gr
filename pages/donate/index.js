@@ -31,7 +31,7 @@ export default function Donate() {
                                     HOW WE'LL USE YOUR DONATIONS
                                 </h2>
                                 <p className={styles.text}>
-                                    We want to be transparent on how we are using the money you donate us. These are the things we have prioritized:
+                                    We want to be transparent on how we are using the money you donate us. These are the goals we have prioritized for 2023:
                                 </p>
                                 <div className={styles.donationItems}>
                                     <div className={styles.donationItem}>
