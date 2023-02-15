@@ -80,6 +80,16 @@ export default function MobileMenu() {
                         NEWS
                     </Link>
                 </li>
+                <li>
+                    <Link href={'/about-us'}>
+                        CONTACT
+                    </Link>
+                </li>
+                <li>
+                    <Link href={'/donate'}>
+                        DONATE
+                    </Link>
+                </li>
             </ul>
 
             <div className={styles.social}>

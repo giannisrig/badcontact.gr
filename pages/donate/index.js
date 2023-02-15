@@ -9,7 +9,7 @@ export default function Donate() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>About the Band - Bad Contact</title>
+                <title>Donate - Bad Contact</title>
             </Head>
             <Header/>
             <main className={fonts.grava400.className}>
@@ -21,9 +21,7 @@ export default function Donate() {
                                    DONATE
                                </h1>
                                <p className={styles.text}>
-                                   Well..you know the financial situation in Greece is !@#&%. We are all having full-time jobs besides the band
-                                   and we are doing our best to keep Bad Contact rolling and doing new things, so any financial aid you provide is really helpful to us.
-                                   Thank you very much, we appreciate it for even coming this far, keep rocking 🤘🤘🤘
+                                   Well..you know the financial situation in Greece is !@#&%. We all have full-time jobs besides the band and we are doing our best to keep Bad Contact rolling and doing new things, so any financial aid you provide is really helpful to us. Thank you very much, we appreciate it for even coming this far, keep rocking 🤘🤘🤘
                                </p>
                             </div>
                             <div>
@@ -31,7 +29,7 @@ export default function Donate() {
                                     HOW WE'LL USE YOUR DONATIONS
                                 </h2>
                                 <p className={styles.text}>
-                                    We want to be transparent on how we are using the money you donate us. These are the goals we have prioritized for 2023:
+                                    We want to be transparent on how we are using the money you donate to us. These are the goals we have prioritized for 2023:
                                 </p>
                                 <div className={styles.donationItems}>
                                     <div className={styles.donationItem}>

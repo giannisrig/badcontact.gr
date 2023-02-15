@@ -54,9 +54,11 @@ const PaypalButtons = () => {
                 (
                 <div className={` ${fonts.grava400.className} ${styles.container} ${styles.placeholderContainer}`}>
                     <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                        DONATION AMOUNT:
+                        DONATION AMOUNT
                     </h3>
-
+                    <p className={styles.text}>
+                        Enter any amount you want, every single penny means a lot to us.
+                    </p>
                     <div className={styles.inputField}>
                         <span className={styles.euroSign}>€</span>
                         <div className={styles.inputPlaceholder} />
@@ -79,8 +81,11 @@ const PaypalButtons = () => {
                 : (
                 <div className={` ${fonts.grava400.className} ${styles.container}`}>
                     <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                        DONATION AMOUNT:
+                        DONATION AMOUNT
                     </h3>
+                    <p className={styles.text}>
+                        Enter any amount you want, every single penny means a lot to us.
+                    </p>
                     <div className={styles.inputField}>
                         <span className={styles.euroSign}>€</span>
                         <input
