@@ -50,15 +50,47 @@ const PaypalButtons = () => {
 
     return (
         <>
-            {isPending ? <p>LOADING...</p> : (
+            {isPending ?
+                (
+                <div className={` ${fonts.grava400.className} ${styles.container} ${styles.placeholderContainer}`}>
+                    <h3 className={styles.title}>
+                        Donation Amount:
+                    </h3>
+
+                    <div className={styles.inputField}>
+                        <span className={styles.euroSign}>€</span>
+                        <div className={styles.inputPlaceholder} />
+                    </div>
+                    <div className={styles.defaultAmountsContainer}>
+                        {defaultAmounts.map((buttonAmount) => (
+                            <button
+                                className={styles.defaultAmount}
+                                key={buttonAmount}
+                            >
+                                €{buttonAmount}
+                            </button>
+                        ))}
+                    </div>
+                    <div className={styles.buttons}>
+                        <div className={styles.paypalPlaceholder} />
+                    </div>
+                </div>
+                )
+                : (
                 <div className={` ${fonts.grava400.className} ${styles.container}`}>
-                    <input
-                        type="number"
-                        className={styles.input}
-                        placeholder="Enter Amount"
-                        value={amount ? amount : 1}
-                        onChange={onAmountChange}
-                    />
+                    <h3 className={styles.title}>
+                        Donation Amount:
+                    </h3>
+                    <div className={styles.inputField}>
+                        <span className={styles.euroSign}>€</span>
+                        <input
+                            type="number"
+                            className={styles.input}
+                            placeholder="Enter Amount"
+                            value={amount ? amount : 1}
+                            onChange={onAmountChange}
+                        />
+                    </div>
                     <div className={styles.defaultAmountsContainer}>
                         {defaultAmounts.map((buttonAmount) => (
                             <button

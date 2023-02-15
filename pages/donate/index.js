@@ -21,9 +21,9 @@ export default function Donate() {
                                    DONATE
                                </h1>
                                <p className={styles.text}>
-                                   Well..you know the financial situation in Greece is !@#&%. We are all having full-time jobs besides the band,
+                                   Well..you know the financial situation in Greece is !@#&%. We are all having full-time jobs besides the band
                                    and we are doing our best to keep Bad Contact rolling and doing new things, so any financial aid you provide is really helpful to us.
-                                   We appreciate it and thank you for even coming this far, keep rocking and buy us a beer (we will compensate you with more beers at our lives).
+                                   We appreciate it and thank you for even coming this far, keep rocking and buy us a beer (we will buy you more beers at our lives).
                                </p>
                             </div>
                             <PaypalDonate />

@@ -4,8 +4,29 @@
   justify-content: center;
   align-items: center;
   gap:10px;
-  width: 300px;
+  width:100%;
+  max-width: 300px;
   margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.inputField {
+  position: relative;
+  width:100%;
+}
+
+.euroSign {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #97A2EC;
 }
 
 .defaultAmountsContainer {
@@ -17,38 +38,55 @@
 }
 
 .defaultAmount {
-  border: 0;
-  color: #fff;
+  color: #97A2EC;
   font-size: 15px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   background-color: #1A277E;
   width: 60px;
   height: 30px;
   border-radius: 32px;
   cursor: pointer;
   font-family: inherit;
+  transition: 0.2s ease-in;
+  border: 2px solid #1A277E;
+  font-weight: 700;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #1A277E;
+    background: #2eb8f6;
+  }
+
 }
 
-.input {
-  width:100%;
+.input, .inputPlaceholder {
+  width: 100%;
   font-family: inherit;
   height: 45px;
   background-color: #1A277E;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border: 0;
+  border: 2px solid #1A277E;
   color: #fff;
   outline: none;
   border-radius: 20px;
-  padding: 0 20px;
+  padding: 0 40%;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
+  transition: 0.2s ease-in;
   -moz-appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #2eb8f6;
   }
 
 
@@ -58,4 +96,15 @@
 .buttons {
   margin-top:15px;
   width:100%;
+}
+
+.placeholderContainer {
+  height: 190px;
+}
+
+.paypalPlaceholder {
+  height: 49px;
+  width:100%;
+  background-color: #fff;
+  border-radius: 30px;
 }
