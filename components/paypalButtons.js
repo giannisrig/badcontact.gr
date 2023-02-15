@@ -44,7 +44,7 @@ const PaypalButtons = () => {
 
     const onApproveOrder = (data,actions) => {
         return actions.order.capture().then((details) => {
-            push("/payment-successful").then()
+            push("/donate/thank-you").then()
         });
     }
 

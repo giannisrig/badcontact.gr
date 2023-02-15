@@ -3,12 +3,9 @@ import PaypalButtons from "@/components/paypalButtons";
 
 export default function PaypalDonate() {
 
-    // const paypalClientID = process.env.PAYPAL_CLIENT_ID;
-    const paypalClientID = "AeJmVdC2qsBztJZD1Afc1x0YQKgzDLwpmMqVhd7m5HFejmxqNwmHK6qdmvudVOKwHG3Zt3y40g4LjqnQ";
-
     return(
         <PayPalScriptProvider options={{
-            "client-id": paypalClientID,
+            "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
             "currency": "EUR",
             "intent": "capture",
         }}>
