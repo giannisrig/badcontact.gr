@@ -53,8 +53,8 @@ const PaypalButtons = () => {
             {isPending ?
                 (
                 <div className={` ${fonts.grava400.className} ${styles.container} ${styles.placeholderContainer}`}>
-                    <h3 className={styles.title}>
-                        Donation Amount:
+                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                        DONATION AMOUNT:
                     </h3>
 
                     <div className={styles.inputField}>
@@ -78,8 +78,8 @@ const PaypalButtons = () => {
                 )
                 : (
                 <div className={` ${fonts.grava400.className} ${styles.container}`}>
-                    <h3 className={styles.title}>
-                        Donation Amount:
+                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                        DONATION AMOUNT:
                     </h3>
                     <div className={styles.inputField}>
                         <span className={styles.euroSign}>€</span>
