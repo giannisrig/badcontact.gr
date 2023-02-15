@@ -22,11 +22,12 @@
 
 .euroSign {
   position: absolute;
-  left: 40%;
+  left: calc(40% + 5px);
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #97A2EC;
+  margin-top: 1px;
 }
 
 .defaultAmountsContainer {
@@ -99,11 +100,11 @@
 }
 
 .placeholderContainer {
-  height: 190px;
+  //height: 190px;
 }
 
 .paypalPlaceholder {
-  height: 49px;
+  height: 47px;
   width:100%;
   background-color: #fff;
   border-radius: 30px;
