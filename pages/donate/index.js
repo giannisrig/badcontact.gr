@@ -4,10 +4,11 @@ import Footer from '@/components/footer'
 import styles from "@/styles/pages/Donate.module.scss";
 import fonts from "@/helpers/fonts";
 import PaypalDonate from "@/components/paypalDonate";
+import Breadcrumbs from "@/components/breadcrumbs";
 
 export default function Donate() {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Donate - Bad Contact</title>
             </Head>
@@ -16,13 +17,17 @@ export default function Donate() {
                 <section className={styles.section}>
                     <div className='container'>
                         <div className={styles.content}>
+
                             <div className={styles.textContainer}>
-                               <h1 className={`${fonts.voltec.className} ${styles.title}`}>
-                                   DONATE
-                               </h1>
-                               <p className={styles.text}>
+                                <div>
+                                    <Breadcrumbs />
+                                    <h1 className={`${fonts.voltec.className} ${styles.title}`}>
+                                        DONATE
+                                    </h1>
+                                </div>
+                                <p className={styles.text}>
                                    Well..you know the financial situation in Greece is !@#&%. We all have full-time jobs besides the band and we are doing our best to keep Bad Contact rolling and doing new things, so any financial aid you provide is really helpful to us. Thank you very much, we appreciate it for even coming this far, keep rocking 🤘🤘🤘
-                               </p>
+                                </p>
                             </div>
                             <div>
                                 <h2 className={`${fonts.voltec.className} ${styles.subtitle}`}>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import fonts from '@/helpers/fonts'
+import Link from 'next/link';
 import styles from '@/styles/components/Header.module.scss'
 import logo from '@/public/images/logo.svg'
 import HeaderVector from '@/public/images/HeaderVector.svg'
@@ -36,9 +37,9 @@ export default function Header() {
                 </a>
 
                 <div className={styles.logoContainer}>
-                    <a href="https://badcontact.gr" className={styles.logo}>
+                    <Link href="/" className={styles.logo}>
                         <Image src={logo} alt="Bad Contact Logo" width={200} height={120} />
-                    </a>
+                    </Link>
                 </div>
 
             </header>
