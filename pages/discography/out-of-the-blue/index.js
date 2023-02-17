@@ -9,6 +9,7 @@ import Image from "next/image";
 import coverArtworkImg from "@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg";
 import MusicInfoItem from "@/components/musicInfoItem";
 import MusicLineupCarousel from "@/components/musicLineupCarousel";
+import rocks from "@/public/images/rocks.svg";
 
 export default function OutOfTheBlue() {
 
@@ -80,6 +81,7 @@ export default function OutOfTheBlue() {
                             </div>
 
                             <div className={styles.lineup}>
+                                {/*<Image className={styles.rocks} src={rocks} alt="Heavy Rock" />*/}
                                 <div>
                                     <h3 className={`${fonts.voltec.className} ${styles.title}`}>
                                         LINE UP
@@ -90,6 +92,40 @@ export default function OutOfTheBlue() {
                                 </div>
                                 <MusicLineupCarousel/>
                             </div>
+
+                            <div className={styles.lineup}>
+                                <div>
+                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                                      LISTEN
+                                    </h3>
+                                    <p className={styles.lineupText}>
+                                        Streaming platforms buttons here that will link to the single
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.lineup}>
+                                <div>
+                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                                      TRACK LIST
+                                    </h3>
+                                    <p className={styles.lineupText}>
+                                        Tracklist here
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.lineup}>
+                                <div>
+                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                                      LYRICS
+                                    </h3>
+                                    <p className={styles.lineupText}>
+                                        Link to lyrics
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
