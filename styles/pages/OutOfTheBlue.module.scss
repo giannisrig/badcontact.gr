@@ -7,7 +7,7 @@
 .title {
   font-size: 36px;
   margin: 7px 0 5px;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.04rem;
 }
 
 .subtitle {
@@ -42,6 +42,7 @@
 }
 
 .lineup {
+  margin-top:10px;
   text-align: left;
   display: flex;
   flex-direction: column;

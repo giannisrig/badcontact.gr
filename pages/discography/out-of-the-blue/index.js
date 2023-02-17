@@ -85,7 +85,7 @@ export default function OutOfTheBlue() {
                                         LINE UP
                                     </h3>
                                     <p className={styles.lineupText}>
-                                        The line-up of Bad Contact when we recorded the <strong>'Out of the Blue'</strong> single in 2023.
+                                        The line-up of Bad Contact when we recorded the <strong>'Out of the Blue'</strong> single in 2023:
                                     </p>
                                 </div>
                                 <MusicLineupCarousel/>
