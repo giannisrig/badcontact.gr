@@ -1,25 +1,88 @@
 import Head from 'next/head'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-import styles from "@/styles/AboutUs.module.scss";
+import styles from "@/styles/pages/OutOfTheBlue.module.scss";
 import fonts from "@/helpers/fonts";
 import Breadcrumbs from "@/components/breadcrumbs";
+import Link from "next/link";
+import Image from "next/image";
+import coverArtworkImg from "@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg";
+import MusicInfoItem from "@/components/musicInfoItem";
 
 export default function OutOfTheBlue() {
+
+    const singleInfo = [
+        {
+            label: 'Release',
+            value: 'Single'
+        },
+        {
+            label: 'Format',
+            value: 'Digital'
+        },
+        {
+            label: 'Label',
+            value: 'Self Released'
+        },
+        {
+            label: 'Recorded at',
+            value: 'Odeon Studios'
+        },
+        {
+            label: 'Produced by',
+            value: 'Bad Contact & Ilias Lakas'
+        },
+        {
+            label: 'Mixed by',
+            value: 'Bad Contact & Ilias Lakas'
+        },
+        {
+            label: 'Engineered by',
+            value: 'Ilias Lakas'
+        },
+        {
+            label: 'Mastered by',
+            value: 'Ilias Lakas'
+        },
+        {
+            label: 'Artwork by',
+            value: 'Dimos Stathis'
+        },
+    ];
+
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Out of the Blue (2023) feat Andreas Lagios - Bad Contact</title>
             </Head>
+            <Header/>
             <main className={fonts.grava400.className}>
-                <Header/>
-                <Breadcrumbs />
-                <h1>
-                    Out of the Blue (2023) feat Andreas Lagios
-                </h1>
+                <section className={styles.section}>
+                    <div className='container'>
+                        <div className={styles.content}>
+                            <div>
+                                <Breadcrumbs />
+                               <h1 className={`${fonts.voltec.className} ${styles.title}`}>
+                                   OUT OF THE BLUE (2023)
+                               </h1>
+                               <h2 className={styles.subtitle}>
+                                   feat Andreas Lagios (Nightstalker)
+                               </h2>
+                            </div>
+                            <div className={styles.artwork}>
+                                <Image src={coverArtworkImg} alt="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" title="Bad Contact - Out of the Blue (Single 2023) - Artwork Cover" width={315} height={315} quality={100} />
+                            </div>
+                            <div className={styles.musicInfoList}>
+                                {singleInfo.map((itemData, i) => {
+                                   return( <MusicInfoItem data={itemData} key={i} /> )
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <Footer/>
             </main>
+            <Footer/>
         </div>
     );
 }

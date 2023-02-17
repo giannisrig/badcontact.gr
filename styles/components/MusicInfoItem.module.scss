@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2442ac;
+  padding: 0 0 8px;
+  font-size: 14px;
+}
+
+.label {
+  color:#A6BBFF;
+}
+
+.value {
+  text-align: right;
+  font-weight: 400;
+}

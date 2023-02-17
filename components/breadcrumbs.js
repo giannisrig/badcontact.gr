@@ -7,6 +7,8 @@ import styles from "@/styles/components/Breadcrumbs.module.scss";
 export default function Breadcrumbs() {
 
     const router = useRouter();
+
+    //This function is responsible for entering an object (thing) between all elements in array (arr)
     const interleave = (arr, thing) => [].concat(...arr.map(n => [n, thing])).slice(0, -1)
     let breadcrumbs = null;
 
@@ -16,10 +18,16 @@ export default function Breadcrumbs() {
     }
 
     if (router) {
+
+        //split the link by separator
         const linkPath = router.asPath.split('/');
+
+        //remove the first item which is home
         linkPath.shift();
 
+        //add the separator between the links array
         breadcrumbs = interleave(
+            //loop through the links array
             linkPath.map((path, i) => {
 
                 return {breadcrumb: path, type: 'link', href: '/' + linkPath.slice(0, i + 1).join('/')};
