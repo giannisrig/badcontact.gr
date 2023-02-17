@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import coverArtworkImg from "@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg";
 import MusicInfoItem from "@/components/musicInfoItem";
+import MusicLineupCarousel from "@/components/musicLineupCarousel";
 
 export default function OutOfTheBlue() {
 
@@ -76,6 +77,18 @@ export default function OutOfTheBlue() {
                                 {singleInfo.map((itemData, i) => {
                                    return( <MusicInfoItem data={itemData} key={i} /> )
                                 })}
+                            </div>
+
+                            <div className={styles.lineup}>
+                                <div>
+                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                                        LINE UP
+                                    </h3>
+                                    <p className={styles.lineupText}>
+                                        The line-up of Bad Contact when we recorded the <strong>'Out of the Blue'</strong> single in 2023.
+                                    </p>
+                                </div>
+                                <MusicLineupCarousel/>
                             </div>
                         </div>
                     </div>

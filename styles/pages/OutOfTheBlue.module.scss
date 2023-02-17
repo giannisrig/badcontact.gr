@@ -40,3 +40,22 @@
   gap:8px;
   padding: 0 10px;
 }
+
+.lineup {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.lineupText {
+  color: #c7ffff;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 22px;
+
+  strong {
+    font-weight: 400;
+  }
+
+}

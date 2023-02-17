@@ -1,0 +1,81 @@
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+}
+
+.imgContainer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #2EB8F6;
+  border: 2px solid #2B126D;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #2B126D;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:3px;
+}
+
+.name {
+  font-size: 14px;
+  color: #c7ffff;
+}
+
+.role {
+  font-size: 13px;
+  color:#BBCBFF;
+}
+
+.slider {
+  padding-bottom: 30px;
+}
+
+.container {
+  padding:0;
+}
+
+.pagingDotsContainer {
+  display: flex;
+  top:30px!important;
+  gap:8px;
+}
+
+.pagingDots {
+  display: flex;
+  fill: #092580 !important;
+  width: 8px;
+  height: 8px;
+  align-items: center;
+
+  svg {
+    width:100%;
+    height: auto;
+  }
+
+}
+
+.nextButton,
+.prevButton {
+  width:35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+.prevButton {
+  transform: translate(-15px, -20px);
+}
+
+.nextButton {
+  transform: translate(15px, -20px);
+}
+
