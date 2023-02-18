@@ -6,7 +6,7 @@ export default function MusicInfoItem( data, ...props ) {
     return (
         <div className={styles.item}>
             <div className={styles.label}>
-               {info.label}:
+               {info.label}
             </div>
             <div className={` ${styles.value}`}>
                 {info.value}

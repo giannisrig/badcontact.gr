@@ -1,0 +1,30 @@
+.section {
+  padding: 30px 0 120px;
+  background: linear-gradient(180deg,#2b4ec4,#2a4cc1);
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 36px;
+  margin: 7px 0 5px;
+  letter-spacing: 0.04rem;
+
+  span {
+    color: #c7ffff;
+  }
+
+}
+
+.content {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.lyricsText {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}

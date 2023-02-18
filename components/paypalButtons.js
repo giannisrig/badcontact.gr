@@ -8,7 +8,8 @@ const PaypalButtons = () => {
 
     const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
     const {push} = useRouter();
-    const [amount, setAmount] = useState(1);
+    const [amount, setAmount] = useState('' );
+    const [timer, setTimer] = useState(null );
     const defaultAmounts = [1, 2, 5, 10];
 
     function reloadPaypal(){
@@ -21,12 +22,22 @@ const PaypalButtons = () => {
     }
 
     const onAmountChange = ({ target: { value } }) => {
-        setAmount(parseInt(value));
-        reloadPaypal();
+        setAmount(parseFloat(value));
+
+        if( timer ){
+            clearTimeout(timer);
+        }
+
+        const newTimer = setTimeout(()=>{
+            reloadPaypal();
+        }, 1000 )
+
+        setTimer(newTimer);
+
     }
 
     const onAmountClicked = (value) => {
-        setAmount(parseInt(value))
+        setAmount(parseFloat(value))
         reloadPaypal();
     }
 
@@ -91,8 +102,10 @@ const PaypalButtons = () => {
                         <input
                             type="number"
                             className={styles.input}
-                            placeholder="Enter Amount"
-                            value={amount ? amount : 1}
+                            placeholder="1"
+                            value={amount}
+                            step="0.1"
+                            min={0}
                             onChange={onAmountChange}
                         />
                     </div>

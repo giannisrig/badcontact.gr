@@ -10,44 +10,45 @@ import coverArtworkImg from "@/public/images/BadContact-OutOfTheBlue2023ArtworkC
 import MusicInfoItem from "@/components/musicInfoItem";
 import MusicLineupCarousel from "@/components/musicLineupCarousel";
 import rocks from "@/public/images/rocks.svg";
+import ButtonLink from "@/components/buttonLink";
 
 export default function OutOfTheBlue() {
 
     const singleInfo = [
         {
-            label: 'Release',
+            label: 'Release:',
             value: 'Single'
         },
         {
-            label: 'Format',
+            label: 'Format:',
             value: 'Digital'
         },
         {
-            label: 'Label',
+            label: 'Label:',
             value: 'Self Released'
         },
         {
-            label: 'Recorded at',
+            label: 'Recorded at:',
             value: 'Odeon Studios'
         },
         {
-            label: 'Produced by',
-            value: 'Bad Contact & Ilias Lakas'
+            label: 'Produced by:',
+            value: 'Bad Contact & Ilias Lakkas'
         },
         {
-            label: 'Mixed by',
-            value: 'Bad Contact & Ilias Lakas'
+            label: 'Mixed by:',
+            value: 'Ilias Lakkas'
         },
         {
-            label: 'Engineered by',
-            value: 'Ilias Lakas'
+            label: 'Engineered by:',
+            value: 'Ilias Lakkas'
         },
         {
-            label: 'Mastered by',
-            value: 'Ilias Lakas'
+            label: 'Mastered by:',
+            value: 'Ilias Lakkas'
         },
         {
-            label: 'Artwork by',
+            label: 'Artwork by:',
             value: 'Dimos Stathis'
         },
     ];
@@ -99,32 +100,36 @@ export default function OutOfTheBlue() {
                                       LISTEN
                                     </h3>
                                     <p className={styles.lineupText}>
-                                        Streaming platforms buttons here that will link to the single
+                                        You can listen to 'Out of the Blue' on all the streaming platforms:
                                     </p>
+                                    <div className={styles.buttonsContainer}>
+
+                                        <ButtonLink href="#" image="/images/spotify.svg" text="SPOTIFY" />
+                                        <ButtonLink href="#" image="/images/bandcamp-bad-contact.svg" text="BANDCAMP" />
+                                        <ButtonLink href="#" image="/images/youtube-bad-contact.svg" text="YOUTUBE" />
+                                        <ButtonLink href="#" image="/images/apple-music-bad-contact.svg" text="APPLE MUSIC" />
+                                        <ButtonLink href="#" image="/images/pandora-bad-contact.svg" text="PANDORA" />
+
+                                    </div>
                                 </div>
                             </div>
 
                             <div className={styles.lineup}>
-                                <div>
-                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                                      TRACK LIST
-                                    </h3>
-                                    <p className={styles.lineupText}>
-                                        Tracklist here
-                                    </p>
-                                </div>
+                               <div>
+                                   <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                                       TRACKS & LYRICS
+                                   </h3>
+                                   <div className={styles.trackList}>
+                                       <MusicInfoItem data={{
+                                           label: '1. Out of the Blue',
+                                           value: <Link href="/discography/out-of-the-blue/lyrics" className={styles.lyricsLink}>
+                                               View Lyrics
+                                           </Link>
+                                       }}  />
+                                   </div>
+                               </div>
                             </div>
 
-                            <div className={styles.lineup}>
-                                <div>
-                                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                                      LYRICS
-                                    </h3>
-                                    <p className={styles.lineupText}>
-                                        Link to lyrics
-                                    </p>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
