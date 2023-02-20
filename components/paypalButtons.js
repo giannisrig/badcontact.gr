@@ -22,7 +22,7 @@ const PaypalButtons = () => {
     }
 
     const onAmountChange = ({ target: { value } }) => {
-        setAmount(parseFloat(value));
+        setAmount(value);
 
         if( timer ){
             clearTimeout(timer);
@@ -37,7 +37,7 @@ const PaypalButtons = () => {
     }
 
     const onAmountClicked = (value) => {
-        setAmount(parseFloat(value))
+        setAmount(value)
         reloadPaypal();
     }
 
@@ -46,7 +46,7 @@ const PaypalButtons = () => {
             purchase_units: [
                 {
                     amount: {
-                        value: amount,
+                        value: parseFloat(amount),
                     },
                 },
             ],
@@ -104,7 +104,7 @@ const PaypalButtons = () => {
                             className={styles.input}
                             placeholder="1"
                             value={amount}
-                            step="0.1"
+                            step="0.01"
                             min={0}
                             onChange={onAmountChange}
                         />
