@@ -1,4 +1,4 @@
-import styles from "@/styles/components/pageHeader.module.scss";
+import styles from "@/styles/components/PageHeader.module.scss";
 import Breadcrumbs from "@/components/breadcrumbs";
 import fonts from "@/helpers/fonts";
 
