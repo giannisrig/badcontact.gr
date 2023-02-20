@@ -61,7 +61,7 @@ export default function MobileMenu() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/about-us'}>
+                    <Link href={'/discography'}>
                         DISCOGRAPHY
                     </Link>
                 </li>
@@ -71,17 +71,17 @@ export default function MobileMenu() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/about-us'}>
+                    <Link href={'/merchandise'}>
                         MERCH
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/about-us'}>
+                    <Link href={'/news'}>
                         NEWS
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/about-us'}>
+                    <Link href={'/contact-us'}>
                         CONTACT
                     </Link>
                 </li>

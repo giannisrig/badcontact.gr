@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import styles from "@/styles/AboutUs.module.scss";
+import styles from "@/styles/pages/News.module.scss";
 import fonts from "@/helpers/fonts";
-import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
+import Layout from "@/components/layout";
 
-export default function AboutUs() {
+export default function News() {
     return (
         <>
             <Head>
-                <title>About the Band - Bad Contact</title>
+                <title>News & Announcements - Bad Contact</title>
             </Head>
             <Layout>
                 <div>
-                    <PageHeader title='ABOUT US' />
+                    <PageHeader title='NEWS' />
                 </div>
             </Layout>
         </>

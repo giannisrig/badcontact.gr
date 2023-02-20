@@ -1,18 +1,19 @@
-import Head from 'next/head'
-import styles from "@/styles/AboutUs.module.scss";
-import fonts from "@/helpers/fonts";
+import styles from "@/styles/pages/Merchandise.module.scss";
+
+import Head from "next/head";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
 
-export default function AboutUs() {
+export default function Merch() {
+
     return (
         <>
             <Head>
-                <title>About the Band - Bad Contact</title>
+                <title>Merchandise Shop - Bad Contact</title>
             </Head>
             <Layout>
                 <div>
-                    <PageHeader title='ABOUT US' />
+                    <PageHeader title='MERCHANDISE' />
                 </div>
             </Layout>
         </>
