@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
 import styles from "@/styles/pages/Lyrics.module.scss";
 import fonts from "@/helpers/fonts";
 import Breadcrumbs from "@/components/breadcrumbs";
 import Layout from "@/components/layout";
-import PageHeader from "@/components/pageHeader";
 
 export default function OutOfTheBlueLyrics() {
     return (
@@ -14,7 +11,7 @@ export default function OutOfTheBlueLyrics() {
                 <title>Lyrics | Out of the Blue (2023) - Bad Contact</title>
             </Head>
             <Layout>
-                <div>
+                <div className={styles.content }>
                     <div>
                         <Breadcrumbs />
                         <h1 className={`${fonts.voltec.className} ${styles.title}`}>

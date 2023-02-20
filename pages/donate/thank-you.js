@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from "@/styles/pages/DonateThankYou.module.scss";
-import fonts from "@/helpers/fonts";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
 import NewsletterForm from "@/components/newsletterForm";
