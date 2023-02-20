@@ -1,6 +1,5 @@
 import styles from "@/styles/components/MusicLineupCarousel.module.scss";
 import Carousel from 'nuka-carousel/es/index';
-import fonts from "@/helpers/fonts";
 
 export default function MusicLineupCarousel() {
 
@@ -31,7 +30,7 @@ export default function MusicLineupCarousel() {
             img: ''
         },
         {
-            name: 'Vaggelis Galanis',
+            name: 'Vangelis Galanis',
             role: 'Synths/Piano',
             img: ''
         },
