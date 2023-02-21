@@ -6,6 +6,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   reactStrictMode: true,
+  images: {
+    formats: ['image/avif', 'image/webp']
+  }
 }
 
 module.exports = nextConfig
