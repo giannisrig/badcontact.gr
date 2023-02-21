@@ -14,7 +14,7 @@ export default function Discography() {
             </Head>
             <Layout>
                 <div>
-                    <PageHeader title='DISCOGRAPHY' subtitle='All the official music releases of Bad Contact.' />
+                    <PageHeader title='DISCOGRAPHY' subtitle='All official music releases of Bad Contact.' />
                 </div>
                 <AlbumItem title='OUT OF THE BLUE (2023)' subtitle='feat. Andreas Lagios (Nightstalker)' img={coverArtworkImg} link='/discography/out-of-the-blue/' release='SINGLE' />
             </Layout>

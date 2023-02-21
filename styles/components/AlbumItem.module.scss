@@ -16,7 +16,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:25px;
   text-align: left;
 }
 
@@ -35,10 +35,26 @@
 .release {
   font-size: 12px;
   background-color: #2944a9;
-  padding: 5px 12px;
-  border-radius: 15px;
+  padding: 7px 15px 7px 8px;
+  border-radius: 20px;
   line-height: 15px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap:6px;
+}
+
+.icon {
+  width:20px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width:100%;
+    height: auto;
+    fill:#fff;
+  }
+
 }
 
 .footer {
@@ -57,17 +73,34 @@
   flex-wrap: nowrap;
   background-color: #2eb8f6;
   padding: 5px 15px 5px 18px;
-  border-radius: 15px;
+  border-radius: 20px;
+  border: 2px solid #0d1a6c;
+  transition: 0.2s ease-in;
 
   span {
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: 700;
+    letter-spacing: 0.02rem;
   }
 
   svg {
     width:22px;
     height: auto;
     fill:#1a277e;
+    transition: 0.2s ease-in;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #0d1a6c;
+    color: #fff;
+
+    svg {
+      fill:#fff;
+    }
+
   }
 
 }
