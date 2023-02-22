@@ -1,0 +1,42 @@
+.notice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  background-color: #1A277E;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap:7px;
+}
+
+.title {
+ font-size: 20px;
+  letter-spacing: 0.04rem;
+}
+
+.icon {
+  width: 25px;
+  height: auto;
+
+  path {
+    fill:#f077ca;
+  }
+}
+
+.content {
+  padding: 0;
+
+  p {
+    color:#c7ffff;
+    font-size: 14px;
+  }
+
+}
+
+

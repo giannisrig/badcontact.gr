@@ -80,7 +80,7 @@ export default function Home() {
                         </h3>
 
                         <h4 className={styles.feat}>
-                           Featuring Andreas Lagios from <a href={'https://nightstalkerband.com/'} rel="noreferrer" target={'_blank'}>Nightstalker</a> as a guest star on the bass.
+                           Featuring Andreas Lagios from <a href={'https://nightstalkerband.com/'} rel="noreferrer" target={'_blank'}>Nightstalker</a> as a special guest on the bass.
                         </h4>
                     </div>
 
