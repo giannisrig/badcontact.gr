@@ -39,4 +39,29 @@
 
 }
 
+.btn {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 25px;
+  gap: 5px;
+  background: #2EB8F6;
+  color: #1A277E;
+  border-radius: 30px;
+  width: fit-content;
+  margin-top: 10px;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+  margin-left: auto;
+  letter-spacing: 0.04rem;
 
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #1A277E;
+    color: #fff;
+  }
+
+}

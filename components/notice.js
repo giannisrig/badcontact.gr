@@ -1,7 +1,8 @@
 import styles from "@/styles/components/Notice.module.scss";
 import fonts from '@/helpers/fonts'
+import Link from 'next/link'
 
-export default function Notice({title, text}) {
+export default function Notice({title, text, btnLink, btnText}) {
 
     return (
         <div className={`${styles.notice} ${fonts.grava400.className}`}>
@@ -16,6 +17,9 @@ export default function Notice({title, text}) {
                     {text}
                 </p>
             </div>
+            { btnLink ?
+                <Link className={`${styles.btn} ${fonts.voltec.className}`} href={btnLink}>{btnText}</Link>
+                : ''}
         </div>
     );
 
