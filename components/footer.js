@@ -31,7 +31,7 @@ export default function Footer() {
 
                 <SocialLinks />
 
-                <div className={styles.newsletter}>
+                <div id={'subscribeForm'} className={styles.newsletter}>
                     <NewsletterForm />
                 </div>
 

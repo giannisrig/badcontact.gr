@@ -66,8 +66,8 @@ export default function MobileMenu() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/about-us'}>
-                        LIVE GIGS
+                    <Link href={'/lives'}>
+                        LIVES
                     </Link>
                 </li>
                 <li>
