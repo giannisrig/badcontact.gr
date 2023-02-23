@@ -12,7 +12,7 @@ export default function ContactUs() {
             </Head>
             <Layout>
                 <div>
-                    <PageHeader title='CONTACT US' />
+                    <PageHeader title='CONTACT US' subtitle='For any information you can send us a message on our social or at the email address below.' />
                 </div>
             </Layout>
         </>
