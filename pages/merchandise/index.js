@@ -1,4 +1,4 @@
-import styles from "@/styles/pages/Merchandise.module.scss";
+// import styles from "@/styles/pages/Merchandise.module.scss";
 
 import Head from "next/head";
 import Layout from "@/components/layout";

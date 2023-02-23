@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from "@/styles/pages/News.module.scss";
-import fonts from "@/helpers/fonts";
+// import styles from "@/styles/pages/News.module.scss";
+// import fonts from "@/helpers/fonts";
 import PageHeader from "@/components/pageHeader";
 import Layout from "@/components/layout";
 import Notice from "@/components/notice";

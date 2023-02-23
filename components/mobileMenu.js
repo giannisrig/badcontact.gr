@@ -1,11 +1,11 @@
-import fonts from '@/helpers/fonts'
 import { useSelector, useDispatch } from 'react-redux'; // updated
 import { selectMobileMenuOpen, setMobileMenuOpen } from '@/store/slices/mobileMenuSlice'; //updated
-import styles from '@/styles/components/MobileMenu.module.scss'
-import Link from 'next/link'
-import logo from '@/public/images/logo.svg'
 import {useEffect, useRef} from "react";
+import styles from '@/styles/components/MobileMenu.module.scss'
 import Image from "next/image";
+import Link from 'next/link'
+import fonts from '@/helpers/fonts'
+import logo from '@/public/images/logo.svg'
 import HeaderVector from "@/public/images/HeaderVector.svg";
 import SocialLinks from "@/components/socialLinks";
 import { useRouter } from 'next/router'

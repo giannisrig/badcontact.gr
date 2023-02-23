@@ -1,4 +1,4 @@
-import styles from "@/styles/pages/Lives.module.scss";
+// import styles from "@/styles/pages/Lives.module.scss";
 import Head from "next/head";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
