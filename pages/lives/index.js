@@ -18,16 +18,22 @@ export default function Lives() {
                 <div>
                     <PageHeader title='LIVE SHOWS' subtitle='Upcoming and past live shows, posters, dates and info.' />
                 </div>
-                <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                    UPCOMING LIVES
-                </h3>
 
-                <Notice title='NO UPCOMING LIVES' btnLink='/contact-us' btnText='CONTACT US' text='If you are interested to book or arrange a live show with us, send us a message.' />
+                <section className={styles.section}>
+                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                        UPCOMING LIVES
+                    </h3>
 
-                <h3 className={`${fonts.voltec.className} ${styles.title}`}>
-                    PAST LIVES
-                </h3>
-                <LiveShow title={'HARD ROCK & HEAVY METAL ROLLING #LIVE'} img={RemedyPoster} date={'SATURDAY, JULY 2, 2022 AT 8:30 PM'} location={'REMEDY'} />
+                    <Notice title='NO UPCOMING LIVES' btnLink='/contact-us' btnText='CONTACT US' text='If you are interested to book or arrange a live show with us, send us a message.' />
+                </section>
+
+                <section className={styles.section}>
+                    <h3 className={`${fonts.voltec.className} ${styles.title}`}>
+                        PAST LIVES
+                    </h3>
+                    <LiveShow title={'HARD ROCK & HEAVY METAL ROLLING #LIVE'} img={RemedyPoster} date={'SATURDAY, JULY 2, 2022 AT 8:30 PM'} location={'REMEDY'} />
+                </section>
+
             </Layout>
         </>
     );
