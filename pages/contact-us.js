@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from "@/styles/pages/ContactUs.module.scss";
-import fonts from "@/helpers/fonts";
 import PageHeader from "@/components/pageHeader";
 import Layout from "@/components/layout";
 import EmailItem from "@/components/emailItem";
