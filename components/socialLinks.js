@@ -1,7 +1,9 @@
 import styles from "@/styles/components/SocialLinks.module.scss";
 import Image from "next/image";
 
-export default function SocialLinks() {
+export default function SocialLinks({youtube}) {
+
+    const showYoutube = !!youtube;
 
     return(
         <div className={styles.socialLinks}>
@@ -16,10 +18,13 @@ export default function SocialLinks() {
                 <Image src="/images/instagram.svg" alt="Bad Contact Band Official Instagram Page" width={20} height={20} />
             </a>
 
-            <a href="https://www.youtube.com/channel/UCteG81-C-AzgqcLJSWbMUnw" className={styles.socialLink}>
+            { showYoutube ?
+                <a href="https://www.youtube.com/channel/UCteG81-C-AzgqcLJSWbMUnw" className={styles.socialLink}>
 
-                <Image  src="/images/youtube.svg" alt="Bad Contact Band Official YouTube Channel Page" width={20} height={20} />
-            </a>
+                    <Image  src="/images/youtube.svg" alt="Bad Contact Band Official YouTube Channel Page" width={20} height={20} />
+                </a>
+                : '' }
+
 
         </div>
     );
