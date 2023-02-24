@@ -61,7 +61,7 @@ export default function AboutLineupCarousel() {
                     return(
                         <div key={i} className={styles.item} >
                             <div className={styles.imgContainer} >
-                                <Image src={itemData.img} alt={'Bad Contact - '+ itemData.name + ' - ' + itemData.role } />
+                                <Image src={itemData.img} alt={'Bad Contact - '+ itemData.name + ' - ' + itemData.role } quality={100}/>
                             </div>
                             <div className={styles.info}>
                                 <div className={` ${styles.name} ${fonts.voltec.className}`}>

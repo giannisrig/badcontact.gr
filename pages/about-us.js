@@ -21,7 +21,7 @@ export default function AboutUs() {
                 </div>
 
                 <div className={styles.imgContainer}>
-                    <Image src={GroupPhoto} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} />
+                    <Image src={GroupPhoto} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
                 </div>
 
                 <div className={styles.content}>
@@ -39,7 +39,7 @@ export default function AboutUs() {
                     </div>
 
                     <div className={styles.imgContainer}>
-                        <Image src={GroupPhoto2} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} />
+                        <Image src={GroupPhoto2} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
                     </div>
 
                     <div className={styles.textBlock}>
