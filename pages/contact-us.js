@@ -16,8 +16,8 @@ export default function ContactUs() {
                     <PageHeader title='CONTACT US' subtitle='Get in touch with us by sending us a message at our social or at the email addresses below.' />
                 </div>
                 <div className={styles.emailItems}>
-                    <EmailItem title='GENERAL INFORMATION' text='For questions, general information or just to connect with us use the following email address to contact us.' email={'info@badcontact.gr'} />
-                    <EmailItem title='BOOKINGS' text='For bookings, collaborations and serious stuff, use the following email address to speak with our manager.' email={'manager@badcontact.gr'} />
+                    <EmailItem title='GENERAL INFORMATION' text='For questions, general information or just to connect with us use the following email address to contact us:' email={'info@badcontact.gr'} />
+                    <EmailItem title='BOOKINGS' text='For bookings, collaborations and serious stuff, use the following email address to speak with our manager:' email={'manager@badcontact.gr'} />
                 </div>
              </Layout>
         </>
