@@ -13,11 +13,13 @@ export default function ContactUs() {
             </Head>
             <Layout>
                 <div>
-                    <PageHeader title='CONTACT US' subtitle='For any information you can send us a message at our social or at the email addresses below.' />
+                    <PageHeader title='CONTACT US' subtitle='Get in touch with us by sending us a message at our social or at the email addresses below.' />
                 </div>
-                <EmailItem email={'info@badcontact.gr'} />
-                <EmailItem email={'manager@badcontact.gr'} />
-            </Layout>
+                <div className={styles.emailItems}>
+                    <EmailItem title='GENERAL INFORMATION' text='For questions, general information or just to connect with us use the following email address to contact us.' email={'info@badcontact.gr'} />
+                    <EmailItem title='BOOKINGS' text='For bookings, collaborations and serious stuff, use the following email address to speak with our manager.' email={'manager@badcontact.gr'} />
+                </div>
+             </Layout>
         </>
     );
 }
