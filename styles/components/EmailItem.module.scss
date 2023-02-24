@@ -21,7 +21,7 @@
 }
 
 .title {
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 0.04rem;
 }
 
@@ -33,6 +33,7 @@
 }
 
 .textarea  {
+  resize: none;
   font-weight: 700;
   font-size: 22px;
   width: 100%;
