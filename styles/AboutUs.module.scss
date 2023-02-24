@@ -35,3 +35,21 @@
   line-height: 22px;
   text-align: left;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
