@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
         <Head>
-          <title>Bad Contact - 80s Heavy Rock Band from Athens Greece</title>
+          <title>Bad Contact - 80s Heavy Metal / Rock Band from Athens Greece</title>
         </Head>
 
         <Header/>
