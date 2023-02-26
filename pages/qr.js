@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Head from "next/head";
 import Layout from "@/components/layout";
 
-export default function qr() {
+export default function Qr() {
 
     const router = useRouter();
 
