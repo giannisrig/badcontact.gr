@@ -24,7 +24,17 @@ export default function Qr() {
 
 
     useEffect(() => {
-        router.push('/');
+
+        if( pixelSent ){
+
+            const interval = setInterval(()=>{
+                router.push('/');
+            }, 1000);
+
+            return () => clearInterval(interval);
+
+        }
+
     }, [pixelSent]);
 
     return (
