@@ -5,33 +5,36 @@ import Layout from "@/components/layout";
 
 export default function Qr() {
 
-    const [pixelSent, setPixelSent] = useState(false);
     const router = useRouter();
 
+    // useEffect(() => {
+    //     import('react-facebook-pixel')
+    //         .then((x) => x.default)
+    //         .then((ReactPixel) => {
+    //             ReactPixel.init('804765880666454') // facebookPixelId
+    //             ReactPixel.pageView()
+    //
+    //             router.events.on('routeChangeComplete', () => {
+    //                 ReactPixel.pageView()
+    //                 console.log('pixel page view sent')
+    //                 setPixelSent(true);
+    //             })
+    //         })
+    // }, [router.events])
+
+
     useEffect(() => {
-        import('react-facebook-pixel')
-            .then((x) => x.default)
-            .then((ReactPixel) => {
-                ReactPixel.init('804765880666454') // facebookPixelId
-                ReactPixel.pageView()
-
-                router.events.on('routeChangeComplete', () => {
-                    ReactPixel.pageView()
-                    setPixelSent(true);
-                })
-            })
-    }, [router.events])
 
 
-    useEffect(() => {
+        const interval = setInterval(()=>{
 
-        if( pixelSent === true ){
+            router.push('/?qr=true');
 
-            router.push('/');
+        }, 3000);
 
-        }
+        return () => clearInterval(interval);
 
-    }, [pixelSent]);
+    },[]);
 
     return (
         <>

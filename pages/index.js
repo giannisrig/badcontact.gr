@@ -86,7 +86,7 @@ export default function Home() {
 
                     <div className={styles.buttonsContainer}>
 
-                      <ButtonLink href="#" image="/images/spotify.svg" text="SPOTIFY" />
+                      <ButtonLink href="https://open.spotify.com/album/3KtsGWIZ3O1IlQULcWsUei" image="/images/spotify.svg" text="SPOTIFY" />
                       <ButtonLink href="#" image="/images/bandcamp-bad-contact.svg" text="BANDCAMP" />
                       <ButtonLink href="#" image="/images/youtube-bad-contact.svg" text="YOUTUBE" />
                       <ButtonLink href="#" image="/images/apple-music-bad-contact.svg" text="APPLE MUSIC" />
