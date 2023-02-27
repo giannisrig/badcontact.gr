@@ -28,7 +28,7 @@ export default function Footer() {
                     80’s inspired Heavy Metal/Rock from Athens, Greece that will bring you feelings of nostalgia.
                 </h5>
 
-                <SocialLinks />
+                <SocialLinks youtube={true} />
 
                 <div id={'subscribeForm'} className={styles.newsletter}>
                     <NewsletterForm />

@@ -18,6 +18,18 @@ export default function SocialLinks({youtube}) {
                 <Image src="/images/instagram.svg" alt="Bad Contact Band Official Instagram Page" width={20} height={20} />
             </a>
 
+            <a href="https://www.instagram.com/badcontactband/" className={styles.socialLink}>
+
+                <Image src="/images/instagram.svg" alt="Bad Contact Band Official Instagram Page" width={20} height={20} />
+
+            </a>
+
+            <a href="https://twitter.com/badcontactband" className={styles.socialLink}>
+
+                <Image src="/images/twitter.svg" alt="Bad Contact Band Official Twitter Page" width={20} height={20} />
+
+            </a>
+
             { showYoutube ?
                 <a href="https://www.youtube.com/channel/UCteG81-C-AzgqcLJSWbMUnw" className={styles.socialLink}>
 
