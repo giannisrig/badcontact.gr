@@ -25,7 +25,7 @@ export default function SocialLinks({youtube}) {
             </a>
 
             { showYoutube ?
-                <a href="https://www.youtube.com/channel/UCteG81-C-AzgqcLJSWbMUnw" className={styles.socialLink}>
+                <a href="https://www.youtube.com/@badcontact" className={styles.socialLink}>
 
                     <Image  src="/images/youtube.svg" alt="Bad Contact Band Official YouTube Channel Page" width={20} height={20} />
                 </a>
