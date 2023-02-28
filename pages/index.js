@@ -90,7 +90,7 @@ export default function Home() {
                       <ButtonLink href="https://badcontact.bandcamp.com/album/out-of-the-blue" image="/images/bandcamp-bad-contact.svg" text="BANDCAMP" />
                       <ButtonLink href="#" image="/images/youtube-bad-contact.svg" text="YOUTUBE" />
                       <ButtonLink href="https://music.apple.com/us/album/out-of-the-blue-feat-andreas-lagios-single/1674087605" image="/images/apple-music-bad-contact.svg" text="APPLE MUSIC" />
-                      <ButtonLink href="#" image="/images/pandora-bad-contact.svg" text="PANDORA" />
+                      <ButtonLink href="https://pandora.app.link/Ek3E1866Mxb" image="/images/pandora-bad-contact.svg" text="PANDORA" />
 
                     </div>
 
