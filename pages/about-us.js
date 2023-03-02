@@ -3,7 +3,7 @@ import styles from "@/styles/AboutUs.module.scss";
 import fonts from "@/helpers/fonts";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
-import GroupPhoto from "@/public/images/band/Bad-Contact-BandGroupPhoto.jpg"
+import GroupPhoto from "@/public/images/band/bad-contact-band-heavy-metal-rock.jpg"
 import GroupPhoto2 from "@/public/images/band/Bad-Contact-BandGroupPhoto2.jpg"
 import Image from "next/image";
 import AboutLineupCarousel from "@/components/aboutLineupCarousel";
@@ -24,7 +24,7 @@ export default function AboutUs() {
                 </div>
 
                 <div className={styles.imgContainer}>
-                    <Image src={ogimg} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
+                    <Image src={GroupPhoto} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
                 </div>
 
                 <div className={styles.content}>
