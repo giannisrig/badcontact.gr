@@ -1,16 +1,17 @@
-import Head from 'next/head'
 import styles from "@/styles/pages/ContactUs.module.scss";
 import PageHeader from "@/components/pageHeader";
 import Layout from "@/components/layout";
 import EmailItem from "@/components/emailItem";
 import SocialLinks from "@/components/socialLinks";
+import HeadSEO from "@/components/headSEO";
+import ogimg from '@/public/images/social/og/contact-us.jpg'
 
 export default function ContactUs() {
+    
+
     return (
         <>
-            <Head>
-                <title>News & Announcements - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Contact Us - Bad Contact' image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='CONTACT US' subtitle='Get in touch with us by sending us a message at our social or at the email addresses below.' />
