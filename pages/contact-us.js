@@ -8,10 +8,11 @@ import ogimg from '@/public/images/social/og/contact-us.jpg'
 
 export default function ContactUs() {
 
+    const desc = "Contact Bad Contact, the Athens-based heavy metal/rock band founded in 2022, through our social links or email addresses. For general inquiries and information, reach out to us at info@badcontact.gr. To discuss bookings, collaborations, or serious matters, contact our manager at manager@badcontact.gr. Get in touch with us today!"
 
     return (
         <>
-            <HeadSEO title='Contact Us - Bad Contact' image={ogimg.src} />
+            <HeadSEO title='Contact Us - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='CONTACT US' subtitle='Get in touch with us by sending us a message at our social or at the email addresses below.' />
