@@ -4,6 +4,7 @@ import PaypalDonate from "@/components/paypalDonate";
 import HeadSEO from "@/components/headSEO";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
+import ogimg from "@/public/images/social/og/donate-bad-contact-band.jpg";
 
 export default function Donate() {
 
@@ -11,7 +12,7 @@ export default function Donate() {
 
     return (
         <div>
-            <HeadSEO title='Donate - Bad Contact' />
+            <HeadSEO title='Donate - Bad Contact' image={ogimg.src} />
             <Layout>
                <div className={styles.content}>
                    <div className={styles.textContainer}>

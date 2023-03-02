@@ -1,19 +1,18 @@
 import styles from "@/styles/pages/Lives.module.scss";
-import Head from "next/head";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
 import LiveShow from "@/components/liveShow";
 import fonts from "@/helpers/fonts"
 import RemedyPoster from "@/public/images/live/remedy-live-02-06-2022.jpg"
 import Notice from "@/components/notice";
+import ogimg from "@/public/images/social/og/lives-bad-contact-band.jpg";
+import HeadSEO from "@/components/headSEO";
 
 export default function Lives() {
 
     return (
         <>
-            <Head>
-                <title>Lives & Tour Dates - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Lives & Tour Dates - Bad Contact' image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='LIVE SHOWS' subtitle='Upcoming and past live shows, posters, dates and info.' />

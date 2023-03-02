@@ -1,17 +1,16 @@
-import Head from 'next/head'
 import styles from "@/styles/pages/Discography.module.scss";
 import PageHeader from "@/components/pageHeader";
 import Layout from "@/components/layout";
 import AlbumItem from "@/components/albumItem";
 import coverArtworkImg from "@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg";
 import newAlbumImg from "@/public/images/new-album.jpg";
+import ogimg from "@/public/images/social/og/discography-music-bad-contact-band.jpg";
+import HeadSEO from "@/components/headSEO";
 
 export default function Discography() {
     return (
         <>
-            <Head>
-                <title>Complete Discography - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Complete Discography - Bad Contact' image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='DISCOGRAPHY' subtitle='All official music releases of Bad Contact.' />

@@ -1,17 +1,16 @@
 // import styles from "@/styles/pages/Merchandise.module.scss";
 
-import Head from "next/head";
 import Layout from "@/components/layout";
 import PageHeader from "@/components/pageHeader";
 import Notice from "@/components/notice";
+import HeadSEO from "@/components/headSEO";
+import ogimg from "@/public/images/social/og/merchandise-bad-contact-band.jpg";
 
 export default function Merch() {
 
     return (
         <>
-            <Head>
-                <title>Merchandise Shop - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Merchandise Shop - Bad Contact' image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='MERCHANDISE' subtitle='The official band online shop to purchase our merchandise.' />

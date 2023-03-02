@@ -7,7 +7,7 @@ import HeadSEO from "@/components/headSEO";
 import ogimg from '@/public/images/social/og/contact-us.jpg'
 
 export default function ContactUs() {
-    
+
 
     return (
         <>
