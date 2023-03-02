@@ -12,7 +12,7 @@ import HeadSEO from "@/components/headSEO";
 
 export default function AboutUs() {
 
-    const desc = 'Get to know Bad Contact, the Athens-based heavy metal/rock band founded in 2022 by Giannis, Marios, and Panagiotis. On our \'About Us\' page, you\'ll find more information about our journey to create a unique and inspiring musical experience that reflects the 80\'s era. Our debut single \'Out of the Blue\' features a special guest appearance by Andreas Lagios from Nightstalker on bass. Discover how our passion for heavy metal/rock fuels our art and learn more about Bad Contact today'
+    const desc = "Get to know Bad Contact, the Athens-based heavy metal/rock band founded in 2022 by Giannis, Marios, and Panagiotis. On our 'About Us' page, you'll find more information about our journey to create a unique and inspiring musical experience that reflects the 80's era. Our debut single 'Out of the Blue' features a special guest appearance by Andreas Lagios from Nightstalker on bass. Discover how our passion for heavy metal/rock fuels our art and learn more about Bad Contact today"
 
     return (
         <>
