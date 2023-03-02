@@ -24,7 +24,7 @@ export default function AboutUs() {
                 </div>
 
                 <div className={styles.imgContainer}>
-                    <Image src={GroupPhoto} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
+                    <Image src={ogimg} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
                 </div>
 
                 <div className={styles.content}>
