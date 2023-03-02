@@ -9,14 +9,13 @@ import fonts from '@/helpers/fonts'
 import singleBgIllustration from '@/public/images/singleIllustration.svg'
 import rocks from '@/public/images/rocks.svg'
 import coverArtworkImg from '@/public/images/BadContact-OutOfTheBlue2023ArtworkCover.jpg'
+import ogimg from "@/public/images/social/og/bad-contact-band.jpg";
+import HeadSEO from "@/components/headSEO";
 export default function Home() {
 
     return (
         <div className={styles.container}>
-        <Head>
-          <title>Bad Contact - 80s Heavy Metal / Rock Band from Athens Greece</title>
-        </Head>
-
+        <HeadSEO title='Bad Contact - 80s Heavy Metal / Rock Band from Athens Greece' image={ogimg.src} />
         <Header/>
 
         <main className={fonts.grava400.className}>

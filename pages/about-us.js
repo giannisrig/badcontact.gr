@@ -7,13 +7,13 @@ import GroupPhoto from "@/public/images/band/Bad-Contact-BandGroupPhoto.jpg"
 import GroupPhoto2 from "@/public/images/band/Bad-Contact-BandGroupPhoto2.jpg"
 import Image from "next/image";
 import AboutLineupCarousel from "@/components/aboutLineupCarousel";
+import ogimg from "@/public/images/social/og/bad-contact-band.jpg";
+import HeadSEO from "@/components/headSEO";
 
 export default function AboutUs() {
     return (
         <>
-            <Head>
-                <title>About the Band - Bad Contact</title>
-            </Head>
+            <HeadSEO title='About the Band - Bad Contact' image={ogimg.src} />
             <Layout>
 
                 <div>
