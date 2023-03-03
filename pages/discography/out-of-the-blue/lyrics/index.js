@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from "@/styles/pages/Lyrics.module.scss";
 import fonts from "@/helpers/fonts";
 import Breadcrumbs from "@/components/breadcrumbs";

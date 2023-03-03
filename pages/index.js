@@ -14,6 +14,7 @@ import HeadSEO from "@/components/headSEO";
 export default function Home() {
 
     const desc = "Get ready to rock with Bad Contact, a fresh new heavy metal/rock band from Athens, Greece. Their rousing and impassioned music reflects the sound of the 80's era, blending elements of beloved motivational bands with a modern rock n roll attitude. Their debut single 'Out of the Blue' features a special guest appearance by Andreas Lagios from Nightstalker on bass. Discover the latest addition to the heavy metal/rock scene with Bad Contact."
+
     return (
         <div className={styles.container}>
         <HeadSEO title='Bad Contact - 80s Heavy Metal / Rock Band from Athens Greece' description={desc} image={ogimg.src} />
