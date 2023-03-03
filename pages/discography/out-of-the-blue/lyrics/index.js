@@ -3,13 +3,16 @@ import styles from "@/styles/pages/Lyrics.module.scss";
 import fonts from "@/helpers/fonts";
 import Breadcrumbs from "@/components/breadcrumbs";
 import Layout from "@/components/layout";
+import HeadSEO from "@/components/headSEO";
+import ogimg from "@/public/images/social/og/out-of-the-blue-2023-lyrics-bad-contact-band-greece.jpg";
 
 export default function OutOfTheBlueLyrics() {
+
+    const desc = ""
+
     return (
         <>
-            <Head>
-                <title>Lyrics | Out of the Blue (2023) - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Lyrics | Out of the Blue (2023) - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div className={styles.content }>
                     <div>
