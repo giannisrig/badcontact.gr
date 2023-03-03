@@ -8,9 +8,11 @@ import ogimg from "@/public/images/social/og/merchandise-bad-contact-band.jpg";
 
 export default function Merch() {
 
+    const desc = "Looking to buy Bad Contact's music in a hard copy format? Fans can support our Athens-based band founded in 2022 by checking out our official online shop for high-quality heavy metal/rock band merchandise, including vinyl and other physical releases. Show your support by purchasing our band merch today! From t-shirts to accessories, we've got everything you need to rock out in style.";
+
     return (
         <>
-            <HeadSEO title='Merchandise Shop - Bad Contact' image={ogimg.src} />
+            <HeadSEO title='Band Merchandise Shop - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='MERCHANDISE' subtitle='The official band online shop to purchase our merchandise.' />

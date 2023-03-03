@@ -10,9 +10,11 @@ import HeadSEO from "@/components/headSEO";
 
 export default function Lives() {
 
+    const desc = "Get ready to rock with Bad Contact's electrifying performances of 80s-inspired heavy metal/rock music, all the way from Athens, Greece. Check out our upcoming shows, dates, posters, and information, and grab your tickets for a unforgettable performance. Don't miss our latest tour!"
+
     return (
         <>
-            <HeadSEO title='Lives & Tour Dates - Bad Contact' image={ogimg.src} />
+            <HeadSEO title='Lives & Tour Dates - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='LIVE SHOWS' subtitle='Upcoming and past live shows, posters, dates and info.' />
