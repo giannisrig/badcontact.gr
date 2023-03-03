@@ -8,9 +8,12 @@ import ogimg from "@/public/images/social/og/discography-music-bad-contact-band.
 import HeadSEO from "@/components/headSEO";
 
 export default function Discography() {
+
+    const desc = "Discover Bad Contact's 80s-inspired heavy metal/rock discography and listen to our latest single \"Out of the Blue\" featuring Andreas Lagios from Nightstalker, self-released in 2023. Stay tuned for our upcoming full album (2023/2024) and support us by making a donation."
+
     return (
         <>
-            <HeadSEO title='Complete Discography - Bad Contact' image={ogimg.src} />
+            <HeadSEO title='Complete Discography, Music & Releases - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='DISCOGRAPHY' subtitle='All official music releases of Bad Contact.' />

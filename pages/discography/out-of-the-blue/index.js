@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from "@/styles/pages/OutOfTheBlue.module.scss";
 import fonts from "@/helpers/fonts";
 import Link from "next/link";
@@ -9,8 +8,12 @@ import MusicLineupCarousel from "@/components/musicLineupCarousel";
 import ButtonLink from "@/components/buttonLink";
 import PageHeader from "@/components/pageHeader";
 import Layout from "@/components/layout";
+import HeadSEO from "@/components/headSEO";
+import ogimg from "@/public/images/social/og/out-of-the-blue-2023-bad-contact-band.jpg";
 
 export default function OutOfTheBlue() {
+
+    const desc = "Discover all you need to know about Bad Contact's latest self-released single \"Out of the Blue\" featuring Andreas Lagios from Nightstalker. On this page, you can find details about the recording process with Ilias Lakkas at Odeon Studios, the release date (2023), the lineup, lyrics, and streaming links."
 
     const singleInfo = [
         {
@@ -53,9 +56,7 @@ export default function OutOfTheBlue() {
 
     return (
         <>
-            <Head>
-                <title>Out of the Blue (2023) feat Andreas Lagios - Bad Contact</title>
-            </Head>
+            <HeadSEO title='Out of the Blue (2023) feat Andreas Lagios - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                 <div>
                     <PageHeader title='OUT OF THE BLUE (2023)' subtitle='feat Andreas Lagios (Nightstalker)' />
