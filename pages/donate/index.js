@@ -10,9 +10,11 @@ export default function Donate() {
 
     const text = 'Well..you know the financial situation in Greece is !@#&%. We all have full-time jobs besides the band and we are doing our best to keep Bad Contact rolling and doing new things, so any financial aid you provide is really helpful to us. Thank you very much, we appreciate it for even coming this far, keep rocking 🤘🤘🤘';
 
+    const desc = "Support Bad Contact, the Athens-based heavy metal/rock band founded in 2022, by donating through our PayPal. Your funding helps us pursue our goals for 2023, including releasing an LP album and creating band merch. With full-time jobs and limited resources, every penny counts. Donate any amount and see how we're using your contributions. Thank you for your support!";
+
     return (
         <div>
-            <HeadSEO title='Donate - Bad Contact' image={ogimg.src} />
+            <HeadSEO title='Donate - Bad Contact' description={desc} image={ogimg.src} />
             <Layout>
                <div className={styles.content}>
                    <div className={styles.textContainer}>
