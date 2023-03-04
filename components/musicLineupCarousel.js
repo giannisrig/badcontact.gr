@@ -1,5 +1,13 @@
 import styles from "@/styles/components/MusicLineupCarousel.module.scss";
 import Carousel from 'nuka-carousel/es/index';
+import Leonidas from "@/public/images/band/thumb/leonidas-zacharakis-vocals-bad-contact-band.jpg"
+import Giannis from "@/public/images/band/thumb/giannis-riganas-guitars-bad-contact-band.jpg"
+import Marios from "@/public/images/band/thumb/marios-fourlas-guitars-bad-contact-band.jpg"
+import Ninos from "@/public/images/band/thumb/panagiotis-ninos-drums-percussion-bad-contact-band.jpg"
+import Vangelis from "@/public/images/band/thumb/vangelis-galanis-synths-keyboards-piano-bad-contact-band.jpg"
+import Andreas from "@/public/images/band/thumb/andreas-lagios-nightstalker-out-of-the-blue-bad-featuring.jpg"
+import Image from "next/image";
+
 
 export default function MusicLineupCarousel() {
 
@@ -7,32 +15,32 @@ export default function MusicLineupCarousel() {
         {
             name: 'Andreas Lagios',
             role: 'Bass (Special Guest)',
-            img: ''
-        },
-        {
-            name: 'Giannis Riganas',
-            role: 'Guitars',
-            img: ''
-        },
-        {
-            name: 'Marios Fourlas',
-            role: 'Guitars',
-            img: ''
-        },
-        {
-            name: 'Panagiotis Ninos',
-            role: 'Drums',
-            img: ''
+            img: Andreas
         },
         {
             name: 'Leonidas Zacharakis',
             role: 'Vocals',
-            img: ''
+            img: Leonidas
+        },
+        {
+            name: 'Giannis Riganas',
+            role: 'Guitars',
+            img: Giannis
+        },
+        {
+            name: 'Marios Fourlas',
+            role: 'Guitars',
+            img: Marios
+        },
+        {
+            name: 'Panagiotis Ninos',
+            role: 'Drums',
+            img: Ninos
         },
         {
             name: 'Vangelis Galanis',
             role: 'Synths/Piano',
-            img: ''
+            img: Vangelis
         },
     ]
 
@@ -52,7 +60,9 @@ export default function MusicLineupCarousel() {
                 {lineUp.map((itemData, i) => {
                     return(
                         <div key={i} className={styles.item} >
-                            <div className={styles.imgContainer} />
+                            <div className={styles.imgContainer}>
+                                <Image src={itemData.img} alt={itemData.name + ' ' + itemData.role + ' Bad Contact Band'} />
+                            </div>
                             <div className={styles.info}>
                                 <div className={styles.name}>
                                     {itemData.name}
