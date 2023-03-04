@@ -16,3 +16,13 @@ body {
   width: 85%;
   margin: 0 auto;
 }
+
+html  {
+  background-color: #2b1d7e;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}

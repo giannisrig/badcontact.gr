@@ -20,6 +20,8 @@ export default function HeadSEO( props ) {
             <meta name="copyright" content="Bad Contact" />
             <meta name="author" content="Bad Contact" />
             <meta name="distribution" content="global" />
+            <meta name="theme-color" content="#2b1d7e" />
+
 
             <meta property="og:title" content={props.title} />
             <meta property="og:url" content={canonicalUrl} />
