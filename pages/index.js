@@ -89,7 +89,7 @@ export default function Home() {
 
                       <ButtonLink href="https://open.spotify.com/album/3KtsGWIZ3O1IlQULcWsUei" image="/images/spotify.svg" text="SPOTIFY" />
                       <ButtonLink href="https://badcontact.bandcamp.com/album/out-of-the-blue" image="/images/bandcamp-bad-contact.svg" text="BANDCAMP" />
-                      <ButtonLink href="#" image="/images/youtube-bad-contact.svg" text="YOUTUBE" />
+                      <ButtonLink href="https://www.youtube.com/@badcontact" image="/images/youtube-bad-contact.svg" text="YOUTUBE" />
                       <ButtonLink href="https://music.apple.com/us/album/out-of-the-blue-feat-andreas-lagios-single/1674087605" image="/images/apple-music-bad-contact.svg" text="APPLE MUSIC" />
                       <ButtonLink href="https://pandora.app.link/YHOJW136Mxb" image="/images/pandora-bad-contact.svg" text="PANDORA" />
 
