@@ -1,11 +1,11 @@
 import styles from "@/styles/components/AboutLineupCarousel.module.scss";
 import Carousel from 'nuka-carousel/es/index';
-import Leonidas from "@/public/images/band/leonidas-zacharakis-vocals-bad-contact.jpg"
-import Giannis from "@/public/images/band/giannis-riganas-guitars-bad-contact.jpg"
+import Leonidas from "@/public/images/band/leonidas-zacharakis-vocals-bad-contact-band.jpg"
+import Giannis from "@/public/images/band/giannis-riganas-guitars-bad-contact-band.jpg"
 import Marios from "@/public/images/band/marios-fourlas-guitars-bad-contact-band.jpg"
-import Ninos from "@/public/images/band/panagiotis-ninos-drums-percussion-bad-contact.jpg"
-import Maria from "@/public/images/band/maria-leiloglou-bass-bad-contact.jpg"
-import Vangelis from "@/public/images/band/vangelis-galanis-synths-piano-bad-contact.jpg"
+import Ninos from "@/public/images/band/panagiotis-ninos-drums-percussion-bad-contact-band.jpg"
+import Maria from "@/public/images/band/maria-leiloglou-bass-bad-contact-band-min.jpg"
+import Vangelis from "@/public/images/band/vangelis-galanis-synths-keyboards-piano-bad-contact-band.jpg"
 import Image from "next/image";
 import fonts from "@/helpers/fonts"
 
