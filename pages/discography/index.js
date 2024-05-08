@@ -20,7 +20,7 @@ export default function Discography() {
                 </div>
                 <div className={styles.albums}>
                     <AlbumItem title='OUT OF THE BLUE (2023)' subtitle='feat. Andreas Lagios (Nightstalker)' img={coverArtworkImg} link='/discography/out-of-the-blue/' release='SINGLE' />
-                    <AlbumItem title='FULL ALBUM (2023/2024)' subtitle='Composing for the album is finished and we are on a pre-production phase. You can support our future release, by making a donation.' img={newAlbumImg} link='/donate/' btnText='DONATE' release='LP ALBUM' />
+                    <AlbumItem title='EIGHTBALL (2024)' subtitle='Our debut full lenght album featuring 8 tracks and bringing feelings of nostalgia.' img={newAlbumImg} link='/donate/' btnText='DONATE' release='LP ALBUM' />
                 </div>
             </Layout>
         </>

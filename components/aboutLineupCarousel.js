@@ -4,7 +4,7 @@ import Leonidas from "@/public/images/band/leonidas-zacharakis-vocals-bad-contac
 import Giannis from "@/public/images/band/giannis-riganas-guitars-bad-contact-band.jpg"
 import Marios from "@/public/images/band/marios-fourlas-guitars-bad-contact-band.jpg"
 import Ninos from "@/public/images/band/panagiotis-ninos-drums-percussion-bad-contact-band.jpg"
-import Maria from "@/public/images/band/maria-leiloglou-bass-bad-contact-band-min.jpg"
+import Pandelis from "@/public/images/band/pandelis-andris-bass-bad-contact.jpg"
 import Vangelis from "@/public/images/band/vangelis-galanis-synths-keyboards-piano-bad-contact-band.jpg"
 import Image from "next/image";
 import fonts from "@/helpers/fonts"
@@ -33,9 +33,9 @@ export default function AboutLineupCarousel() {
             img: Ninos
         },
         {
-            name: 'Maria Leiloglou',
+            name: 'Pandelis Andris',
             role: 'Bass',
-            img: Maria
+            img: Pandelis
         },
         {
             name: 'Vangelis Galanis',
