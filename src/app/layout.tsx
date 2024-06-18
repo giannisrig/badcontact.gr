@@ -7,6 +7,7 @@ import '@/styles/globals.scss'
 import Wrapper from '@/components/layout/Wrapper'
 import Header from '@/components/common/header/Header'
 import Footer from '@/components/common/footer/Footer'
+import {View} from "@/components/layout/View";
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -21,9 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body>
         <Wrapper>
-          <Header />
-          <main>{children}</main>
-          <Overlay />
+          {/*<Header />*/}
+          <View>{children}</View>
+          {/*<Overlay />*/}
           {/*<Footer />*/}
         </Wrapper>
       </body>

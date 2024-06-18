@@ -1,5 +1,4 @@
 'use client'
-import { PageContentContainer } from '@/components/common/page/PageContentContainer'
 import styled from 'styled-components'
 import { Flames } from '@/components/flames/Flames'
 
@@ -20,11 +19,9 @@ export default function HomePage() {
 
   return (
     <>
-      <PageContentContainer>
         <Flames />
         {/*<StyledEyeImage src={'/images/EyeFlames.svg'} alt={'Logo of the Project'} width={869} height={718} />*/}
         {/*<StyledTerrainImage src={'/images/Terrain.svg'} alt={'Logo of the Project'} width={1085} height={536} />*/}
-      </PageContentContainer>
     </>
   )
 }

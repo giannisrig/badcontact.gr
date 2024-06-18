@@ -5,7 +5,7 @@ import { ShaderMaterial } from 'three'
 import gsap from 'gsap'
 
 export const StyledFlames = styled.div`
-  position: fixed;
+  position: relative;
   max-width: 100%;
   width: 70%;
   display: inline-block;
