@@ -4,14 +4,14 @@ import { Provider } from 'react-redux'
 import { store } from '@/store/store'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 import fonts from '../../constants/fonts'
+import {PageViewContainer} from "@/components/layout/PageViewContainer";
 
-export default function Wrapper({ children }: { children: React.ReactNode }) {
+export default function LayoutProvider({ children }: { children: React.ReactNode }) {
   return (
     <Provider store={store}>
       <GoogleAnalytics trackPageViews />
       <div className={`${fonts.primary.variable} ${fonts.secondary.variable} font-primary`}>
-        <div className='grain' />
-        {children}
+          <PageViewContainer>{children}</PageViewContainer>
       </div>
     </Provider>
   )
