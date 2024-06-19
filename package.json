@@ -12,28 +12,19 @@
     "format:fix": "prettier --write ."
   },
   "dependencies": {
-    "@andersonmancini/lens-flare": "^1.0.1",
     "@gsap/react": "^2.1.0",
-    "@react-three/drei": "^9.70.0",
-    "@react-three/fiber": "^8.13.0",
-    "@react-three/postprocessing": "^2.14.7",
     "@reduxjs/toolkit": "2.1.0",
     "gsap": "^3.12.5",
-    "leva": "^0.9.34",
     "lodash": "^4.17.21",
     "next": "^14.1.4",
     "next-redux-wrapper": "^8.1.0",
     "next-sitemap": "^4.0.7",
     "nextjs-google-analytics": "^2.3.3",
-    "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "9.1.0",
     "react-use": "^17.4.0",
     "styled-components": "^6.1.11",
-    "three": "^0.152.2",
-    "three-stdlib": "^2.23.4",
-    "tunnel-rat": "^0.1.2",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
@@ -51,7 +42,6 @@
     "postcss": "^8.4.38",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.7",
-    "raw-loader": "^4.0.2",
     "sass": "^1.62.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4"

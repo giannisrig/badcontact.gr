@@ -7,16 +7,6 @@
 const path = require('path')
 
 const nextConfig = {
-  experimental: {
-    turbo: {
-      rules: {
-        '*.glsl': {
-          loaders: ['raw-loader'],
-          as: '*.ts',
-        },
-      },
-    },
-  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
