@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { Flames } from '@/components/flames/Flames'
 import {Metadata} from "next";
 
