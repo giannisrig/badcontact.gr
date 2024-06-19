@@ -1,7 +1,6 @@
 'use client'
 import styled from 'styled-components'
 import { useEffect, useRef } from 'react'
-import { ShaderMaterial } from 'three'
 import gsap from 'gsap'
 
 export const StyledFlames = styled.div`

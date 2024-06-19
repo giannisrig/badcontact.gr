@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import {ScreenLevelView} from "@/components/layout/ScreenLevelView/ScreenLevelView";
 import {PageContentContainer} from "@/components/common/page/PageContentContainer";
