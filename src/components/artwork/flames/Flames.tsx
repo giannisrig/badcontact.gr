@@ -1,6 +1,6 @@
 'use client'
-import { useFlamesAnimation } from '@/components/flames/Flames.animations'
-import { StyledBaseImage, StyledFlames, StyledShadeImage } from '@/components/flames/Flames.styles'
+import { useFlamesAnimation } from './Flames.animations'
+import { StyledBaseImage, StyledFlames, StyledShadeImage } from '@/components/artwork/flames/Flames.styles'
 
 export const FLAMES_DIMENSIONS = {
   width: 1238,
@@ -11,7 +11,7 @@ export const Flames = () => {
   const { lightFlames, mediumFlames, darkFlames, clonedBaseFlames } = useFlamesAnimation()
 
   return (
-    <StyledFlames>
+    <StyledFlames id='flames'>
       <StyledBaseImage
         src={'/images/flames/FlamesBase.svg'}
         alt={'Bad Contact Eightball Flames'}

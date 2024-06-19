@@ -1,13 +1,14 @@
 // import styled from 'styled-components'
-import { Flames } from '@/components/flames/Flames'
-import {Metadata} from "next";
+import { Flames } from '@/components/artwork/flames/Flames'
+import { Metadata } from 'next'
+import PageTitle from '@/components/common/page/PageTitle'
 
 export const metadata: Metadata = {
-    title: 'Bad Contact Home',
-    description: 'Welcome to Next.js',
-    icons: {
-        icon: '/images/favicon.png',
-    },
+  title: 'Bad Contact Home',
+  description: 'Welcome to Next.js',
+  icons: {
+    icon: '/images/favicon.png',
+  },
 }
 
 // export const StyledTerrainImage = styled.img`
@@ -28,12 +29,11 @@ export const metadata: Metadata = {
  * @constructor
  */
 export default function HomePage() {
-
   return (
     <>
-        <Flames />
-        {/*<StyledEyeImage src={'/images/EyeFlames.svg'} alt={'Logo of the Project'} width={869} height={718} />*/}
-        {/*<StyledTerrainImage src={'/images/Terrain.svg'} alt={'Logo of the Project'} width={1085} height={536} />*/}
+      <h1>Bad Contact</h1>
+      {/*<StyledEyeImage src={'/images/EyeFlames.svg'} alt={'Logo of the Project'} width={869} height={718} />*/}
+      {/*<StyledTerrainImage src={'/images/Terrain.svg'} alt={'Logo of the Project'} width={1085} height={536} />*/}
     </>
   )
 }
