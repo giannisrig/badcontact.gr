@@ -9,9 +9,3 @@ export const StyledEyeWithFlames = styled.div`
   justify-content: center;
   max-height: 70vh;
 `
-
-export const EyeFlamesSpacer = styled(StyledEyeWithFlames)`
-  position: relative;
-  width: 100%;
-  max-width: 85%;
-`

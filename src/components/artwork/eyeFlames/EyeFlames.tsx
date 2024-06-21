@@ -6,12 +6,12 @@ import { Eye } from '@/components/artwork/eye/Eye'
 
 export const StyledEyeWithFlames = styled.div`
   position: absolute;
-  max-width: 90%;
+  max-width: min(90%, 450px);
   width: auto;
   aspect-ratio: 1244 / 1028;
   display: flex;
   justify-content: center;
-  max-height: 70vh;
+  max-height: 450px;
 `
 
 export const EyeFlames = () => (

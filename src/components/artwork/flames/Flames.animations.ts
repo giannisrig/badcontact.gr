@@ -12,6 +12,7 @@ export const useFlamesAnimation = () => {
   const mediumFlames = useRef(null)
   const darkFlames = useRef(null)
   const clonedBaseFlames = useRef(null)
+  const fireGradient = useRef(null)
 
   useGSAP(() => {
     if (lightFlames?.current && mediumFlames?.current && darkFlames?.current) {
@@ -40,6 +41,12 @@ export const useFlamesAnimation = () => {
         opacity: 0.5,
         scale: 1.02,
       })
+      gsap.to(fireGradient.current, {
+        ...FLAMES_ANIMATION_PROPS,
+        duration: 0.5,
+        opacity: 0.4,
+        scaleX: 1.3,
+      })
     }
   }, [lightFlames, mediumFlames, darkFlames, clonedBaseFlames])
 
@@ -48,5 +55,6 @@ export const useFlamesAnimation = () => {
     mediumFlames,
     darkFlames,
     clonedBaseFlames,
+    fireGradient,
   }
 }
