@@ -9,5 +9,4 @@ export const TerrainSpacer = styled(BaseTerrainDimensions)`
 export const EyeFlamesSpacer = styled(StyledEyeWithFlames)`
   position: relative;
   width: 100%;
-  max-width: 85%;
 `

@@ -7,6 +7,7 @@ import {
   StyledAbsoluteImage,
 } from '@/components/artwork/flames/Flames.styles'
 import { Sparkles } from '@/components/artwork/sparkles/Sparkles'
+import { Element } from '@/definitions/element'
 
 export const FLAMES_DIMENSIONS = {
   width: 1238,
@@ -14,10 +15,11 @@ export const FLAMES_DIMENSIONS = {
 }
 
 export const Flames = () => {
-  const { lightFlames, mediumFlames, darkFlames, clonedBaseFlames, fireGradient } = useFlamesAnimation()
+  const { lightFlames, mediumFlames, darkFlames, clonedBaseFlames, fireGradient, flamesContainer } =
+    useFlamesAnimation()
 
   return (
-    <StyledFlames id='flames'>
+    <StyledFlames id={Element.FLAMES} ref={flamesContainer}>
       <StyledBaseImage
         src={'/images/flames/FlamesBase.svg'}
         alt={'Bad Contact Eightball Flames'}

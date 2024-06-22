@@ -5,6 +5,7 @@ export const StyledFlames = styled.div`
   max-width: 100%;
   width: 100%;
   display: inline-block;
+  transform-origin: center;
 `
 
 export const StyledBaseImage = styled.img`

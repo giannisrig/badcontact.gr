@@ -2,6 +2,7 @@
 import { useSparklesAnimation } from './Sparkles.animations'
 import { StyledAbsoluteImage } from '@/components/artwork/flames/Flames.styles'
 import { StyledSparkles } from '@/components/artwork/sparkles/Sparkles.styles'
+import { Element } from '@/definitions/element'
 
 export const SPARKLES_DIMENSIONS = {
   width: 1310,
@@ -14,7 +15,7 @@ export const Sparkles = () => {
   const { sparklesBase, sparkles1, sparkles2, sparkles3, sparkles4 } = useSparklesAnimation()
 
   return (
-    <StyledSparkles id='sparkles'>
+    <StyledSparkles id={Element.SPARKLES}>
       <StyledAbsoluteImage
         ref={sparklesBase}
         src={`${SPARKLES_PATH}/BaseSparkles.png`}

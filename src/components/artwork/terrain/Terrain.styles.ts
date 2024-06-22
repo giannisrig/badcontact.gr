@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { StyledAbsoluteImage } from '@/components/artwork/flames/Flames.styles'
 
 export const BaseTerrainDimensions = styled.div`
-  max-height: min(40vh, 400px);
+  max-height: min(35vh, 400px);
   aspect-ratio: 1310/559;
   width: 100%;
 `
