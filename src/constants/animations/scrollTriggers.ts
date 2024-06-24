@@ -10,5 +10,5 @@ export const eyeFlamesScrollTrigger = {
   start: 'center 15%',
   end: 'bottom 25%',
   scrub: 1,
-  markers: true,
+  // markers: true,
 }

@@ -2,6 +2,8 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { eyeFlamesScrollTrigger } from '@/constants/animations/scrollTriggers'
+import { getElementId } from '@/utils/elements.utils'
+import { Element } from '@/definitions/element'
 
 export const useEyeAnimations = () => {
   const eye = useRef(null)

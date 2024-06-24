@@ -1,4 +1,6 @@
 'use client'
+
+import Image from 'next/image'
 import { useFlamesAnimation } from './Flames.animations'
 import {
   StyledBaseImage,
@@ -20,44 +22,51 @@ export const Flames = () => {
 
   return (
     <StyledFlames id={Element.FLAMES} ref={flamesContainer}>
-      <StyledBaseImage
-        src={'/images/flames/FlamesBase.svg'}
-        alt={'Bad Contact Eightball Flames'}
-        width={FLAMES_DIMENSIONS.width}
-        height={FLAMES_DIMENSIONS.height}
-      />
-      <StyledAbsoluteImage
-        ref={clonedBaseFlames}
-        src={'/images/flames/FlamesBase.svg'}
-        alt={'Bad Contact Eightball Flames duplicate'}
-        width={FLAMES_DIMENSIONS.width}
-        height={FLAMES_DIMENSIONS.height}
-        className='z--1'
-      />
-      <StyledAbsoluteImage
-        ref={lightFlames}
-        src={'/images/flames/FlamesLight.png'}
-        alt={'Bad Contact Eightball Flames Light'}
-        width={FLAMES_DIMENSIONS.width}
-        height={FLAMES_DIMENSIONS.height}
-        className='z-1'
-      />
-      <StyledAbsoluteImage
-        ref={mediumFlames}
-        src={'/images/flames/FlamesMedium.png'}
-        alt={'Bad Contact Eightball Flames Neutral'}
-        width={FLAMES_DIMENSIONS.width}
-        height={FLAMES_DIMENSIONS.height}
-        className='z-2'
-      />
-      <StyledAbsoluteImage
-        ref={darkFlames}
-        src={'/images/flames/FlamesDark.png'}
-        alt={'Bad Contact Eightball Flames Dark'}
-        width={FLAMES_DIMENSIONS.width}
-        height={FLAMES_DIMENSIONS.height}
-        className='z-3'
-      />
+      <StyledBaseImage>
+        <Image
+          src={'/images/flames/FlamesBase.svg'}
+          alt={'Bad Contact Eightball Flames'}
+          width={FLAMES_DIMENSIONS.width}
+          height={FLAMES_DIMENSIONS.height}
+          quality={100}
+        />
+      </StyledBaseImage>
+      <StyledAbsoluteImage ref={clonedBaseFlames} className='z--1'>
+        <Image
+          src={'/images/flames/FlamesBase.svg'}
+          alt={'Bad Contact Eightball Flames duplicate'}
+          width={FLAMES_DIMENSIONS.width}
+          height={FLAMES_DIMENSIONS.height}
+          quality={100}
+        />
+      </StyledAbsoluteImage>
+      <StyledAbsoluteImage ref={lightFlames} className='z-1'>
+        <Image
+          src={'/images/flames/FlamesLight.png'}
+          alt={'Bad Contact Eightball Flames Light'}
+          width={FLAMES_DIMENSIONS.width}
+          height={FLAMES_DIMENSIONS.height}
+          quality={100}
+        />
+      </StyledAbsoluteImage>
+      <StyledAbsoluteImage ref={mediumFlames} className='z-2'>
+        <Image
+          src={'/images/flames/FlamesMedium.png'}
+          alt={'Bad Contact Eightball Flames Neutral'}
+          width={FLAMES_DIMENSIONS.width}
+          height={FLAMES_DIMENSIONS.height}
+          quality={100}
+        />
+      </StyledAbsoluteImage>
+      <StyledAbsoluteImage ref={darkFlames} className='z-3'>
+        <Image
+          src={'/images/flames/FlamesDark.png'}
+          alt={'Bad Contact Eightball Flames Dark'}
+          width={FLAMES_DIMENSIONS.width}
+          height={FLAMES_DIMENSIONS.height}
+          quality={100}
+        />
+      </StyledAbsoluteImage>
       <Sparkles />
       <StyledGradientCircle ref={fireGradient} />
     </StyledFlames>

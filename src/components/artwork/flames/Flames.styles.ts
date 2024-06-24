@@ -8,12 +8,12 @@ export const StyledFlames = styled.div`
   transform-origin: center;
 `
 
-export const StyledBaseImage = styled.img`
+export const StyledBaseImage = styled.div`
   position: relative;
   width: 100%;
 `
 
-export const StyledAbsoluteImage = styled.img`
+export const StyledAbsoluteImage = styled.div`
   position: absolute;
   width: 100%;
   height: auto;
