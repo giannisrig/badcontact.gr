@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { ViewLevel } from '@/definitions/viewLevel'
 
 export const StyledEye = styled.div`
   position: absolute;
@@ -7,5 +6,5 @@ export const StyledEye = styled.div`
   width: 100%;
   display: inline-block;
   bottom: -2%;
-  z-index: ${ViewLevel.LEVEL_3};
+  z-index: 3;
 `

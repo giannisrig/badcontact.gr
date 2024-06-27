@@ -31,14 +31,12 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <div className='w-[70%]'>
-        <h1>Bad Contact</h1>
+      <div className='flex w-[70%] flex-col items-center justify-center'>
+        <h1>{`80'S INSPIRED HEAVY METAL/ROCK`}</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut posuere tortor, vel fringilla nisl. Quisque
-          eget arcu lacinia, blandit nulla sed, ultricies nulla. Nulla ullamcorper sodales ex, eget ullamcorper nibh.
-          Nunc ex velit, rhoncus ac diam quis, ullamcorper gravida enim. In pharetra urna felis. Quisque pellentesque
-          iaculis efficitur. Suspendisse molestie nulla a arcu interdum, vel imperdiet massa fringilla. Ut id euismod
-          metus. Quisque tincidunt leo velit, eu sollicitudin elit sagittis et.
+          ...Bad Contact from Athens, Greece, is a band dedicated to creating passionate heavy metal music. Inspired by
+          the iconic sounds of the 80s, we blend elements from beloved bands of that era, to evoke you feelings of
+          nostalgia...
         </p>
         <p>
           Etiam mollis diam libero, in suscipit odio luctus nec. Phasellus sit amet blandit augue, et viverra nunc.

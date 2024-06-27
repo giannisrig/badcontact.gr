@@ -6,6 +6,7 @@ import { EyeFlames } from '@/components/artwork/eyeFlames/EyeFlames'
 import { Logo } from '@/components/artwork/logo/Logo'
 import { BgIris } from '@/components/artwork/bgIris/BgIris'
 import { Terrain } from '@/components/artwork/terrain/Terrain'
+import { ContentFader } from '@/components/layout/ContentFader/ContentFader'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -25,6 +26,7 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       {/* Anything that covers content, Terrain */}
       <ScreenLevelView level={4} />
       <Terrain />
+      <ContentFader />
       {/* Anything that's above everything, logo, buttons */}
       <div id={`level-view-5`} className={`fixed left-0 top-0 z-5 flex h-auto w-full justify-center`}>
         <Logo />

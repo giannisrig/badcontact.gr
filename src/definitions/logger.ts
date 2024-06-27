@@ -1,5 +1,5 @@
 export enum ELog {
-  CAMERA = 'Camera',
+  IMAGE = 'Image',
   SCENE = 'Scene',
   CONTROL = 'Control',
   OBJECT3D = '3D Object',

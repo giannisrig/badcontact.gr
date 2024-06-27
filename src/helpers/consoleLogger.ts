@@ -20,7 +20,7 @@ class ConsoleLogger {
       let bgColor = ''
 
       switch (type) {
-        case ELog.CAMERA: // Data layer
+        case ELog.IMAGE: // Data layer
           bgColor = '#ed8c15' // orange
           break
         case ELog.SCENE: // UI Logic

@@ -29,6 +29,7 @@ export const Flames = () => {
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
           quality={100}
+          priority={true}
         />
       </StyledBaseImage>
       <StyledAbsoluteImage ref={clonedBaseFlames} className='z--1'>
@@ -38,6 +39,7 @@ export const Flames = () => {
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
           quality={100}
+          priority={true}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={lightFlames} className='z-1'>
@@ -47,6 +49,7 @@ export const Flames = () => {
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
           quality={100}
+          priority={true}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={mediumFlames} className='z-2'>
@@ -56,6 +59,7 @@ export const Flames = () => {
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
           quality={100}
+          priority={true}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={darkFlames} className='z-3'>
@@ -65,6 +69,7 @@ export const Flames = () => {
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
           quality={100}
+          priority={true}
         />
       </StyledAbsoluteImage>
       <Sparkles />

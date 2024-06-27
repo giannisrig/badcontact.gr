@@ -29,16 +29,40 @@ export const useEyeAnimations = () => {
           opacity: 0.5,
         },
         0
-      ).fromTo(
-        '#logo',
-        {
-          scale: 1,
-        },
-        {
-          scale: 0.6,
-        },
-        0
       )
+        .fromTo(
+          getElementId(Element.LOGO),
+          {
+            scale: 1,
+          },
+          {
+            scale: 0.6,
+          },
+          0
+        )
+        .fromTo(
+          getElementId(Element.TERRAIN),
+          {
+            scale: 1,
+            yPercent: 0,
+            filter: 'brightness(1)',
+          },
+          {
+            scale: 1.5,
+            yPercent: 10,
+            filter: 'brightness(0.3)',
+          },
+          0
+        )
+        .fromTo(
+          getElementId(Element.CONTENT_FADER),
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+        )
     }
   }, [eye])
 

@@ -1,14 +1,11 @@
 'use client'
-import { useSparklesAnimation } from './Sparkles.animations'
-import { StyledAbsoluteImage } from '@/components/artwork/flames/Flames.styles'
-import { StyledSparkles } from '@/components/artwork/sparkles/Sparkles.styles'
-import { Element } from '@/definitions/element'
 import Image from 'next/image'
-
-export const SPARKLES_DIMENSIONS = {
-  width: 1310,
-  height: 827,
-}
+import { StyledAbsoluteImage } from '@/components/artwork/flames/Flames.styles'
+import { SPARKLES_DIMENSIONS, StyledSparkles } from '@/components/artwork/sparkles/Sparkles.styles'
+import { Element } from '@/definitions/element'
+import { useSparklesAnimation } from './Sparkles.animations'
+import { consoleLogger } from '@/helpers/consoleLogger'
+import { ELog } from '@/definitions/logger'
 
 export const SPARKLES_PATH = '/images/sparkles'
 
@@ -24,9 +21,12 @@ export const Sparkles = () => {
           width={SPARKLES_DIMENSIONS.width}
           height={SPARKLES_DIMENSIONS.height}
           quality={100}
+          priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Base Sparkles is loaded')
+          }}
         />
       </StyledAbsoluteImage>
-
       <StyledAbsoluteImage ref={sparkles1}>
         <Image
           src={`${SPARKLES_PATH}/sparkles1.png`}
@@ -34,6 +34,10 @@ export const Sparkles = () => {
           width={SPARKLES_DIMENSIONS.width}
           height={SPARKLES_DIMENSIONS.height}
           quality={100}
+          priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Base Sparkles is loaded')
+          }}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={sparkles2}>
@@ -43,6 +47,10 @@ export const Sparkles = () => {
           width={SPARKLES_DIMENSIONS.width}
           height={SPARKLES_DIMENSIONS.height}
           quality={100}
+          priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Sparkles 2 is loaded')
+          }}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={sparkles3}>
@@ -52,6 +60,10 @@ export const Sparkles = () => {
           width={SPARKLES_DIMENSIONS.width}
           height={SPARKLES_DIMENSIONS.height}
           quality={100}
+          priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Sparkles 3 is loaded')
+          }}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={sparkles4}>
@@ -61,6 +73,10 @@ export const Sparkles = () => {
           width={SPARKLES_DIMENSIONS.width}
           height={SPARKLES_DIMENSIONS.height}
           quality={100}
+          priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Sparkles 4 is loaded')
+          }}
         />
       </StyledAbsoluteImage>
     </StyledSparkles>

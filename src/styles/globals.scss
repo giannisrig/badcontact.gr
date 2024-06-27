@@ -19,12 +19,21 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #000;
+  font-size: max(2vw, 16px);
+  line-height: 112%;
 }
 
-.next-logo {
-  &::after {
-    background: radial-gradient(50% 50% at 50% 50%, #F73693 0%, rgba(21, 18, 39, 0) 100%);
-  }
+p {
+  margin: max(1vh, 15px) 0;
+}
+
+h1 {
+  font-size: 40px;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  line-height: 30px;
+  text-shadow: 3px 1px 1px #e8601e;
 }
 
 canvas {
