@@ -1,3 +1,4 @@
 export enum ESceneReduxActions {
   SET_ASPECT_RATIO = 'SCENE/SET_ASPECT_RATIO',
+  SET_IMAGE_LOADED = 'SCENE/SET_IMAGE_LOADED',
 }

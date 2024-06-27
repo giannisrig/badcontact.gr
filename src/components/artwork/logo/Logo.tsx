@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import { Element } from '@/definitions/element'
+import { EImage, Element } from '@/definitions/element'
+import { consoleLogger } from '@/helpers/consoleLogger'
+import { ELog } from '@/definitions/logger'
+import { useImageLoader } from '@/hooks/useImageLoader'
 
 export const StyledArtWorkLogo = styled.div`
   width: min(50%, 250px);
@@ -11,6 +14,8 @@ export const StyledArtWorkLogo = styled.div`
 `
 
 export const Logo = () => {
+  const { onLoadImage } = useImageLoader()
+
   return (
     <StyledArtWorkLogo id={Element.LOGO}>
       <Image
@@ -19,6 +24,8 @@ export const Logo = () => {
         width={520}
         height={293}
         quality={100}
+        priority={true}
+        onLoad={onLoadImage(EImage.FLAMES_BASE)}
       />
     </StyledArtWorkLogo>
   )

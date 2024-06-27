@@ -3,13 +3,16 @@
 import Image from 'next/image'
 import { useFlamesAnimation } from './Flames.animations'
 import {
+  StyledAbsoluteImage,
   StyledBaseImage,
   StyledFlames,
   StyledGradientCircle,
-  StyledAbsoluteImage,
 } from '@/components/artwork/flames/Flames.styles'
 import { Sparkles } from '@/components/artwork/sparkles/Sparkles'
-import { Element } from '@/definitions/element'
+import { EImage, Element } from '@/definitions/element'
+import { consoleLogger } from '@/helpers/consoleLogger'
+import { ELog } from '@/definitions/logger'
+import { useImageLoader } from '@/hooks/useImageLoader'
 
 export const FLAMES_DIMENSIONS = {
   width: 1238,
@@ -17,6 +20,7 @@ export const FLAMES_DIMENSIONS = {
 }
 
 export const Flames = () => {
+  const { onLoadImage } = useImageLoader()
   const { lightFlames, mediumFlames, darkFlames, clonedBaseFlames, fireGradient, flamesContainer } =
     useFlamesAnimation()
 
@@ -30,6 +34,7 @@ export const Flames = () => {
           height={FLAMES_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={onLoadImage(EImage.FLAMES_BASE)}
         />
       </StyledBaseImage>
       <StyledAbsoluteImage ref={clonedBaseFlames} className='z--1'>
@@ -40,6 +45,7 @@ export const Flames = () => {
           height={FLAMES_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={onLoadImage(EImage.FLAMES_CLONE)}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={lightFlames} className='z-1'>
@@ -50,6 +56,7 @@ export const Flames = () => {
           height={FLAMES_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={onLoadImage(EImage.FLAMES_LIGHT)}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={mediumFlames} className='z-2'>
@@ -60,6 +67,7 @@ export const Flames = () => {
           height={FLAMES_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={onLoadImage(EImage.FLAMES_NEUTRAL)}
         />
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={darkFlames} className='z-3'>
@@ -70,6 +78,7 @@ export const Flames = () => {
           height={FLAMES_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={onLoadImage(EImage.FLAMES_DARK)}
         />
       </StyledAbsoluteImage>
       <Sparkles />

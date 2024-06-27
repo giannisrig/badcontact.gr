@@ -5,6 +5,8 @@ import { StyledBaseImage } from '@/components/artwork/flames/Flames.styles'
 import { StyledEye } from '@/components/artwork/eye/Eye.styles'
 import { useEyeAnimations } from '@/components/artwork/eye/Eye.animations'
 import { Element } from '@/definitions/element'
+import { consoleLogger } from '@/helpers/consoleLogger'
+import { ELog } from '@/definitions/logger'
 
 export const EYE_DIMENSIONS = {
   width: 1189,
@@ -23,6 +25,9 @@ export const Eye = () => {
           height={EYE_DIMENSIONS.height}
           quality={100}
           priority={true}
+          onLoad={() => {
+            consoleLogger.log(ELog.IMAGE, 'Eye is loaded')
+          }}
         />
       </StyledBaseImage>
     </StyledEye>
