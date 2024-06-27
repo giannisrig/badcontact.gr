@@ -17,7 +17,12 @@ export const MenuButton = () => {
   const { menuIconRef, animateOnMouseOver, animateOnMouseLeave } = useMenuButtonAnimations()
 
   return (
-    <StyledMenuButton ref={menuIconRef} onMouseEnter={animateOnMouseOver} onMouseLeave={animateOnMouseLeave}>
+    <StyledMenuButton
+      id={Element.MENU_BUTTON}
+      ref={menuIconRef}
+      onMouseEnter={animateOnMouseOver}
+      onMouseLeave={animateOnMouseLeave}
+    >
       <StyledMenuIcon>
         <Image
           id={EImage.EIGHT_ICON}

@@ -6,6 +6,7 @@ export enum Element {
   TERRAIN = 'terrain',
   EYE_FLAMES_SPACER = 'eyeFlamesSpacer',
   CONTENT_FADER = 'contentFader',
+  MENU_BUTTON = 'menuButton',
   MENU_ICON_OUTLINE = 'menuIconOutline',
   MENU_ICON_FADER = 'menuIconFader',
 }

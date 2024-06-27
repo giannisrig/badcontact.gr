@@ -63,6 +63,16 @@ export const useMainContentScrollAnimation = () => {
         0
       )
       .fromTo(
+        getElementId(Element.MENU_BUTTON),
+        {
+          y: 0,
+        },
+        {
+          y: 25,
+        },
+        0
+      )
+      .fromTo(
         getElementId(Element.CONTENT_FADER),
         {
           opacity: 0,
