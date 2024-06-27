@@ -3,15 +3,17 @@ import { useGSAP } from '@gsap/react'
 import { getElementId } from '@/utils/elements.utils'
 import { EImage, Element } from '@/definitions/element'
 import gsap from 'gsap'
-import { eyeFlamesScrollTrigger } from '@/constants/animations/scrollTriggers'
+import { useMainContentScrollTrigger } from '@/hooks/useMainContentScrollTrigger'
 
 export const useMenuButtonAnimations = () => {
   const menuIconRef = useRef(null)
+  const { mainContentScrollTrigger } = useMainContentScrollTrigger()
   const { contextSafe } = useGSAP({ scope: menuIconRef })
+
   useGSAP(() => {
     if (menuIconRef?.current) {
       const tl = gsap.timeline({
-        scrollTrigger: eyeFlamesScrollTrigger,
+        scrollTrigger: mainContentScrollTrigger,
       })
 
       tl.fromTo(

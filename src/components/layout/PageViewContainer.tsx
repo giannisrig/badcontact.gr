@@ -10,6 +10,7 @@ import { ContentFader } from '@/components/layout/ContentFader/ContentFader'
 import { LoadingScreen } from '@/components/layout/LoadingScreen'
 import { MenuButton } from '@/components/common/MenuButton/MenuButton'
 import { Menu } from '@/components/common/Menu/Menu'
+import { AnimationsLoader } from '@/components/common/AnimationsLoader/AnimationsLoader'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -37,6 +38,7 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       </div>
       <Menu />
       <MenuButton />
+      <AnimationsLoader />
     </>
   )
 }

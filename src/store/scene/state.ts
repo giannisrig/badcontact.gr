@@ -1,6 +1,7 @@
 import { SceneState } from '@/store/scene/types'
 
-export const initialSceneState: SceneState = {
+export const initialUIState: SceneState = {
   aspectRatio: 1,
   imagesLoaded: [],
+  isMainContentScrollTriggered: false,
 }

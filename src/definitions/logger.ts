@@ -1,6 +1,6 @@
 export enum ELog {
   IMAGE = 'Image',
-  SCENE = 'Scene',
+  ANIMATION = 'Animation',
   CONTROL = 'Control',
   OBJECT3D = '3D Object',
 }

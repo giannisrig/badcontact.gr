@@ -2,8 +2,6 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-import { eyeFlamesScrollTrigger } from '@/constants/animations/scrollTriggers'
-
 const FLAMES_ANIMATION_PROPS = {
   repeat: -1,
   yoyo: true,
@@ -52,30 +50,6 @@ export const useFlamesAnimation = () => {
       })
     }
   }, [lightFlames, mediumFlames, darkFlames, clonedBaseFlames])
-
-  useGSAP(() => {
-    if (flamesContainer?.current) {
-      const tl = gsap.timeline({
-        scrollTrigger: eyeFlamesScrollTrigger,
-      })
-
-      tl.fromTo(
-        flamesContainer?.current,
-        {
-          opacity: 1,
-          scale: 1,
-          // duration: 1,
-          // ease: 'power3.out',
-        },
-        {
-          opacity: 0,
-          scale: 0.7,
-          // duration: 1,
-          // ease: 'power3.out',
-        }
-      )
-    }
-  }, [flamesContainer])
 
   return {
     flamesContainer,

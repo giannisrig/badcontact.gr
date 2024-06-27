@@ -23,7 +23,7 @@ class ConsoleLogger {
         case ELog.IMAGE: // Data layer
           bgColor = '#ed8c15' // orange
           break
-        case ELog.SCENE: // UI Logic
+        case ELog.ANIMATION: // UI Logic
           bgColor = '#239823' // green
           break
         case ELog.CONTROL:
