@@ -8,6 +8,8 @@ import { BgIris } from '@/components/artwork/bgIris/BgIris'
 import { Terrain } from '@/components/artwork/terrain/Terrain'
 import { ContentFader } from '@/components/layout/ContentFader/ContentFader'
 import { LoadingScreen } from '@/components/layout/LoadingScreen'
+import { MenuButton } from '@/components/common/MenuButton/MenuButton'
+import { Menu } from '@/components/common/Menu/Menu'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -27,12 +29,14 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       <PageContentContainer>{children}</PageContentContainer>
       {/* Anything that covers content, Terrain */}
       <ScreenLevelView level={4} />
-      <Terrain />
       <ContentFader />
+      <Terrain />
       {/* Anything that's above everything, logo, buttons */}
       <div id={`level-view-5`} className={`fixed left-0 top-0 z-5 flex h-auto w-full justify-center`}>
         <Logo />
       </div>
+      <Menu />
+      <MenuButton />
     </>
   )
 }

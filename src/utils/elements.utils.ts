@@ -1,3 +1,3 @@
-import { Element } from '@/definitions/element'
+import { EImage, Element } from '@/definitions/element'
 
-export const getElementId = (element: Element) => `#${element}`
+export const getElementId = (element: Element | EImage) => `#${element}`

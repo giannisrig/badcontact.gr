@@ -19,8 +19,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #000;
-  font-size: max(2vw, 16px);
-  line-height: 112%;
+  font-size: 1.7vw;
+  line-height: 105%;
 }
 
 p {
@@ -28,12 +28,12 @@ p {
 }
 
 h1 {
-  font-size: 40px;
-  width: 300px;
+  font-size: 3.6vw;
   text-align: center;
   margin: 10px;
-  line-height: 30px;
+  line-height: 3vw;
   text-shadow: 3px 1px 1px #e8601e;
+  width: 25vw;
 }
 
 canvas {

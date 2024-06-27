@@ -12,6 +12,7 @@ export const StyledTerrainContainer = styled(BaseTerrainDimensions)`
   position: fixed;
   bottom: 0;
   z-index: 4;
+  pointer-events: none;
 `
 
 export const StyledTerrainLave = styled(StyledAbsoluteImage)`

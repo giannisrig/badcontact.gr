@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 import { EImage, Element } from '@/definitions/element'
-import { consoleLogger } from '@/helpers/consoleLogger'
-import { ELog } from '@/definitions/logger'
 import { useImageLoader } from '@/hooks/useImageLoader'
 
 export const StyledArtWorkLogo = styled.div`
@@ -25,7 +23,7 @@ export const Logo = () => {
         height={293}
         quality={100}
         priority={true}
-        onLoad={onLoadImage(EImage.FLAMES_BASE)}
+        onLoad={onLoadImage(EImage.LOGO)}
       />
     </StyledArtWorkLogo>
   )

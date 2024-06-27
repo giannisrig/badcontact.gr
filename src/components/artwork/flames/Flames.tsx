@@ -10,8 +10,6 @@ import {
 } from '@/components/artwork/flames/Flames.styles'
 import { Sparkles } from '@/components/artwork/sparkles/Sparkles'
 import { EImage, Element } from '@/definitions/element'
-import { consoleLogger } from '@/helpers/consoleLogger'
-import { ELog } from '@/definitions/logger'
 import { useImageLoader } from '@/hooks/useImageLoader'
 
 export const FLAMES_DIMENSIONS = {

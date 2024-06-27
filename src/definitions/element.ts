@@ -6,10 +6,13 @@ export enum Element {
   TERRAIN = 'terrain',
   EYE_FLAMES_SPACER = 'eyeFlamesSpacer',
   CONTENT_FADER = 'contentFader',
+  MENU_ICON_OUTLINE = 'menuIconOutline',
+  MENU_ICON_FADER = 'menuIconFader',
 }
 
 export enum EImage {
   LOGO = 'LOGO',
+  EIGHT_ICON = 'EIGHT_ICON',
   FLAMES_BASE = 'FLAMES_BASE',
   FLAMES_CLONE = 'FLAMES_CLONE',
   FLAMES_LIGHT = 'FLAMES_LIGHT',

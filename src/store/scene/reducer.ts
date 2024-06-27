@@ -8,6 +8,8 @@ export const sceneReducer = createReducer(initialSceneState, (builder) => {
       state.aspectRatio = payload
     })
     .addCase(setImageLoaded, (state, { payload }) => {
-      state.imagesLoaded = [...state.imagesLoaded, payload]
+      if (!state.imagesLoaded.includes(payload)) {
+        state.imagesLoaded = [...state.imagesLoaded, payload]
+      }
     })
 })
