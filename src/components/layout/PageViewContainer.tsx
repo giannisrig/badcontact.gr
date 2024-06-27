@@ -7,10 +7,12 @@ import { Logo } from '@/components/artwork/logo/Logo'
 import { BgIris } from '@/components/artwork/bgIris/BgIris'
 import { Terrain } from '@/components/artwork/terrain/Terrain'
 import { ContentFader } from '@/components/layout/ContentFader/ContentFader'
+import { LoadingScreen } from '@/components/layout/LoadingScreen'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
+      <LoadingScreen />
       <div className='grain' />
       {/* For BG decorations */}
       <ScreenLevelView level={0}>
