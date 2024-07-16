@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit'
 import { initialUIState } from '@/store/scene/state'
-import { setAspectRatio, setImageLoaded, setIsMainContentScrollTriggered } from '@/store/scene/actions'
+import { setAspectRatio, setImageLoaded, setIsMainContentScrollTriggered, setIsMenuOpen } from '@/store/scene/actions'
 
 export const uiReducer = createReducer(initialUIState, (builder) => {
   builder
@@ -9,6 +9,9 @@ export const uiReducer = createReducer(initialUIState, (builder) => {
     })
     .addCase(setIsMainContentScrollTriggered, (state, { payload }) => {
       state.isMainContentScrollTriggered = payload
+    })
+    .addCase(setIsMenuOpen, (state, { payload }) => {
+      state.isMenuOpened = payload
     })
     .addCase(setImageLoaded, (state, { payload }) => {
       if (!state.imagesLoaded.includes(payload)) {

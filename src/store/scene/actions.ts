@@ -7,3 +7,4 @@ export const setImageLoaded = createAction<EImage>(ESceneReduxActions.SET_IMAGE_
 export const setIsMainContentScrollTriggered = createAction<boolean>(
   ESceneReduxActions.SET_IS_MAIN_CONTENT_SCROLL_TRIGGER
 )
+export const setIsMenuOpen = createAction<boolean>(ESceneReduxActions.SET_IS_MENU_OPEN)

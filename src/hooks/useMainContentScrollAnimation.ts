@@ -68,7 +68,7 @@ export const useMainContentScrollAnimation = () => {
           y: 0,
         },
         {
-          y: 25,
+          y: 28,
         },
         0
       )

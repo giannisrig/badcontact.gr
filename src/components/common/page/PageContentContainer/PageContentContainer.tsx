@@ -11,7 +11,7 @@ export const PageContentContainer = ({ children }) => {
   const container = useOnMenuPageContentAnimation()
 
   return (
-    <main ref={container} className='relative z-3 flex flex-col items-center text-center text-white'>
+    <main id={Element.MAIN} ref={container} className='relative z-3 flex flex-col items-center text-center text-white'>
       <EyeFlamesSpacer id={Element.EYE_FLAMES_SPACER} />
       {children}
       <TerrainSpacer />

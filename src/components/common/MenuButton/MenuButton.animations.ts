@@ -4,15 +4,22 @@ import { getElementId } from '@/utils/elements.utils'
 import { EImage, Element } from '@/definitions/element'
 import gsap from 'gsap'
 import { useAppSelector } from '@/store/store'
-import { selectIsMainContentScrollTriggered } from '@/store/scene/selectors'
+import { selectIsMainContentScrollTriggered, selectIsMenuOpened } from '@/store/scene/selectors'
 
 export const useMenuButtonAnimations = () => {
   const menuIconRef = useRef(null)
-  const { contextSafe } = useGSAP({ scope: menuIconRef })
+  const { contextSafe } = useGSAP()
   const isMainContentScrolled = useAppSelector(selectIsMainContentScrollTriggered)
+  const isMenuOpened = useAppSelector(selectIsMenuOpened)
+
+  useGSAP(() => {
+    if (menuIconRef.current && !isMenuOpened) {
+      gsap.to(menuIconRef.current, { opacity: 1 })
+    }
+  }, [menuIconRef, isMenuOpened])
 
   const animateOnMouseOver = contextSafe(() => {
-    if (menuIconRef.current) {
+    if (menuIconRef.current && !isMenuOpened) {
       gsap
         .timeline({
           duration: 1,
@@ -20,7 +27,7 @@ export const useMenuButtonAnimations = () => {
         .fromTo(getElementId(EImage.EIGHT_ICON), { rotation: 0 }, { rotation: 360 }, 0)
         .fromTo(getElementId(Element.MENU_ICON_OUTLINE), { scale: 1 }, { scale: 1.1 }, 0)
         .fromTo(getElementId(Element.MENU_ICON_FADER), { scale: 1 }, { scale: 1.6 }, 0)
-        .fromTo('h5', { scale: 1, y: 0 }, { scale: 0.8, y: 5 }, 0)
+        .fromTo(getElementId(Element.MENU_ICON_TEXT), { scale: 1, y: 0 }, { scale: 0.8, y: 5 }, 0)
         .to(menuIconRef.current, { y: 0 }, 0)
     }
   })
@@ -34,8 +41,14 @@ export const useMenuButtonAnimations = () => {
         .fromTo(getElementId(EImage.EIGHT_ICON), { rotation: 360 }, { rotation: 0 }, 0)
         .fromTo(getElementId(Element.MENU_ICON_OUTLINE), { scale: 1.1 }, { scale: 1 }, 0)
         .fromTo(getElementId(Element.MENU_ICON_FADER), { scale: 1.6 }, { scale: 1 }, 0)
-        .fromTo('h5', { scale: 0.8, y: 5 }, { scale: 1, y: 0 }, 0)
+        .fromTo(getElementId(Element.MENU_ICON_TEXT), { scale: 0.8, y: 5 }, { scale: 1, y: 0 }, 0)
         .to(menuIconRef.current, { y: isMainContentScrolled ? 25 : 0 }, 0)
+    }
+  })
+
+  const animateOnClick = contextSafe(() => {
+    if (menuIconRef.current) {
+      gsap.to(menuIconRef.current, { opacity: 0 })
     }
   })
 
@@ -43,5 +56,6 @@ export const useMenuButtonAnimations = () => {
     menuIconRef,
     animateOnMouseOver,
     animateOnMouseLeave,
+    animateOnClick,
   }
 }

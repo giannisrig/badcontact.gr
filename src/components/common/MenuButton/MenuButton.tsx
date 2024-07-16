@@ -11,17 +11,31 @@ import {
   StyledMenuText,
 } from '@/components/common/MenuButton/MenuButton.styles'
 import { useMenuButtonAnimations } from '@/components/common/MenuButton/MenuButton.animations'
+import { useAppDispatch, useAppSelector } from '@/store/store'
+import { setIsMenuOpen } from '@/store/scene/actions'
+import { selectIsMenuOpened } from '@/store/scene/selectors'
 
 export const MenuButton = () => {
+  const dispatch = useAppDispatch()
   const { onLoadImage } = useImageLoader()
-  const { menuIconRef, animateOnMouseOver, animateOnMouseLeave } = useMenuButtonAnimations()
+  const isMenuOpened = useAppSelector(selectIsMenuOpened)
+  const pointerEvents = isMenuOpened ? 'none' : 'all'
+  const { menuIconRef, animateOnMouseOver, animateOnMouseLeave, animateOnClick } = useMenuButtonAnimations()
+
+  const handleOnClick = () => {
+    dispatch(setIsMenuOpen(true))
+    animateOnClick()
+    document.body.style.overflow = 'hidden'
+  }
 
   return (
     <StyledMenuButton
       id={Element.MENU_BUTTON}
       ref={menuIconRef}
+      onClick={handleOnClick}
       onMouseEnter={animateOnMouseOver}
       onMouseLeave={animateOnMouseLeave}
+      $pointerEvents={pointerEvents}
     >
       <StyledMenuIcon>
         <Image
@@ -37,7 +51,9 @@ export const MenuButton = () => {
         <StyledCircleOutline id={Element.MENU_ICON_OUTLINE} />
         <StyledMenuFader id={Element.MENU_ICON_FADER} />
       </StyledMenuIcon>
-      <StyledMenuText className='font-secondary'>Menu</StyledMenuText>
+      <StyledMenuText id={Element.MENU_ICON_TEXT} className='font-secondary'>
+        Menu
+      </StyledMenuText>
     </StyledMenuButton>
   )
 }

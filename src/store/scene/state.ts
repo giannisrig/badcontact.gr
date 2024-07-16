@@ -4,4 +4,5 @@ export const initialUIState: SceneState = {
   aspectRatio: 1,
   imagesLoaded: [],
   isMainContentScrollTriggered: false,
+  isMenuOpened: false,
 }

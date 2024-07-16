@@ -11,6 +11,7 @@ import { LoadingScreen } from '@/components/layout/LoadingScreen'
 import { MenuButton } from '@/components/common/MenuButton/MenuButton'
 import { Menu } from '@/components/common/Menu/Menu'
 import { AnimationsLoader } from '@/components/common/AnimationsLoader/AnimationsLoader'
+import MenuOverlay from '@/components/common/MenuOverlay/MenuOverlay'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -32,6 +33,7 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       <ScreenLevelView level={4} />
       <ContentFader />
       <Terrain />
+      <MenuOverlay />
       {/* Anything that's above everything, logo, buttons */}
       <div id={`level-view-5`} className={`fixed left-0 top-0 z-5 flex h-auto w-full justify-center`}>
         <Logo />

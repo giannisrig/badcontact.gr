@@ -1,19 +1,25 @@
 'use client'
 
 import styled from 'styled-components'
+import { CSSProperties } from 'react'
 
-export const StyledMenuButton = styled.button`
+export interface MenuButtonStyles {
+  $pointerEvents?: CSSProperties['pointerEvents']
+}
+
+export const StyledMenuButton = styled.button<MenuButtonStyles>`
   width: 130px;
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 16px;
   z-index: 5;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  pointer-events: ${(props) => props.$pointerEvents ?? 'all'};
 `
 
 export const StyledMenuIcon = styled.div`
@@ -49,10 +55,12 @@ export const StyledMenuFader = styled.div`
   position: absolute;
   top: -40%;
   left: -60%;
+  z-index: -1;
 `
 
 export const StyledMenuText = styled.h5`
   font-size: 14px;
+  line-height: 28px;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   position: relative;

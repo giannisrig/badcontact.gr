@@ -4,4 +4,5 @@ export interface SceneState {
   aspectRatio: number
   imagesLoaded: EImage[]
   isMainContentScrollTriggered: boolean
+  isMenuOpened: boolean
 }
