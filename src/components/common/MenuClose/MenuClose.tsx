@@ -4,8 +4,10 @@ import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuBu
 import { useAppDispatch } from '@/store/store'
 import { setIsMenuOpen } from '@/store/scene/actions'
 import { StyledCloseIcon, StyledMenuClose, StyledMenuCloseText } from '@/components/common/MenuClose/MenuClose.styles'
+import { useMenuCloseAnimations } from '@/components/common/MenuClose/MenuClose.animations'
 
 export const MenuClose = () => {
+  const { menuCloseRef, animateOnMouseOver, animateOnMouseLeave } = useMenuCloseAnimations()
   const dispatch = useAppDispatch()
 
   const handleOnClick = () => {
@@ -14,13 +16,26 @@ export const MenuClose = () => {
   }
 
   return (
-    <StyledMenuClose id={Element.MENU_CLOSE} onClick={handleOnClick}>
-      <StyledCloseIcon>
-        <Image src={'/images/artwork/close.svg'} alt={'Eight Menu Icon'} width={130} height={130} quality={100} />
+    <StyledMenuClose
+      id={Element.MENU_CLOSE}
+      ref={menuCloseRef}
+      onClick={handleOnClick}
+      onMouseEnter={animateOnMouseOver}
+      onMouseLeave={animateOnMouseLeave}
+    >
+      <StyledCloseIcon className='icon'>
+        <Image
+          src={'/images/artwork/close.svg'}
+          alt={'Menu Close'}
+          title={'Menu Close'}
+          width={130}
+          height={130}
+          quality={100}
+        />
         <StyledCircleOutline />
         <StyledMenuFader />
       </StyledCloseIcon>
-      <StyledMenuCloseText className='font-secondary'>Close</StyledMenuCloseText>
+      <StyledMenuCloseText className='close-text font-secondary'>Close</StyledMenuCloseText>
     </StyledMenuClose>
   )
 }

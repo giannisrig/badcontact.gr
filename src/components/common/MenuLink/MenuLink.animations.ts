@@ -16,6 +16,7 @@ export const useMenuLinkAnimations = () => {
         })
         .to('.link-circle', { scale: 1.8 }, 0)
         .to('.link-title', { color: '#FAB5A7', y: 20 }, 0)
+        .to('img', { opacity: 1, scale: 1 }, 0)
     }
   })
 
@@ -26,7 +27,8 @@ export const useMenuLinkAnimations = () => {
           duration: 1,
         })
         .fromTo('.link-circle', { scale: 1.8 }, { scale: 1 }, 0)
-        .fromTo('.link-title', { color: '#FAB5A7', y: 20 }, { color: 'inherit', y: 0 }, 0)
+        .fromTo('.link-title', { color: '#FAB5A7', y: 20 }, { color: '#fff', y: 0 }, 0)
+        .to('img', { opacity: 0, scale: 0 }, 0)
     }
   })
 

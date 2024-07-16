@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { CSSProperties } from 'react'
 
-export const RADIUS = '170px'
+export const RADIUS = '150px'
+export const MAX_VIEWPORT_WIDTH = '90vw'
 
 export interface MenuStyles {
   $pointerEvents?: CSSProperties['pointerEvents']
@@ -16,8 +17,8 @@ export const StyledMenu = styled.div<MenuStyles>`
   transform: translateX(-50%);
   opacity: 0;
   z-index: 5;
-  width: calc(${RADIUS} * 2);
-  height: calc(${RADIUS} * 2);
+  width: min(90vw, calc(${RADIUS} * 2));
+  height: min(90vw, calc(${RADIUS} * 2));
   pointer-events: ${(props) => props.$pointerEvents ?? 'all'};
 
   img {
@@ -50,8 +51,8 @@ export interface MenuListPointProps {
 export const StyledMenuListPoint = styled(StyledPointBase)<MenuListPointProps>`
   width: 40px;
   height: 40px;
-  transform: translate(-50%, -50%) translateX(calc(cos(${(props) => props.$angle}deg) * ${RADIUS}))
-    translateY(calc(sin(${(props) => props.$angle}deg) * ${RADIUS} * -1));
+  transform: translate(-50%, -50%) translateX(calc(cos(${(props) => props.$angle}deg) * min(${RADIUS}, calc(90vw / 2))))
+    translateY(calc(sin(${(props) => props.$angle}deg) * min(${RADIUS}, calc(90vw / 2)) * -1));
 
   a {
     position: absolute;
@@ -66,12 +67,22 @@ export const StyledMenuListPoint = styled(StyledPointBase)<MenuListPointProps>`
 `
 
 export const StyleMenuCircle = styled.span`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: hsl(8deg 48.39% 81.76%);
   width: 35px;
   height: 35px;
   border-radius: 50%;
   position: relative;
+  pointer-events: none;
+
+  img {
+    width: 70%;
+    opacity: 0;
+    transform: scale(0);
+    position: relative;
+  }
 `
 
 export const StyledLink = styled.span`

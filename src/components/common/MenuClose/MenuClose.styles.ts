@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 export const StyledMenuClose = styled(StyledMenuButton)`
   position: absolute;
-  transform: translate(-50%, -50%);
-  bottom: unset;
-  top: 105%;
+  transform: translate(-50%, 60%);
+  bottom: 0;
+  gap: 12px;
 `
 
 export const StyledCloseIcon = styled.div`
-  width: 55px;
+  width: 50px;
   aspect-ratio: 1;
   position: relative;
 

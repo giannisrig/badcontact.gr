@@ -23,7 +23,7 @@ export const StyledMenuButton = styled.button<MenuButtonStyles>`
 `
 
 export const StyledMenuIcon = styled.div`
-  width: 55px;
+  width: 50px;
   aspect-ratio: 1;
   position: relative;
 
