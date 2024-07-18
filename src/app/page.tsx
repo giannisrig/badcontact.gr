@@ -80,7 +80,6 @@ export default function HomePage() {
           blandit egestas lacus.
         </p>
       </div>
-      {/*<StyledEyeImage src={'/images/EyeFlames.svg'} alt={'Logo of the Project'} width={869} height={718} />*/}
       {/*<StyledTerrainImage src={'/images/Terrain.svg'} alt={'Logo of the Project'} width={1085} height={536} />*/}
     </>
   )

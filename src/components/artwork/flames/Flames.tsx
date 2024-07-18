@@ -26,7 +26,7 @@ export const Flames = () => {
     <StyledFlames id={Element.FLAMES} ref={flamesContainer}>
       <StyledBaseImage>
         <Image
-          src={'/images/flames/FlamesBase.svg'}
+          src={'/images/artwork/flames/FlamesBase.svg'}
           alt={'Bad Contact Eightball Flames'}
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
@@ -37,7 +37,7 @@ export const Flames = () => {
       </StyledBaseImage>
       <StyledAbsoluteImage ref={clonedBaseFlames} className='z--1'>
         <Image
-          src={'/images/flames/FlamesBase.svg'}
+          src={'/images/artwork/flames/FlamesBase.svg'}
           alt={'Bad Contact Eightball Flames duplicate'}
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
@@ -48,7 +48,7 @@ export const Flames = () => {
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={lightFlames} className='z-1'>
         <Image
-          src={'/images/flames/FlamesLight.png'}
+          src={'/images/artwork/flames/FlamesLight.png'}
           alt={'Bad Contact Eightball Flames Light'}
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
@@ -59,7 +59,7 @@ export const Flames = () => {
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={mediumFlames} className='z-2'>
         <Image
-          src={'/images/flames/FlamesMedium.png'}
+          src={'/images/artwork/flames/FlamesMedium.png'}
           alt={'Bad Contact Eightball Flames Neutral'}
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}
@@ -70,7 +70,7 @@ export const Flames = () => {
       </StyledAbsoluteImage>
       <StyledAbsoluteImage ref={darkFlames} className='z-3'>
         <Image
-          src={'/images/flames/FlamesDark.png'}
+          src={'/images/artwork/flames/FlamesDark.png'}
           alt={'Bad Contact Eightball Flames Dark'}
           width={FLAMES_DIMENSIONS.width}
           height={FLAMES_DIMENSIONS.height}

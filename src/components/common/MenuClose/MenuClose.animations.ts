@@ -14,7 +14,7 @@ export const useMenuCloseAnimations = () => {
         .timeline({
           duration: 1,
         })
-        .to('.icon', { scale: 0.85 }, 0)
+        .to('.icon', { scale: 0.85, opacity: 0.8 }, 0)
         .to('.close-text', { color: '#FAB5A7', y: -5 }, 0)
     }
   })
@@ -25,7 +25,7 @@ export const useMenuCloseAnimations = () => {
         .timeline({
           duration: 1,
         })
-        .to('.icon', { scale: 1 }, 0)
+        .to('.icon', { scale: 1, opacity: 1 }, 0)
         .to('.close-text', { color: '#fff', y: 0 }, 0)
     }
   })

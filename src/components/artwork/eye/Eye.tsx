@@ -19,7 +19,7 @@ export const Eye = () => {
     <StyledEye id={Element.EYE} ref={eye}>
       <StyledBaseImage>
         <Image
-          src={'/images/Eye.svg'}
+          src={'/images/artwork/Eye.svg'}
           alt={'Bad Contact Eightball Eye'}
           width={EYE_DIMENSIONS.width}
           height={EYE_DIMENSIONS.height}

@@ -12,6 +12,7 @@ import { MenuButton } from '@/components/common/MenuButton/MenuButton'
 import { Menu } from '@/components/common/Menu/Menu'
 import { AnimationsLoader } from '@/components/common/AnimationsLoader/AnimationsLoader'
 import MenuOverlay from '@/components/common/MenuOverlay/MenuOverlay'
+import { Footer } from '@/components/common/Footer/Footer'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -40,6 +41,7 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       </div>
       <Menu />
       <MenuButton />
+      <Footer />
       <AnimationsLoader />
     </>
   )

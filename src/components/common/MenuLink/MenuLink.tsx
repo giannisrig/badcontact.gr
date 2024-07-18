@@ -31,7 +31,7 @@ export const MenuLink = ({ href, label, index }: MenuLinkProps) => {
       >
         <StyleMenuCircle className='link-circle'>
           <Image
-            src={`/images/icons/${label}.svg`}
+            src={`/images/icons/menu/${label}.svg`}
             alt={`${label} Menu Icon`}
             title={`${label} Menu Icon`}
             width={22}

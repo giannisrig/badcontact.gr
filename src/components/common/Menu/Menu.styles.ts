@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { CSSProperties } from 'react'
 
 export const RADIUS = '150px'
-export const MAX_VIEWPORT_WIDTH = '90vw'
+export const MAX_VIEWPORT_WIDTH = '80vw'
 
 export interface MenuStyles {
   $pointerEvents?: CSSProperties['pointerEvents']
@@ -17,8 +17,8 @@ export const StyledMenu = styled.div<MenuStyles>`
   transform: translateX(-50%);
   opacity: 0;
   z-index: 5;
-  width: min(90vw, calc(${RADIUS} * 2));
-  height: min(90vw, calc(${RADIUS} * 2));
+  width: min(${MAX_VIEWPORT_WIDTH}, calc(${RADIUS} * 2));
+  height: min(${MAX_VIEWPORT_WIDTH}, calc(${RADIUS} * 2));
   pointer-events: ${(props) => props.$pointerEvents ?? 'all'};
 
   img {
@@ -51,8 +51,9 @@ export interface MenuListPointProps {
 export const StyledMenuListPoint = styled(StyledPointBase)<MenuListPointProps>`
   width: 40px;
   height: 40px;
-  transform: translate(-50%, -50%) translateX(calc(cos(${(props) => props.$angle}deg) * min(${RADIUS}, calc(90vw / 2))))
-    translateY(calc(sin(${(props) => props.$angle}deg) * min(${RADIUS}, calc(90vw / 2)) * -1));
+  transform: translate(-50%, -50%)
+    translateX(calc(cos(${(props) => props.$angle}deg) * min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2))))
+    translateY(calc(sin(${(props) => props.$angle}deg) * min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2)) * -1));
 
   a {
     position: absolute;
@@ -91,4 +92,5 @@ export const StyledLink = styled.span`
   line-height: 34px;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 1px 2px 1px #e8601e;
 `

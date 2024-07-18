@@ -4,7 +4,7 @@ import { getElementId } from '@/utils/elements.utils'
 import { Element } from '@/definitions/element'
 import gsap from 'gsap'
 import { useAppSelector } from '@/store/store'
-import {  selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMenuOpened } from '@/store/scene/selectors'
 
 export const useMenuAnimations = () => {
   const menuRef = useRef(null)
@@ -20,7 +20,8 @@ export const useMenuAnimations = () => {
           .to(menuRef.current, { opacity: 1 }, 0)
           .fromTo('.circle-point', { scale: 0 }, { scale: 1, stagger: 0.1 }, 0)
           .fromTo(getElementId(Element.MENU_LIST_IMAGE), { scale: 0 }, { scale: 1 }, 0)
-          .to(getElementId(Element.MENU_LIST_IMAGE), { rotation: '360', ease: 'none', duration: 40, repeat: -1 })
+
+        gsap.to(getElementId(Element.MENU_LIST_IMAGE), { rotation: '360', ease: 'none', duration: 40, repeat: -1 })
       } else {
         gsap.to(menuRef.current, { opacity: 0 })
         gsap.to(getElementId(Element.MENU_LIST_IMAGE), { rotation: '0', duration: 1 })

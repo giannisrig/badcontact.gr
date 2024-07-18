@@ -8,7 +8,7 @@ import { consoleLogger } from '@/helpers/consoleLogger'
 import { ELog } from '@/definitions/logger'
 import { useImageLoader } from '@/hooks/useImageLoader'
 
-export const SPARKLES_PATH = '/images/sparkles'
+export const SPARKLES_PATH = '/images/artwork/sparkles'
 
 export const Sparkles = () => {
   const { onLoadImage } = useImageLoader()
