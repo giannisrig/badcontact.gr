@@ -14,7 +14,7 @@ export const StyledMenuButton = styled.button<MenuButtonStyles>`
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  z-index: 5;
+  z-index: 7;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);

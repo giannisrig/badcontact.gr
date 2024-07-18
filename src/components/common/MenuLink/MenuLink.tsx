@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { StyledLink, StyledMenuListPoint, StyleMenuCircle } from '@/components/common/Menu/Menu.styles'
 import { StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
 import { useMenuLinkAnimations } from '@/components/common/MenuLink/MenuLink.animations'
 import Image from 'next/image'
-import { Element } from '@/definitions/element'
+import { appConfig } from '@/constants/config'
+import { StyledMenuListPoint, StyledLink, StyleMenuCircle } from '@/components/common/MenuLink/MenuLink.styles'
 
 export interface MenuLinkProps {
   href: string
@@ -11,16 +11,15 @@ export interface MenuLinkProps {
   index: number
 }
 
-export const ANGLE_MAP = [90, 25, -35, 155, -145]
-
 export const MenuLink = ({ href, label, index }: MenuLinkProps) => {
   const { menuLinkRef, animateOnMouseOver, animateOnMouseLeave } = useMenuLinkAnimations()
 
   const animateOnClick = () => {
     animateOnMouseOver()
   }
+
   return (
-    <StyledMenuListPoint ref={menuLinkRef} key={href} $angle={ANGLE_MAP[index]} className='circle-point'>
+    <StyledMenuListPoint ref={menuLinkRef} key={href} $angle={appConfig.menu.angles[index]} className='circle-point'>
       <Link
         prefetch
         href={href}
@@ -31,7 +30,7 @@ export const MenuLink = ({ href, label, index }: MenuLinkProps) => {
       >
         <StyleMenuCircle className='link-circle'>
           <Image
-            src={`/images/icons/menu/${label}.svg`}
+            src={`${appConfig.assets.menuIconsUrl}/${label}.svg`}
             alt={`${label} Menu Icon`}
             title={`${label} Menu Icon`}
             width={22}

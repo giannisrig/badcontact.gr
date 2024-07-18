@@ -13,35 +13,40 @@ import { Menu } from '@/components/common/Menu/Menu'
 import { AnimationsLoader } from '@/components/common/AnimationsLoader/AnimationsLoader'
 import MenuOverlay from '@/components/common/MenuOverlay/MenuOverlay'
 import { Footer } from '@/components/common/Footer/Footer'
+import { MenuText } from '@/components/common/MenuText/MenuText'
+import { SocialLinks } from '@/components/common/SocialLinks/SocialLinks'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <LoadingScreen />
       <div className='grain' />
-      {/* For BG decorations */}
+      {/*=== LEVEL 0 ===*/}
       <ScreenLevelView level={0}>
         <BgIris />
       </ScreenLevelView>
-      {/* For Flames & Eye */}
+      {/*=== LEVEL 1 ===*/}
       <ScreenLevelView level={1}>
         <EyeFlames />
       </ScreenLevelView>
-      {/* Eye */}
-      <ScreenLevelView level={2} />
+      {/*=== LEVEL 2 ===*/}
+      {/*=== LEVEL 3 - Main Content ===*/}
       <PageContentContainer>{children}</PageContentContainer>
-      {/* Anything that covers content, Terrain */}
-      <ScreenLevelView level={4} />
+      {/*=== LEVEL 4 ===*/}
       <ContentFader />
       <Terrain />
       <MenuOverlay />
-      {/* Anything that's above everything, logo, buttons */}
+      {/*=== LEVEL 5 ===*/}
       <div id={`level-view-5`} className={`fixed left-0 top-0 z-5 flex h-auto w-full justify-center`}>
         <Logo />
       </div>
+      {/*=== LEVEL 6 ===*/}
+      <MenuText />
+      <SocialLinks />
+      <Footer />
+      {/*=== LEVEL 7 ===*/}
       <Menu />
       <MenuButton />
-      <Footer />
       <AnimationsLoader />
     </>
   )
