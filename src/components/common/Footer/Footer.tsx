@@ -1,10 +1,10 @@
-import { StyledFooter } from '@/components/common/Footer/Footer.styles'
+import { StyledFooterDevelopedBy, StyledFooterText } from '@/components/common/Footer/Footer.styles'
 
 export const Footer = () => {
   return (
-    <StyledFooter className='font-secondary'>
-      <div>©2024, All Rights Reserved</div>
-      <div>Developed by Giannis Riganas</div>
-    </StyledFooter>
+    <>
+      <StyledFooterText className='font-secondary'>©2024, All Rights Reserved</StyledFooterText>
+      <StyledFooterDevelopedBy className='font-secondary'>Developed by Giannis Riganas</StyledFooterDevelopedBy>
+    </>
   )
 }

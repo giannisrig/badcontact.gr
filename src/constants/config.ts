@@ -28,10 +28,10 @@ export const appConfig = {
   },
   social: {
     links: [
-      {
-        href: 'https://music.apple.com/us/artist/bad-contact/1674032129',
-        label: 'apple-music',
-      },
+      // {
+      //   href: 'https://music.apple.com/us/artist/bad-contact/1674032129',
+      //   label: 'apple-music',
+      // },
       {
         href: 'https://badcontact.bandcamp.com/',
         label: 'bandcamp',
@@ -56,10 +56,10 @@ export const appConfig = {
         href: 'https://www.youtube.com/@badcontact',
         label: 'youtube',
       },
-      {
-        href: 'https://twitter.com/badcontactband',
-        label: 'x',
-      },
+      // {
+      //   href: 'https://twitter.com/badcontactband',
+      //   label: 'x',
+      // },
     ],
   },
   assets: {

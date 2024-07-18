@@ -1,6 +1,6 @@
 import { appConfig } from '@/constants/config'
-import { MenuLink } from '@/components/common/MenuLink/MenuLink'
-import { StyledMenuList } from '@/components/common/MenuList/MenuList.styles'
+import { MenuLink } from '@/components/common/Header/components/MenuLink/MenuLink'
+import { StyledMenuList } from '@/components/common/Header/components/MenuList/MenuList.styles'
 
 export const MenuList = () => (
   <StyledMenuList>

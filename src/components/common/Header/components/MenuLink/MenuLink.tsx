@@ -1,9 +1,13 @@
 import Link from 'next/link'
 import { StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
-import { useMenuLinkAnimations } from '@/components/common/MenuLink/MenuLink.animations'
+import { useMenuLinkAnimations } from '@/components/common/Header/components/MenuLink/MenuLink.animations'
 import Image from 'next/image'
 import { appConfig } from '@/constants/config'
-import { StyledMenuListPoint, StyledLink, StyleMenuCircle } from '@/components/common/MenuLink/MenuLink.styles'
+import {
+  StyledMenuListPoint,
+  StyledLink,
+  StyleMenuCircle,
+} from '@/components/common/Header/components/MenuLink/MenuLink.styles'
 
 export interface MenuLinkProps {
   href: string

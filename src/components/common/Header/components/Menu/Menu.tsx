@@ -1,10 +1,10 @@
-import { StyledMenu } from '@/components/common/Menu/Menu.styles'
+import { StyledMenu } from '@/components/common/Header/components/Menu/Menu.styles'
 import { selectIsMenuOpened } from '@/store/scene/selectors'
-import { MenuClose } from '@/components/common/MenuClose/MenuClose'
-import { useMenuAnimations } from '@/components/common/Menu/Menu.animations'
+import { MenuClose } from '@/components/common/Header/components/MenuClose/MenuClose'
+import { useMenuAnimations } from '@/components/common/Header/components/Menu/Menu.animations'
 import { useAppSelector } from '@/store/store'
-import { MenuImage } from '@/components/common/MenuImage/MenuImage'
-import { MenuList } from '@/components/common/MenuList/MenuList'
+import { MenuImage } from '@/components/common/Header/components/MenuImage/MenuImage'
+import { MenuList } from '@/components/common/Header/components/MenuList/MenuList'
 
 export const Menu = () => {
   const { menuRef } = useMenuAnimations()

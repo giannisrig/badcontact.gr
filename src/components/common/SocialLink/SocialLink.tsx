@@ -1,10 +1,15 @@
-import { useMenuLinkAnimations } from '@/components/common/MenuLink/MenuLink.animations'
-import { StyledLink, StyledMenuListPoint, StyleMenuCircle } from '@/components/common/MenuLink/MenuLink.styles'
+import { useMenuLinkAnimations } from '@/components/common/Header/components/MenuLink/MenuLink.animations'
 import { appConfig } from '@/constants/config'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MenuLinkProps } from '@/components/common/MenuLink/MenuLink'
-import { StyledSocialLink } from '@/components/common/SocialLink/SocialLink.styles'
+import { MenuLinkProps } from '@/components/common/Header/components/MenuLink/MenuLink'
+import {
+  StyledSocialLink,
+  StyledSocialLinkOutline,
+  StyleSocialLinkIcon,
+} from '@/components/common/SocialLink/SocialLink.styles'
+import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
+import { Element } from '@/definitions/element'
 
 export type SocialLinkProps = Omit<MenuLinkProps, 'index'>
 
@@ -17,15 +22,8 @@ export const SocialLink = ({ href, label }: SocialLinkProps) => {
 
   return (
     <StyledSocialLink ref={menuLinkRef} key={href}>
-      <Link
-        prefetch
-        href={href}
-        title={label}
-        onMouseEnter={animateOnMouseOver}
-        onMouseLeave={animateOnMouseLeave}
-        onClick={animateOnClick}
-      >
-        <StyleMenuCircle className='link-circle'>
+      <Link prefetch href={href} title={label} onClick={animateOnClick}>
+        <StyleSocialLinkIcon className='link-circle'>
           <Image
             src={`${appConfig.assets.socialIconsUrl}/${label}.svg`}
             alt={`${label}  Icon`}
@@ -34,7 +32,9 @@ export const SocialLink = ({ href, label }: SocialLinkProps) => {
             height={22}
             quality={100}
           />
-        </StyleMenuCircle>
+          <StyledSocialLinkOutline />
+          <StyledMenuFader />
+        </StyleSocialLinkIcon>
       </Link>
     </StyledSocialLink>
   )

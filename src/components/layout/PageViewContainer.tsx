@@ -9,12 +9,10 @@ import { Terrain } from '@/components/artwork/terrain/Terrain'
 import { ContentFader } from '@/components/layout/ContentFader/ContentFader'
 import { LoadingScreen } from '@/components/layout/LoadingScreen'
 import { MenuButton } from '@/components/common/MenuButton/MenuButton'
-import { Menu } from '@/components/common/Menu/Menu'
 import { AnimationsLoader } from '@/components/common/AnimationsLoader/AnimationsLoader'
 import MenuOverlay from '@/components/common/MenuOverlay/MenuOverlay'
 import { Footer } from '@/components/common/Footer/Footer'
-import { MenuText } from '@/components/common/MenuText/MenuText'
-import { SocialLinks } from '@/components/common/SocialLinks/SocialLinks'
+import { Header } from '@/components/common/Header/Header'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -41,11 +39,9 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
         <Logo />
       </div>
       {/*=== LEVEL 6 ===*/}
-      <MenuText />
-      <SocialLinks />
       <Footer />
       {/*=== LEVEL 7 ===*/}
-      <Menu />
+      <Header />
       <MenuButton />
       <AnimationsLoader />
     </>

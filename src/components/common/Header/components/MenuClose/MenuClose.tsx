@@ -3,8 +3,12 @@ import { Element } from '@/definitions/element'
 import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
 import { useAppDispatch } from '@/store/store'
 import { setIsMenuOpen } from '@/store/scene/actions'
-import { StyledCloseIcon, StyledMenuClose, StyledMenuCloseText } from '@/components/common/MenuClose/MenuClose.styles'
-import { useMenuCloseAnimations } from '@/components/common/MenuClose/MenuClose.animations'
+import {
+  StyledCloseIcon,
+  StyledMenuClose,
+  StyledMenuCloseText,
+} from '@/components/common/Header/components/MenuClose/MenuClose.styles'
+import { useMenuCloseAnimations } from '@/components/common/Header/components/MenuClose/MenuClose.animations'
 
 export const MenuClose = () => {
   const { menuCloseRef, animateOnMouseOver, animateOnMouseLeave } = useMenuCloseAnimations()

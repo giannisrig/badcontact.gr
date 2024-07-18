@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MAX_VIEWPORT_WIDTH, RADIUS } from '@/components/common/Menu/Menu.styles'
+import { MAX_VIEWPORT_HEIGHT, MAX_VIEWPORT_WIDTH, RADIUS } from '@/components/common/Header/components/Menu/Menu.styles'
 
 export interface MenuListPointProps {
   $angle: number
@@ -35,8 +35,18 @@ export const StyledMenuListPoint = styled(StyledPointBase)<MenuListPointProps>`
   width: 40px;
   height: 40px;
   transform: translate(-50%, -50%)
-    translateX(calc(cos(${(props) => props.$angle}deg) * min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2))))
-    translateY(calc(sin(${(props) => props.$angle}deg) * min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2)) * -1));
+    translateX(
+      calc(
+        cos(${(props) => props.$angle}deg) *
+          min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2), calc(${MAX_VIEWPORT_HEIGHT} / 2))
+      )
+    )
+    translateY(
+      calc(
+        sin(${(props) => props.$angle}deg) *
+          min(${RADIUS}, calc(${MAX_VIEWPORT_WIDTH} / 2), calc(${MAX_VIEWPORT_HEIGHT} / 2)) * -1
+      )
+    );
 
   a {
     position: absolute;
