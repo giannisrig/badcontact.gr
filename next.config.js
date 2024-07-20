@@ -15,9 +15,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  // images: {
-  //   formats: ['image/avif', 'image/webp']
-  // },
+  images: {
+    formats: ['image/avif', 'image/webp']
+  },
 }
 
 module.exports = nextConfig
