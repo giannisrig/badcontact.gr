@@ -4,11 +4,9 @@ import gsap from 'gsap'
 import { useViewport } from '@/hooks/useViewport'
 
 export const useMenuLinkAnimations = () => {
-  const { viewport } = useViewport()
   const menuLinkRef = useRef(null)
   const { contextSafe } = useGSAP(undefined, {
     scope: menuLinkRef,
-    dependencies: [viewport],
   })
 
   const animateOnMouseOver = contextSafe(() => {
