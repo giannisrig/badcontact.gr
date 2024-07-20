@@ -16,7 +16,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    formats: ['image/avif', 'image/webp']
+    formats: ['image/avif', 'image/webp', 'image/svg', 'image/png']
   },
 }
 
