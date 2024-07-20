@@ -4,7 +4,7 @@ import { getElementId } from '@/utils/elements.utils'
 import { EImage, Element } from '@/definitions/element'
 import gsap from 'gsap'
 import { useAppSelector } from '@/store/store'
-import { selectIsMainContentScrollTriggered, selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMainContentScrollTriggered, selectIsMenuOpened } from '@/store/ui/selectors'
 
 export const useMenuButtonAnimations = () => {
   const menuIconRef = useRef(null)

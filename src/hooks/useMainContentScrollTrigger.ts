@@ -3,7 +3,7 @@ import { Element } from '@/definitions/element'
 import { consoleLogger } from '@/helpers/consoleLogger'
 import { ELog } from '@/definitions/logger'
 import { useAppDispatch } from '@/store/store'
-import { setIsMainContentScrollTriggered } from '@/store/scene/actions'
+import { setIsMainContentScrollTriggered } from '@/store/ui/actions'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 

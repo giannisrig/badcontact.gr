@@ -6,7 +6,7 @@ import { RootState, useAppSelector } from '@/store/store'
 gsap.registerPlugin(useGSAP)
 
 export const useOnMenuPageContentAnimation = () => {
-  const mobileMenuOpen = useAppSelector((state: RootState) => state.mobileMenu.open) // updated
+  const isMenuOpened = useAppSelector((state: RootState) => state.ui.isMenuOpened) // updated
   const animating = useRef(false)
   const container = useRef(null)
 
@@ -17,12 +17,12 @@ export const useOnMenuPageContentAnimation = () => {
       gsap.fromTo(
         container.current,
         {
-          opacity: mobileMenuOpen ? 1 : 0,
+          opacity: isMenuOpened ? 1 : 0,
         },
         {
-          opacity: mobileMenuOpen ? 0 : 1,
-          duration: mobileMenuOpen ? 0.4 : 1,
-          delay: mobileMenuOpen ? 0 : 0.7,
+          opacity: isMenuOpened ? 0 : 1,
+          duration: isMenuOpened ? 0.4 : 1,
+          delay: isMenuOpened ? 0 : 0.7,
           onStart: () => {
             animating.current = true
           },
@@ -32,7 +32,7 @@ export const useOnMenuPageContentAnimation = () => {
         }
       )
     },
-    { scope: container, dependencies: [mobileMenuOpen] }
+    { scope: container, dependencies: [isMenuOpened] }
   )
   return container
 }

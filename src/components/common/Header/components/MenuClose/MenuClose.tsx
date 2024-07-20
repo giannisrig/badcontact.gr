@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Element } from '@/definitions/element'
 import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
 import { useAppDispatch } from '@/store/store'
-import { setIsMenuOpen } from '@/store/scene/actions'
+import { setIsMenuOpen } from '@/store/ui/actions'
 import {
   StyledCloseIcon,
   StyledMenuClose,

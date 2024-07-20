@@ -1,7 +1,7 @@
 import { useAppDispatch } from '@/store/store'
 import { consoleLogger } from '@/helpers/consoleLogger'
 import { ELog } from '@/definitions/logger'
-import { setImageLoaded } from '@/store/scene/actions'
+import { setImageLoaded } from '@/store/ui/actions'
 import { EImage } from '@/definitions/element'
 
 export const useImageLoader = () => {

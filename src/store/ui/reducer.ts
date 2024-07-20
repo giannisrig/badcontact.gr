@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { initialUIState } from '@/store/scene/state'
-import { setAspectRatio, setImageLoaded, setIsMainContentScrollTriggered, setIsMenuOpen } from '@/store/scene/actions'
+import { initialUIState } from '@/store/ui/state'
+import { setAspectRatio, setImageLoaded, setIsMainContentScrollTriggered, setIsMenuOpen } from '@/store/ui/actions'
 
 export const uiReducer = createReducer(initialUIState, (builder) => {
   builder

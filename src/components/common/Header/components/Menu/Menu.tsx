@@ -1,5 +1,5 @@
 import { StyledMenu } from '@/components/common/Header/components/Menu/Menu.styles'
-import { selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMenuOpened } from '@/store/ui/selectors'
 import { MenuClose } from '@/components/common/Header/components/MenuClose/MenuClose'
 import { useMenuAnimations } from '@/components/common/Header/components/Menu/Menu.animations'
 import { useAppSelector } from '@/store/store'

@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { useAppSelector } from '@/store/store'
-import { selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMenuOpened } from '@/store/ui/selectors'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 

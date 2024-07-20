@@ -1,6 +1,6 @@
 import { HYDRATE } from 'next-redux-wrapper'
 import { combineReducers } from '@reduxjs/toolkit'
-import { uiReducer } from '@/store/scene/reducer'
+import { uiReducer } from '@/store/ui/reducer'
 
 // Define your reducers here
 export const rootReducer = combineReducers({

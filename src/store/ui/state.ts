@@ -1,4 +1,4 @@
-import { SceneState } from '@/store/scene/types'
+import { SceneState } from '@/store/ui/types'
 
 export const initialUIState: SceneState = {
   aspectRatio: 1,

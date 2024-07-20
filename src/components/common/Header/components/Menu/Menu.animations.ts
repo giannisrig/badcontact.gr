@@ -4,7 +4,7 @@ import { getElementId } from '@/utils/elements.utils'
 import { Element } from '@/definitions/element'
 import gsap from 'gsap'
 import { useAppSelector } from '@/store/store'
-import { selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMenuOpened } from '@/store/ui/selectors'
 
 export const useMenuAnimations = () => {
   const menuRef = useRef(null)

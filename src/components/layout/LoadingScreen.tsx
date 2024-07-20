@@ -1,5 +1,5 @@
 // 'use client'
-import { selectIsAllImagesLoaded } from '@/store/scene/reselectors'
+import { selectIsAllImagesLoaded } from '@/store/ui/reselectors'
 import { ConditionalComponent } from '@/components/shared/ConditionalComponent'
 import { useAppSelector } from '@/store/store'
 import { EImage } from '@/definitions/element'

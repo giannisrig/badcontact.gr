@@ -12,8 +12,8 @@ import {
 } from '@/components/common/MenuButton/MenuButton.styles'
 import { useMenuButtonAnimations } from '@/components/common/MenuButton/MenuButton.animations'
 import { useAppDispatch, useAppSelector } from '@/store/store'
-import { setIsMenuOpen } from '@/store/scene/actions'
-import { selectIsMenuOpened } from '@/store/scene/selectors'
+import { setIsMenuOpen } from '@/store/ui/actions'
+import { selectIsMenuOpened } from '@/store/ui/selectors'
 
 export const MenuButton = () => {
   const dispatch = useAppDispatch()

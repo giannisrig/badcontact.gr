@@ -4,7 +4,7 @@ import { SocialLinks } from '@/components/common/Header/components/SocialLinks/S
 import { Menu } from '@/components/common/Header/components/Menu/Menu'
 import React from 'react'
 import { useAppSelector } from '@/store/store'
-import { selectIsMenuOpened } from '@/store/scene/selectors'
+import { selectIsMenuOpened } from '@/store/ui/selectors'
 
 export const Header = () => {
   const isMenuOpened = useAppSelector(selectIsMenuOpened)
