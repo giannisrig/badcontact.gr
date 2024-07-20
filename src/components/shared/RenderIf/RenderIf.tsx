@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from '@redux'
+import { RootState } from '@/store/store'
 
 /** React 18+ Conditional Rendering component integrated with latest Redux-Toolkit and useSelectors  */
 export const RenderIf = ({ children, selector }: PropsWithChildren<{ selector: (store: RootState) => unknown }>) => {
