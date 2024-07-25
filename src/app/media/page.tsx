@@ -1,10 +1,7 @@
 import { Metadata } from 'next'
-import { PolaroidImage } from '@/components/common/PolaroidImage/PolaroidImage'
-import Image from 'next/image'
-import { EYE_DIMENSIONS } from '@/components/artwork/eye/Eye'
-import Band from '@/public/images/band/bad-contact-band-heavy-metal-rock.jpg'
-import Band2 from '@/public/images/band/Bad-Contact-BandGroupPhoto2.jpg'
-import { PolaroidGallery } from '@/components/common/PolaroidGallery/PolaroidGallery'
+import { PhotoGallery } from '@/components/common/PhotoGallery/PhotoGallery'
+import { appImages } from '@/constants/images'
+import { EGallery } from '@/definitions/images'
 
 export const metadata: Metadata = {
   title: 'Media',
@@ -22,20 +19,7 @@ export default function Page() {
     <>
       <div className='flex w-[70%] flex-col items-center justify-center'>
         <h1>{`Media`}</h1>
-        <PolaroidGallery>
-          <PolaroidImage>
-            <Image src={Band} alt={'Bad Contact Eightball Eye'} quality={100} priority={true} />
-            <caption>Band Photos</caption>
-          </PolaroidImage>
-          <PolaroidImage>
-            <Image src={Band} alt={'Bad Contact Eightball Eye'} quality={100} priority={true} />
-            <caption>Band Photos</caption>
-          </PolaroidImage>
-          <PolaroidImage>
-            <Image src={Band} alt={'Bad Contact Eightball Eye'} quality={100} priority={true} />
-            <caption>Band Photos</caption>
-          </PolaroidImage>
-        </PolaroidGallery>
+        <PhotoGallery {...appImages[EGallery.BAND_PHOTOS]} />
       </div>
     </>
   )
