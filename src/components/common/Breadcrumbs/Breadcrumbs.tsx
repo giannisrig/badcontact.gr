@@ -4,6 +4,7 @@ import React from 'react'
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { StyledBreadcrumbs } from '@/components/common/Breadcrumbs/Breadcrumbs.styles'
 
 type TBreadCrumbProps = {
   capitalizeLinks?: boolean
@@ -17,7 +18,7 @@ export const Breadcrumbs = ({ capitalizeLinks = true }: TBreadCrumbProps) => {
 
   return (
     <div>
-      <ul>
+      <StyledBreadcrumbs className='font-secondary'>
         <li>
           <Link href={'/'}>Home</Link>
         </li>
@@ -29,13 +30,13 @@ export const Breadcrumbs = ({ capitalizeLinks = true }: TBreadCrumbProps) => {
           return (
             <React.Fragment key={index}>
               <li className={itemClasses}>
-                <Link href={href}>{itemLink}</Link>
+                <Link href={href}>{itemLink.replace('-', ' ')}</Link>
               </li>
               {pathNames.length !== index + 1 && separator}
             </React.Fragment>
           )
         })}
-      </ul>
+      </StyledBreadcrumbs>
     </div>
   )
 }

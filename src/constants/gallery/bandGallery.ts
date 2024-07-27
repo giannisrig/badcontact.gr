@@ -3,7 +3,7 @@ import Live2 from '@/images/gallery/band/group/BadContactGroupPhoto2.jpg'
 import Live3 from '@/images/gallery/band/group/BadContactGroupPhoto3.jpg'
 import Live4 from '@/images/gallery/band/group/BadContactGroupPhoto4.jpg'
 import Giannis1 from '@/images/gallery/band/members/BadContactGiannis1.jpg'
-import Giannis2 from '@/images/gallery/band/members/BadContactGiannis2.jpg'
+import Giannis2 from '@/images/gallery/band/members/BadContactGiannis3.jpg'
 import Leonidas1 from '@/images/gallery/band/members/BadContactLeonidas1.jpg'
 import Leonidas2 from '@/images/gallery/band/members/BadContactLeonidas2.jpg'
 import Leonidas3 from '@/images/gallery/band/members/BadContactLeonidas3.jpg'
@@ -23,62 +23,12 @@ export const bandGallery = [
     priority: false,
   },
   {
-    src: Giannis1,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
     src: Live2,
     caption: 'Group photo for Album EIGHTBALL',
     priority: false,
   },
   {
-    src: Pandelis2,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Leonidas1,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Leonidas2,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Leonidas3,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Marios1,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Vangelis1,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Giannis2,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Ninos1,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Live3,
-    caption: 'Group photo for Album EIGHTBALL',
-    priority: false,
-  },
-  {
-    src: Ninos2,
+    src: Giannis1,
     caption: 'Group photo for Album EIGHTBALL',
     priority: false,
   },
@@ -88,7 +38,49 @@ export const bandGallery = [
     priority: false,
   },
   {
+    src: Leonidas3,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Live3,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Leonidas2,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  //COlUMN 2
+  {
+    src: Leonidas1,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Ninos1,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Vangelis1,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Ninos2,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
     src: Marios2,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  //COlUMN 2
+  {
+    src: Marios1,
     caption: 'Group photo for Album EIGHTBALL',
     priority: false,
   },
@@ -98,7 +90,17 @@ export const bandGallery = [
     priority: false,
   },
   {
+    src: Giannis2,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
     src: Live4,
+    caption: 'Group photo for Album EIGHTBALL',
+    priority: false,
+  },
+  {
+    src: Pandelis2,
     caption: 'Group photo for Album EIGHTBALL',
     priority: false,
   },

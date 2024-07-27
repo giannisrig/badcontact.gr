@@ -21,6 +21,8 @@ export default function Page() {
       <div className='flex w-[70%] flex-col items-center justify-center'>
         <h1>{`Band Photos`}</h1>
         <Breadcrumbs />
+        <p>Official photos of Bad Contact, band images from photo shootings of group and member photos.</p>
+
         <PhotoGrid images={appImages[EGallery.BAND_PHOTOS].grid} />
       </div>
     </>

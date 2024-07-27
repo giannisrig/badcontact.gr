@@ -19,8 +19,12 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #000;
-  font-size: 1.7vw;
-  line-height: 105%;
+  font-size: 26px;
+  line-height: 100%;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -28,12 +32,17 @@ p {
 }
 
 h1 {
-  font-size: 3.6vw;
+  font-size: 55px;
   text-align: center;
   margin: 10px;
   line-height: 3vw;
   text-shadow: 3px 1px 1px #e8601e;
   width: 25vw;
+
+  @media only screen and (max-width: 999px) {
+    width: 100%;
+    font-size: 40px;
+  }
 }
 
 canvas {

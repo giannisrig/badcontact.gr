@@ -1,7 +1,4 @@
-// import styled from 'styled-components'
-import { Flames } from '@/components/artwork/flames/Flames'
 import { Metadata } from 'next'
-import PageTitle from '@/components/common/page/PageTitle'
 
 export const metadata: Metadata = {
   title: 'Bad Contact Home',
@@ -10,19 +7,6 @@ export const metadata: Metadata = {
     icon: '/images/favicon.png',
   },
 }
-
-// export const StyledTerrainImage = styled.img`
-//   position: fixed;
-//   max-width: 103%;
-//   width: 103%;
-//   bottom: -2%;
-// `
-//
-// export const StyledEyeImage = styled.img`
-//   position: fixed;
-//   width: 100%;
-//   top: 10%;
-// `
 
 /**
  * Keep this as a Server Component
