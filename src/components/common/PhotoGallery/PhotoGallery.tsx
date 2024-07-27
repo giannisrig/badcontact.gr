@@ -5,11 +5,11 @@ import { PolaroidGallery } from '@/components/common/PolaroidGallery/PolaroidGal
 import { PhotoGalleryProps } from '@/types/images'
 import { StyledPhotoGallery } from '@/components/common/PhotoGallery/PhotoGallery.styles'
 
-export const PhotoGallery = (props: PhotoGalleryProps) => {
+export const PhotoGallery = ({ thumbs, variant }: PhotoGalleryProps) => {
   return (
     <StyledPhotoGallery>
-      <PolaroidGallery>
-        {props.thumbs.map(({ src, caption, priority }, index) => (
+      <PolaroidGallery variant={variant}>
+        {thumbs.map(({ src, caption, priority }, index) => (
           <PolaroidImage key={`image-${index}`}>
             <Image src={src} alt={'Bad Contact Eightball Eye'} quality={100} priority={priority} />
             <caption>{caption}</caption>

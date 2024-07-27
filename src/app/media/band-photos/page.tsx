@@ -1,10 +1,11 @@
 import { Metadata } from 'next'
-import { PhotoGallery } from '@/components/common/PhotoGallery/PhotoGallery'
 import { appImages } from '@/constants/images'
 import { EGallery } from '@/definitions/images'
+import { PhotoGrid } from '@/components/common/PhotoGrid/PhotoGrid'
+import { Breadcrumbs } from '@/components/common/Breadcrumbs/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Media',
+  title: 'Official Band Photos - Bad Contact',
   description: 'Welcome to Next.js',
   icons: {
     icon: '/images/favicon.png',
@@ -18,9 +19,9 @@ export default function Page() {
   return (
     <>
       <div className='flex w-[70%] flex-col items-center justify-center'>
-        <h1>{`Media`}</h1>
-        <PhotoGallery {...appImages[EGallery.BAND_PHOTOS]} />
-        <PhotoGallery {...appImages[EGallery.LIVE_PHOTOS]} />
+        <h1>{`Band Photos`}</h1>
+        <Breadcrumbs />
+        <PhotoGrid images={appImages[EGallery.BAND_PHOTOS].grid} />
       </div>
     </>
   )

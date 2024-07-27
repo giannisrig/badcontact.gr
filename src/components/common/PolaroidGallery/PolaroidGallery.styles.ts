@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const StyledPolaroidGallery = styled.div`
+export interface PolaroidGalleryStyles {
+  $variant: string
+}
+
+export const StyledPolaroidGallery = styled.div<PolaroidGalleryStyles>`
   width: 340px;
   aspect-ratio: 1;
   position: relative;
@@ -12,10 +16,11 @@ export const StyledPolaroidGallery = styled.div`
     position: absolute;
 
     &:nth-child(2) {
-      transform: translateX(2%) rotate(-9deg);
+      transform: ${(props) =>
+        props.$variant === 'left' ? 'translateX(2%) rotate(-9deg)' : 'translateX(2%) rotate(9deg)'};
     }
     &:nth-child(3) {
-      transform: rotate(15deg);
+      transform: ${(props) => (props.$variant === 'left' ? 'rotate(15deg)' : 'rotate(-15deg)')};
     }
   }
 `

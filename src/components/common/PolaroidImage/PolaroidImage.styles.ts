@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledPolaroidImage = styled.div`
-  width: 75%;
+  width: 82%;
   background-color: #f6e3e1;
   background-image: linear-gradient(135deg, transparent 35%, rgba(0, 0, 0, 0.1));
   border-radius: 2px;
@@ -10,7 +10,6 @@ export const StyledPolaroidImage = styled.div`
   position: relative;
   z-index: -1;
   padding: 10px 10px 45px;
-  aspect-ratio: 7/8;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.45), inset -1px -1px 1px rgba(0, 0, 0, 0.5),
     inset 1px 1px 1px rgba(255, 255, 255, 0.5);
 

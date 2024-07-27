@@ -67,5 +67,8 @@ export const appConfig = {
     iconsUrl: '/images/icons',
     menuIconsUrl: '/images/icons/menu',
     socialIconsUrl: '/images/icons/social',
+    galleryImages: '/images/gallery',
+    galleryBandImages: '/images/gallery/band',
+    galleryLiveImages: '/images/gallery/live',
   },
 }
