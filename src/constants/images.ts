@@ -8,6 +8,7 @@ import { EGallery } from '@/definitions/images'
 import { PhotoGalleryProps } from '@/types/images'
 import { beerFestivalGallery } from '@/constants/gallery/beerFestival'
 import { bandGallery } from '@/constants/gallery/bandGallery'
+import { membersGallery } from '@/constants/gallery/membersGallery'
 
 export const appImages: Record<EGallery, PhotoGalleryProps> = {
   [EGallery.BAND_PHOTOS]: {
@@ -50,6 +51,11 @@ export const appImages: Record<EGallery, PhotoGalleryProps> = {
       },
     ],
     grid: beerFestivalGallery,
+    variant: 'right',
+  },
+  [EGallery.MEMBERS_PHOTOS]: {
+    thumbs: membersGallery,
+    grid: membersGallery,
     variant: 'right',
   },
 }

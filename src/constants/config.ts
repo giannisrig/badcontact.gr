@@ -62,6 +62,30 @@ export const appConfig = {
       // },
     ],
   },
+  streaming: {
+    artist: [
+      {
+        href: 'https://music.apple.com/us/artist/bad-contact/1674032129',
+        label: 'apple-music',
+      },
+      {
+        href: 'https://badcontact.bandcamp.com/',
+        label: 'bandcamp',
+      },
+      {
+        href: 'https://pandora.app.link/YHOJW136Mxb',
+        label: 'pandora',
+      },
+      {
+        href: 'https://open.spotify.com/artist/26pvH0j0Cu2jwQSpxiaEiN',
+        label: 'spotify',
+      },
+      {
+        href: 'https://www.youtube.com/@badcontact',
+        label: 'youtube',
+      },
+    ],
+  },
   assets: {
     artworkImagesUrl: '/images/artwork',
     iconsUrl: '/images/icons',

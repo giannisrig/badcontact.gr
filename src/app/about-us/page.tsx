@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
-import { appImages } from '@/constants/images'
-import { EGallery } from '@/definitions/images'
-import { PhotoGrid } from '@/components/common/PhotoGrid/PhotoGrid'
+import Band from '@/images/band/bad-contact-band-heavy-metal-rock.jpg'
 import { PageHeader } from '@/components/common/PageHeader/PageHeader'
+import Image from 'next/image'
+import { AboutContent } from '@/components/common/AboutContent/AboutContent'
 
 export const metadata: Metadata = {
-  title: 'Official Live Photos - Bad Contact',
+  title: 'Media',
   description: 'Welcome to Next.js',
   icons: {
     icon: '/images/favicon.png',
@@ -20,10 +20,11 @@ export default function Page() {
     <>
       <div className='flex w-[70%] flex-col items-center justify-center'>
         <PageHeader
-          title='Live Photos'
-          description='Official photos of Bad Contact, band images from lives they have played.'
+          title='About Bad Contact'
+          description='All you need to know about the band, our story and the current lineup.'
         />
-        <PhotoGrid images={appImages[EGallery.LIVE_PHOTOS].grid} />
+
+        <AboutContent />
       </div>
     </>
   )

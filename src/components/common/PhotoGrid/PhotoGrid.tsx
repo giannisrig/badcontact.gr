@@ -23,7 +23,7 @@ export const PhotoGrid = ({ images }: PhotoGridProps) => {
   return (
     <StyledPhotoGrid>
       <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-        {images.map(({ src, caption, priority }, index) => (
+        {images.map(({ src, priority }, index) => (
           <a key={`img-grid-${index}`} href={src?.src}>
             <Image src={src} alt={'Bad Contact Eightball Eye'} quality={100} priority={priority} />
           </a>

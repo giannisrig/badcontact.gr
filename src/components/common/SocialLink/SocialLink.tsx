@@ -1,3 +1,4 @@
+'use client'
 import { useMenuLinkAnimations } from '@/components/common/Header/components/MenuLink/MenuLink.animations'
 import { appConfig } from '@/constants/config'
 import Link from 'next/link'
@@ -9,7 +10,6 @@ import {
   StyleSocialLinkIcon,
 } from '@/components/common/SocialLink/SocialLink.styles'
 import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
-import { Element } from '@/definitions/element'
 
 export type SocialLinkProps = Omit<MenuLinkProps, 'index'>
 

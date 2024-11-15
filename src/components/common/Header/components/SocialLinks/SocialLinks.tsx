@@ -1,3 +1,4 @@
+'use client'
 import { StyledSocialLinks } from '@/components/common/Header/components/SocialLinks/SocialLinks.styles'
 import { appConfig } from '@/constants/config'
 import { SocialLink } from '@/components/common/SocialLink/SocialLink'

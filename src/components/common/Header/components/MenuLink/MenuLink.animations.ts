@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { useViewport } from '@/hooks/useViewport'
 
 export const useMenuLinkAnimations = () => {
   const menuLinkRef = useRef(null)

@@ -13,6 +13,7 @@ import { AnimationsLoader } from '@/components/common/AnimationsLoader/Animation
 import MenuOverlay from '@/components/common/MenuOverlay/MenuOverlay'
 import { Footer } from '@/components/common/Footer/Footer'
 import { Header } from '@/components/common/Header/Header'
+import { FullPageImage } from '@/components/common/FullPageImage/FullPageImage'
 
 export const PageViewContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -22,6 +23,7 @@ export const PageViewContainer = ({ children }: { children: React.ReactNode }) =
       {/*=== LEVEL 0 ===*/}
       <ScreenLevelView level={0}>
         <BgIris />
+        <FullPageImage />
       </ScreenLevelView>
       {/*=== LEVEL 1 ===*/}
       <ScreenLevelView level={1}>

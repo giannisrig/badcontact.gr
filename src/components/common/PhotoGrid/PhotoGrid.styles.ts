@@ -24,6 +24,11 @@ export const StyledPhotoGrid = styled.div`
       display: inline-block;
       width: 100%;
       margin-bottom: 10px;
+      transition: 0.4s ease-in;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 `

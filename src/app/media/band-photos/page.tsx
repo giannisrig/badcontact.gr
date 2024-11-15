@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { appImages } from '@/constants/images'
 import { EGallery } from '@/definitions/images'
 import { PhotoGrid } from '@/components/common/PhotoGrid/PhotoGrid'
-import { Breadcrumbs } from '@/components/common/Breadcrumbs/Breadcrumbs'
+import { PageHeader } from '@/components/common/PageHeader/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Official Band Photos - Bad Contact',
@@ -19,10 +19,10 @@ export default function Page() {
   return (
     <>
       <div className='flex w-[70%] flex-col items-center justify-center'>
-        <h1>{`Band Photos`}</h1>
-        <Breadcrumbs />
-        <p>Official photos of Bad Contact, band images from photo shootings of group and member photos.</p>
-
+        <PageHeader
+          title='Band Photos'
+          description='Official photos of Bad Contact, band images from photo shootings of group and member photos.'
+        />
         <PhotoGrid images={appImages[EGallery.BAND_PHOTOS].grid} />
       </div>
     </>

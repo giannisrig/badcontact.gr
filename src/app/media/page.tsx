@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
-import { PhotoGallery } from '@/components/common/PhotoGallery/PhotoGallery'
-import { appImages } from '@/constants/images'
-import { EGallery } from '@/definitions/images'
+import { PageHeader } from '@/components/common/PageHeader/PageHeader'
+import { MediaContent } from '@/components/common/MediaContent/MediaContent'
 
 export const metadata: Metadata = {
   title: 'Media',
@@ -18,9 +17,11 @@ export default function Page() {
   return (
     <>
       <div className='flex w-[70%] flex-col items-center justify-center'>
-        <h1>{`Media`}</h1>
-        <PhotoGallery {...appImages[EGallery.BAND_PHOTOS]} />
-        <PhotoGallery {...appImages[EGallery.LIVE_PHOTOS]} />
+        <PageHeader
+          title='Band Media'
+          description='Official photos, videos, press releases and media from Bad Contact.'
+        />
+        <MediaContent />
       </div>
     </>
   )

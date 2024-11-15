@@ -31,17 +31,40 @@ p {
   margin: max(1vh, 15px) 0;
 }
 
-h1 {
-  font-size: 55px;
-  text-align: center;
+h1, h2, h3 {
   margin: 10px;
-  line-height: 3vw;
+  line-height: 85%;
   text-shadow: 3px 1px 1px #e8601e;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
   width: 25vw;
 
   @media only screen and (max-width: 999px) {
     width: 100%;
     font-size: 40px;
+  }
+}
+
+h2, h3 {
+  font-size: 42px;
+
+  @media only screen and (max-width: 999px) {
+    font-size: 32px;
+  }
+}
+
+.square-img-container {
+  aspect-ratio: 16 / 8;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
   }
 }
 

@@ -8,6 +8,8 @@ import {
   StyledLink,
   StyleMenuCircle,
 } from '@/components/common/Header/components/MenuLink/MenuLink.styles'
+import { useAppDispatch } from '@/store/store'
+import { setIsMenuOpen } from '@/store/ui/actions'
 
 export interface MenuLinkProps {
   href: string
@@ -16,10 +18,12 @@ export interface MenuLinkProps {
 }
 
 export const MenuLink = ({ href, label, index }: MenuLinkProps) => {
+  const dispatch = useAppDispatch()
   const { menuLinkRef, animateOnMouseOver, animateOnMouseLeave } = useMenuLinkAnimations()
-
-  const animateOnClick = () => {
+  const handleOnClick = () => {
     animateOnMouseOver()
+    dispatch(setIsMenuOpen(false))
+    document.body.style.overflow = 'auto'
   }
 
   return (
@@ -30,7 +34,7 @@ export const MenuLink = ({ href, label, index }: MenuLinkProps) => {
         title={label}
         onMouseEnter={animateOnMouseOver}
         onMouseLeave={animateOnMouseLeave}
-        onClick={animateOnClick}
+        onClick={handleOnClick}
       >
         <StyleMenuCircle className='link-circle'>
           <Image
