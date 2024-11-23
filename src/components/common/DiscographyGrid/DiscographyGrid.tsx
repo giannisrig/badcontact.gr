@@ -4,11 +4,11 @@ import {
   StyledDiscographyGrid,
   StyledDiscographyItem,
   StyledDiscographyItemContent,
-  StyledPaperShape,
 } from '@/components/common/DiscographyGrid/DiscographyGrid.styles'
 import Image from 'next/image'
 import { CutPaper } from '@/components/common/Shapes/CutPaper/CutPaper'
 import Link from 'next/link'
+import { PixelatedButton } from '@/components/common/PixelatedButton/PixelatedButton'
 
 export const DiscographyGrid = () => {
   return (
@@ -29,10 +29,8 @@ export const DiscographyGrid = () => {
               released. The LP consists of eight tracks and is available in CD format and in digital format in all
               streaming platforms.
             </p>
-            <span className='font-secondary'>VIEW MORE...</span>
-            <StyledPaperShape>
-              <CutPaper />
-            </StyledPaperShape>
+            <PixelatedButton text='VIEW MORE...' />
+            <CutPaper />
           </StyledDiscographyItemContent>
         </Link>
       </StyledDiscographyItem>
@@ -49,13 +47,11 @@ export const DiscographyGrid = () => {
             <h2>Out of the Blue (2023)</h2>
             <p>
               In February 2023, Bad Contact released their first official music{' '}
-              <strong>&quot;Out of the Blue&quot;</strong>. A single containing one track and featuring Andreas Lagios
-              (Nightstalker, Thee Holy Strangers, ex Rotting Christ) on the bass.
+              <strong>&quot;Out of the Blue&quot;</strong>. A single containing one track and featuring{' '}
+              <strong>Andreas Lagios</strong>&nbsp;(Nightstalker, Thee Holy Strangers, ex Rotting Christ) on the bass.
             </p>
-            <span className='font-secondary'>VIEW MORE...</span>
-            <StyledPaperShape>
-              <CutPaper />
-            </StyledPaperShape>
+            <PixelatedButton text='VIEW MORE...' />
+            <CutPaper />
           </StyledDiscographyItemContent>
         </Link>
       </StyledDiscographyItem>

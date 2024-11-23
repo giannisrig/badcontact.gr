@@ -9,11 +9,12 @@ export const StyledFullPageImage = styled(StyledAbsoluteImage)`
   max-width: 100%;
 
   @media only screen and (max-width: 999px) {
-    top: 280px;
+    top: 250px;
   }
 
   @media only screen and (max-width: 666px) {
     max-width: 110%;
-    opacity: 0.3;
+    opacity: 0.25;
+    top: 250px;
   }
 `

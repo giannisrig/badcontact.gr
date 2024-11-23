@@ -5,6 +5,11 @@ export const StyledDiscographyGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
+
+  @media only screen and (max-width: 999px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 `
 
 export const StyledDiscographyItem = styled.div`
@@ -17,19 +22,33 @@ export const StyledDiscographyItemContent = styled.div`
   gap: 0;
   width: 100%;
   margin-top: -27px;
-  padding: 20px 40px;
+  padding: 25px 40px;
   position: relative;
   z-index: 2;
+
+  @media only screen and (max-width: 666px) {
+    padding: 20px;
+    margin-top: -22px;
+  }
 
   h2 {
     margin-top: 0;
     font-size: 30px;
+
+    @media only screen and (max-width: 666px) {
+      font-size: 25px;
+    }
   }
 
   p {
     margin-top: 0;
     font-size: 20px;
     line-height: 20px;
+
+    @media only screen and (max-width: 666px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 
   span {
@@ -37,30 +56,14 @@ export const StyledDiscographyItemContent = styled.div`
     font-size: 13px;
     font-weight: 200;
     cursor: pointer;
+
+    @media only screen and (max-width: 666px) {
+      font-size: 12px;
+    }
   }
 
   strong {
     font-weight: 400;
     color: #edb2a9;
-  }
-`
-
-export const StyledPaperShape = styled.div`
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-
-  svg {
-    width: 104%;
-    height: 104%;
-    vertical-align: unset;
-    left: -2%;
-    position: absolute;
-    top: -2%;
-    stroke: #464646;
-    stroke-width: 2px;
   }
 `

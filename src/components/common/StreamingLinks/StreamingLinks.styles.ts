@@ -5,7 +5,7 @@ export const StyledStreamingLinks = styled.div`
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 `
 
 export const StyledStreamingIcon = styled(StyleSocialLinkIcon)`

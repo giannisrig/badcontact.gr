@@ -1,5 +1,7 @@
-export const CutPaper = () => {
-  return (
+import { StyledPaperShape } from '@/components/common/Shapes/CutPaper/CutPaper.styles'
+
+export const CutPaper = () => (
+  <StyledPaperShape>
     <svg
       width='1683'
       height='254'
@@ -13,5 +15,5 @@ export const CutPaper = () => {
         fill='#0A0A0A'
       />
     </svg>
-  )
-}
+  </StyledPaperShape>
+)

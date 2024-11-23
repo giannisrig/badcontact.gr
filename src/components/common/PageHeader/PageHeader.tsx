@@ -12,7 +12,7 @@ export const PageHeader = ({ title, description }: PageHeaderProps) => {
     <div className='mb-[80px] flex w-full flex-col items-center gap-15px'>
       <Breadcrumbs />
       <h1 className='m-0'>{title}</h1>
-      <p className='m-0 w-[70%]'>{description}</p>
+      <p className='m-0 w-full md:w-[70%]'>{description}</p>
       <ScrollIndicator />
     </div>
   )

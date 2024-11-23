@@ -8,4 +8,9 @@ export const StyledEyeWithFlames = styled.div`
   display: flex;
   justify-content: center;
   max-height: 350px;
+
+  @media only screen and (max-width: 666px) {
+    max-width: min(90%, 300px);
+    max-height: 300px;
+  }
 `
