@@ -18,17 +18,16 @@
     "lightgallery": "^2.7.2",
     "lodash": "^4.17.21",
     "next": "^15.0.3",
-    "next-owl-carousel": "^1.0.7",
     "next-redux-wrapper": "^8.1.0",
     "next-sitemap": "^4.0.7",
     "nextjs-google-analytics": "^2.3.3",
-    "react": "^19.0.0-rc.1",
+    "react": "19.0.0-rc.1",
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.0.0-rc.1",
     "react-redux": "9.1.0",
-    "react-use": "^17.4.0",
-    "styled-components": "^6.1.11",
-    "use-sound": "^4.0.1"
+    "react-use": "^17.5.1",
+    "styled-components": "^6.1.13",
+    "use-sound": "^4.0.3"
   },
   "devDependencies": {
     "@types/lodash": "4.17.0",
@@ -46,8 +45,8 @@
     "postcss": "^8.4.38",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.7",
-    "sass": "^1.62.0",
-    "tailwindcss": "^3.3.2",
+    "sass": "^1.81.0",
+    "tailwindcss": "3.4.15",
     "typescript": "^5.0.4"
   },
   "overrides": {
