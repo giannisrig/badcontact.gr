@@ -1,38 +1,30 @@
 'use client'
 
-import React, { useRef } from 'react'
-import OwlCarousel from 'next-owl-carousel'
+import React from 'react'
+
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
+
+const responsive = {
+  0: { items: 1 },
+  568: { items: 2 },
+  1024: { items: 2 },
+}
+
 export const InstagramStories = () => {
-  const carouselRef = useRef(null)
-
-  const options = {
-    loop: true,
-    responsiveClass: true,
-    dots: false,
-    autoplay: true,
-    responsive: {
-      0: { items: 1, dots: true },
-      768: { items: 2 },
-    },
-  }
-
   return (
-    <OwlCarousel ref={carouselRef} options={options} className='owl-carousel'>
-      <div className='item'>
-        <video width='300' height='300' controls className='aspect-[18/9] w-full object-cover'>
+    <div className='mt-50px w-full'>
+      <AliceCarousel mouseTracking responsive={responsive} disableButtonsControls={true} controlsStrategy='alterante'>
+        <video width='300' height='300' controls className={'aspect-[18/9] w-full object-cover p-15px'} key={0}>
           <source src='/images/videos/RethymnoDay1Overview.mp4' type='video/mp4' />
         </video>
-      </div>
-      <div className='item'>
-        <video width='300' height='300' controls className='aspect-[18/9] w-full object-cover'>
+        <video width='300' height='300' controls className={'aspect-[18/9] w-full object-cover p-15px'} key={1}>
           <source src='/images/videos/RethymnoInterview.mp4' type='video/mp4' />
         </video>
-      </div>
-      <div className='item'>
-        <video width='300' height='300' controls className='aspect-[18/9] w-full object-cover'>
+        <video width='300' height='300' controls className={'aspect-[18/9] w-full object-cover p-15px'} key={2}>
           <source src='/images/videos/RethymnoDay1Teaser.mp4' type='video/mp4' />
         </video>
-      </div>
-    </OwlCarousel>
+      </AliceCarousel>
+    </div>
   )
 }
