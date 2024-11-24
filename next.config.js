@@ -9,9 +9,9 @@ const path = require('path')
 const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+    silenceDeprecations: ['legacy-js-api'],
   },
   reactStrictMode: true,
-  swcMinify: true,
   compiler: {
     styledComponents: true,
   },
