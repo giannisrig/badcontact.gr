@@ -26,7 +26,13 @@ export default function Page() {
         description='All you need to know about the band, our story and the current lineup.'
       />
 
-      <Image src={Band} alt={'Bad Contact - Band Group Photo'} title={'Bad Contact - Band Group Photo'} quality={100} />
+      <Image
+        src={Band}
+        alt={'Bad Contact - Band Group Photo'}
+        title={'Bad Contact - Band Group Photo'}
+        quality={100}
+        className={'grayscale'}
+      />
       <ContentSection>
         <h3>ABOUT US</h3>
         <p>

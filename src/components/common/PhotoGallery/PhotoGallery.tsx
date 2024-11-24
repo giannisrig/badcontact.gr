@@ -1,30 +1,35 @@
 'use client'
-import { PolaroidImage } from '@/components/common/PolaroidImage/PolaroidImage'
 import Image from 'next/image'
-import { PolaroidGallery } from '@/components/common/PolaroidGallery/PolaroidGallery'
 import { PhotoGalleryProps } from '@/types/images'
-import { StyledLinkText, StyledPhotoGallery } from '@/components/common/PhotoGallery/PhotoGallery.styles'
 import Link from 'next/link'
+import { StyledProductItem, StyledProductItemContent } from '@/components/common/Product/Product.styles'
+import { PixelatedButton } from '@/components/common/PixelatedButton/PixelatedButton'
+import { CutPaper } from '@/components/common/Shapes/CutPaper/CutPaper'
+import React from 'react'
+import { ConditionalComponent } from '@/components/shared/ConditionalComponent'
 
-export type IPhotoGalleryProps = PhotoGalleryProps & {
+export interface IPhotoGalleryProps {
   url: string
-  label: string
+  img: string
+  title: string
+  description?: string
+  button: string
 }
 
-export const PhotoGallery = ({ thumbs, variant, url, label }: IPhotoGalleryProps) => {
+export const PhotoGallery = ({ img, title, url, description, button }: IPhotoGalleryProps) => {
   return (
-    <StyledPhotoGallery>
+    <StyledProductItem>
       <Link href={url}>
-        <PolaroidGallery variant={variant}>
-          {thumbs.map(({ src, caption, priority }, index) => (
-            <PolaroidImage key={`image-${index}`}>
-              <Image src={src} alt={'Bad Contact Eightball Eye'} quality={100} priority={priority} />
-              <caption>{caption}</caption>
-            </PolaroidImage>
-          ))}
-        </PolaroidGallery>
-        <StyledLinkText>{label}</StyledLinkText>
+        <Image src={img} alt={'Eightball CD - Merch - Bad Contact'} quality={100} width={700} height={463} />
+        <StyledProductItemContent>
+          <h2>{title}</h2>
+          <ConditionalComponent condition={!!description}>
+            <p>{description}</p>
+          </ConditionalComponent>
+          <PixelatedButton text={button} />
+          <CutPaper />
+        </StyledProductItemContent>
       </Link>
-    </StyledPhotoGallery>
+    </StyledProductItem>
   )
 }

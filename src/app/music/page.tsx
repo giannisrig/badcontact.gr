@@ -47,16 +47,6 @@ export default function Page() {
           platform you prefer.
         </p>
 
-        {/*<div className='mb-15px mt-15px w-[70%]'>*/}
-        {/*  <iframe*/}
-        {/*    src='https://open.spotify.com/embed/track/2rQf1kkT3H4e6sQDmcr4rf?utm_source=generator&theme=1'*/}
-        {/*    width='100%'*/}
-        {/*    height='152'*/}
-        {/*    allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'*/}
-        {/*    loading='lazy'*/}
-        {/*  ></iframe>*/}
-        {/*</div>*/}
-
         <StreamingLinks />
       </ContentSection>
     </PageContentContainer>

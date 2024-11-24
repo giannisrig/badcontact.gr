@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { PageHeader } from '@/components/common/PageHeader/PageHeader'
 import { MediaContent } from '@/components/common/MediaContent/MediaContent'
+import { InstagramStories } from '@/components/common/InstagramStories/InstagramStories'
 
 export const metadata: Metadata = {
   title: 'Media',
@@ -22,6 +23,7 @@ export default function Page() {
           description='Official photos, videos, press releases and media from Bad Contact.'
         />
         <MediaContent />
+        <InstagramStories />
       </div>
     </>
   )
