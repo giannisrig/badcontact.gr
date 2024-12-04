@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { redirect } from 'next/navigation'
+import { ClientRedirect } from '@/components/common/ClientRedirect/ClientRedirect'
 
 export const metadata: Metadata = {
   title: 'Metal Hammer - QR - Bad Contact',
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
  * @constructor
  */
 export default function Page() {
-  redirect('/')
+  return <ClientRedirect />
 }
