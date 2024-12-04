@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 21, 18, 39;
+    --background-end-rgb: 54, 30, 46;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #000;
+  font-size: 26px;
+  line-height: 100%;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: max(1vh, 15px) 0;
+}
+
+h1, h2, h3 {
+  margin: 10px;
+  line-height: 85%;
+  text-shadow: 3px 1px 1px #e8601e;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  width: 35vw;
+
+  @media only screen and (max-width: 999px) {
+    width: 100%;
+    font-size: 40px;
+  }
+}
+
+h2, h3 {
+  font-size: 42px;
+
+  @media only screen and (max-width: 999px) {
+    font-size: 32px;
+  }
+}
+
+.square-img-container {
+  aspect-ratio: 16 / 8;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+canvas {
+  height: 100%;
+}
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 300;
+  transform: translateZ(0);
+}
+
+.grain:before {
+  content: "";
+  top: -10rem;
+  left: -10rem;
+  width: calc(100% + 20rem);
+  height: calc(100% + 20rem);
+  z-index: 9999;
+  position: fixed;
+  background-image: url(/images/noise.png);
+  opacity: 0.15;
+  pointer-events: none;
+  -webkit-animation: noise 1s steps(2) infinite;
+  animation: noise 1s steps(2) infinite;
+}
+
+@-webkit-keyframes noise {
+  to { transform: translate3d(-7rem,0,0) }
+}
+
+@keyframes noise {
+  0% { transform: translate3d(0,9rem,0) }
+  10% { transform: translate3d(-1rem,-4rem,0) }
+  20% { transform: translate3d(-8rem,2rem,0) }
+  30% { transform: translate3d(9rem,-9rem,0) }
+  40% { transform: translate3d(-2rem,7rem,0) }
+  50% { transform: translate3d(-9rem,-4rem,0) }
+  60% { transform: translate3d(2rem,6rem,0) }
+  70% { transform: translate3d(7rem,-8rem,0) }
+  80% { transform: translate3d(-9rem,1rem,0) }
+  90% { transform: translate3d(6rem,-5rem,0) }
+  to { transform: translate3d(-7rem,0,0) }
+}
+
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #b64d39!important;
+}
