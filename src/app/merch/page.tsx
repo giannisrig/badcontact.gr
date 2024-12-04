@@ -19,20 +19,51 @@ export default function Page() {
   return (
     <>
       <PageContentContainer>
-        <PageHeader title='Offical Merchandise' description='Official live dates and posters of Bad Contact.' />
+        <PageHeader
+          title='Offical Merchandise'
+          description='Official merchandise of Bad Contact. Apparel, and music available for purchase.'
+        />
         <ContentSection fullWidth={false}>
-          <Product
-            href={'/merch/music/eightball-cd'}
-            imgSrc={'/images/merch/T-Shirt-Black.png'}
-            imgAlt={'T-Shirt Black - Merch - Bad Contact'}
-            imgWidth={700}
-            imgHeight={463}
-            title={'Eightball T-Shirt (Black) - 15 EUR'}
-            desc={
-              ' For Old-School fans, limited edition of 100 printed copies, for the latest release of the band,\n' +
-              '           "Eightball".'
-            }
-          />
+          <div className='grid-cols1 grid md:grid-cols-2'>
+            <Product
+              href={'https://badcontact.bandcamp.com/'}
+              imgSrc={'/images/merch/T-Shirt-Black.png'}
+              imgAlt={'T-Shirt Black - Merch - Bad Contact'}
+              imgWidth={700}
+              imgHeight={463}
+              title={'Eightball T-Shirt (Black) - 15 EUR'}
+              desc={''}
+            />
+            <Product
+              href={'https://badcontact.bandcamp.com/'}
+              imgSrc={'/images/merch/T-Shirt-White.png'}
+              imgAlt={'T-Shirt White - Merch - Bad Contact'}
+              imgWidth={700}
+              imgHeight={463}
+              title={'Eightball T-Shirt (White) - 15 EUR'}
+              desc={''}
+            />
+            <Product
+              href={'https://badcontact.bandcamp.com/'}
+              imgSrc={'/images/merch/T-Shirt-Red.png'}
+              imgAlt={'T-Shirt Red - Merch - Bad Contact'}
+              imgWidth={700}
+              imgHeight={463}
+              title={'Eightball T-Shirt (Red) - 15 EUR'}
+              desc={''}
+            />
+            <div className={'flex items-end'}>
+              <Product
+                href={'https://badcontact.bandcamp.com/'}
+                imgSrc={'/images/merch/Bad-Contact-Merch-Eightball-CD.png'}
+                imgAlt={'Eightball CD - Merch - Bad Contact'}
+                imgWidth={700}
+                imgHeight={463}
+                title={'"Eightball" CD - 10 EUR'}
+                desc={''}
+              />
+            </div>
+          </div>
         </ContentSection>
       </PageContentContainer>
     </>

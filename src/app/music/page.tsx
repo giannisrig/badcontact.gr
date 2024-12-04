@@ -37,7 +37,7 @@ export default function Page() {
         </p>
 
         <Product
-          href={'/merch/music/eightball-cd'}
+          href={'/merch'}
           imgSrc={'/images/merch/Bad-Contact-Merch-Eightball-CD.png'}
           imgAlt={'Eightball CD - Merch - Bad Contact'}
           imgWidth={700}
