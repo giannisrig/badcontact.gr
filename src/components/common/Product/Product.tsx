@@ -7,23 +7,25 @@ import Link from 'next/link'
 import { CutPaper } from '@/components/common/Shapes/CutPaper/CutPaper'
 import { PixelatedButton } from '@/components/common/PixelatedButton/PixelatedButton'
 
-export const Product = () => {
+export interface ProductProps {
+  href: string
+  imgSrc: string
+  imgAlt: string
+  imgWidth: number
+  imgHeight: number
+  title: string
+  desc: string
+}
+
+export const Product = (props: ProductProps) => {
+  const { href, imgSrc, imgAlt, imgWidth, imgHeight, title, desc } = props
   return (
     <StyledProductItem>
-      <Link href={'/merch/music/eightball-cd'}>
-        <Image
-          src={'/images/merch/Bad-Contact-Merch-Eightball-CD.png'}
-          alt={'Eightball CD - Merch - Bad Contact'}
-          quality={100}
-          width={700}
-          height={463}
-        />
+      <Link href={href}>
+        <Image src={imgSrc} alt={imgAlt} quality={100} width={imgWidth} height={imgHeight} />
         <StyledProductItemContent>
-          <h2>&quot;Eightball&quot; CD - 10 EUR</h2>
-          <p>
-            For Old-School funs, limited edition of 100 printed copies, for the latest release of the band,
-            &quot;Eightball&quot;.
-          </p>
+          <h2>{title}</h2>
+          <p>{desc}</p>
           <PixelatedButton text='BUY NOW...' />
           <CutPaper />
         </StyledProductItemContent>

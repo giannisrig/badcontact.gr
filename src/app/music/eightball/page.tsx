@@ -1,13 +1,10 @@
 import { Metadata } from 'next'
 import { PageHeader } from '@/components/common/PageHeader/PageHeader'
-import { DiscographyGrid } from '@/components/common/DiscographyGrid/DiscographyGrid'
 import { StreamingLinks } from '@/components/common/StreamingLinks/StreamingLinks'
 import React from 'react'
 import { ContentSection } from '@/components/common/ContentSection/ContentSection'
 import { PageContentContainer } from '@/components/common/PageContentContainer/PageContentContainer'
-import { Product } from '@/components/common/Product/Product'
 import Image from 'next/image'
-import { StyledDiscographyGrid } from '@/components/common/DiscographyGrid/DiscographyGrid.styles'
 
 export const metadata: Metadata = {
   title: 'Music & Discography - Bad Contact',
@@ -25,7 +22,7 @@ export default function Page() {
     <PageContentContainer>
       <PageHeader
         title='Eightball (2024)'
-        description='..The first full length album of Bad Contact &quot;Eightball&quot;, includes eight tracks of 70s & 80s inspired heavy metal that will bring you feelings of nostalgia...'
+        description='..The first full length album of Bad Contact "Eightball", includes eight tracks of 70s & 80s inspired heavy metal that will bring you feelings of nostalgia...'
       />
 
       <div className='grid grid-cols-2 gap-15px md:gap-50px'>
@@ -48,11 +45,11 @@ export default function Page() {
       <ContentSection>
         <h3>About the Album</h3>
         <p>
-          Our first album &quot;Eightball&quot; is our perspective of what an 80s heavy metal music could sound like in the modern
-          era. It includes around 35min of music that will travel you back in time and will evoke you feelings of
-          nostalgia. Drums were recorded at Odeon Studios by Ilias Lakkas, instruments and vocals were recorded at
-          Ignite Studios by Giorgos Christoforidis aka Georger &quot;Tirouris&quot;. Mixed by George Tirouris and produced by
-          George and Bad Contact. Artwork created by Dimos Stathis.
+          Our first album &quot;Eightball&quot; is our perspective of what an 80s heavy metal music could sound like in
+          the modern era. It includes around 35min of music that will travel you back in time and will evoke you
+          feelings of nostalgia. Drums were recorded at Odeon Studios by Ilias Lakkas, instruments and vocals were
+          recorded at Ignite Studios by Giorgos Christoforidis aka Georger &quot;Tirouris&quot;. Mixed by George
+          Tirouris and produced by George and Bad Contact. Artwork created by Dimos Stathis.
         </p>
 
         <div className='mb-15px mt-30px w-[90%] md:w-[80%]'>

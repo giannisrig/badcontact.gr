@@ -9,6 +9,7 @@ import { PhotoGalleryProps } from '@/types/images'
 import { beerFestivalGallery } from '@/constants/gallery/beerFestival'
 import { bandGallery } from '@/constants/gallery/bandGallery'
 import { membersGallery } from '@/constants/gallery/membersGallery'
+import { posterGallery } from '@/constants/gallery/posterGallery'
 
 export const appImages: Record<EGallery, PhotoGalleryProps> = {
   [EGallery.BAND_PHOTOS]: {
@@ -57,5 +58,10 @@ export const appImages: Record<EGallery, PhotoGalleryProps> = {
     thumbs: membersGallery,
     grid: membersGallery,
     variant: 'right',
+  },
+  [EGallery.POSTER_PHOTOS]: {
+    thumbs: [],
+    grid: posterGallery,
+    variant: 'left',
   },
 }

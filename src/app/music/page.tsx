@@ -36,7 +36,18 @@ export default function Page() {
           you can buy it online from the merch.
         </p>
 
-        <Product />
+        <Product
+          href={'/merch/music/eightball-cd'}
+          imgSrc={'/images/merch/Bad-Contact-Merch-Eightball-CD.png'}
+          imgAlt={'Eightball CD - Merch - Bad Contact'}
+          imgWidth={700}
+          imgHeight={463}
+          title={'"Eightball" CD - 10 EUR'}
+          desc={
+            ' For Old-School fans, limited edition of 100 printed copies, for the latest release of the band,\n' +
+            '           "Eightball".'
+          }
+        />
       </ContentSection>
 
       <ContentSection>
