@@ -116,7 +116,6 @@ canvas {
   to { transform: translate3d(-7rem,0,0) }
 }
 
-.instagram-media {
-  border: 0 !important;
-  width: 100%;
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #b64d39!important;
 }
