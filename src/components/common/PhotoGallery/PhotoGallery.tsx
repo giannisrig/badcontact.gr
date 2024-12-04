@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import { PhotoGalleryProps } from '@/types/images'
 import Link from 'next/link'
 import { StyledProductItem, StyledProductItemContent } from '@/components/common/Product/Product.styles'
 import { PixelatedButton } from '@/components/common/PixelatedButton/PixelatedButton'

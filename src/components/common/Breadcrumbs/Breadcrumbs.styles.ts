@@ -1,4 +1,3 @@
-import { Breadcrumbs } from '@/components/common/Breadcrumbs/Breadcrumbs'
 import styled from 'styled-components'
 
 export const StyledBreadcrumbs = styled.ul`

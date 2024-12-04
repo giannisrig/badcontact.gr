@@ -9,12 +9,12 @@ import {
   StyledSocialLinkOutline,
   StyleSocialLinkIcon,
 } from '@/components/common/SocialLink/SocialLink.styles'
-import { StyledCircleOutline, StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
+import { StyledMenuFader } from '@/components/common/MenuButton/MenuButton.styles'
 
 export type SocialLinkProps = Omit<MenuLinkProps, 'index'>
 
 export const SocialLink = ({ href, label }: SocialLinkProps) => {
-  const { menuLinkRef, animateOnMouseOver, animateOnMouseLeave } = useMenuLinkAnimations()
+  const { menuLinkRef, animateOnMouseOver } = useMenuLinkAnimations()
 
   const animateOnClick = () => {
     animateOnMouseOver()

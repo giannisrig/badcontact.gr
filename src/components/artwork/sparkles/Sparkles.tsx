@@ -4,8 +4,6 @@ import { StyledAbsoluteImage } from '@/components/artwork/flames/Flames.styles'
 import { SPARKLES_DIMENSIONS, StyledSparkles } from '@/components/artwork/sparkles/Sparkles.styles'
 import { EImage, Element } from '@/definitions/element'
 import { useSparklesAnimation } from './Sparkles.animations'
-import { consoleLogger } from '@/helpers/consoleLogger'
-import { ELog } from '@/definitions/logger'
 import { useImageLoader } from '@/hooks/useImageLoader'
 
 export const SPARKLES_PATH = '/images/artwork/sparkles'

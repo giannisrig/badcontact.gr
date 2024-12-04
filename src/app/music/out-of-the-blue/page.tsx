@@ -41,10 +41,10 @@ export default function Page() {
       <ContentSection>
         <h3>About the Single</h3>
         <p>
-          Our first album "Eightball" is our perspective of what an 80s heavy metal music could sound like in the modern
+          Our first album &quot;Eightball&quot; is our perspective of what an 80s heavy metal music could sound like in the modern
           era. It includes around 35min of music that will travel you back in time and will evoke you feelings of
           nostalgia. Drums were recorded at Odeon Studios by Ilias Lakkas, instruments and vocals were recorded at
-          Ignite Studios by Giorgos Christoforidis aka Georger "Tirouris". Mixed by George Tirouris and produced by
+          Ignite Studios by Giorgos Christoforidis aka Georger &quot;Tirouris&quot;. Mixed by George Tirouris and produced by
           George and Bad Contact. Artwork created by Dimos Stathis.
         </p>
 
