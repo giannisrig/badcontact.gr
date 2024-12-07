@@ -16,7 +16,32 @@ export const useMenuButtonAnimations = () => {
     if (menuIconRef.current && !isMenuOpened) {
       gsap.to(menuIconRef.current, { opacity: 1 })
     }
-  }, [menuIconRef, isMenuOpened])
+
+    if (isMainContentScrolled && isMenuOpened) {
+      gsap.fromTo(
+        getElementId(Element.LOGO),
+        {
+          scale: 0.6,
+        },
+        {
+          scale: 1,
+        }
+      )
+    }
+
+    if (isMainContentScrolled && !isMenuOpened) {
+      gsap.fromTo(
+        getElementId(Element.LOGO),
+        {
+          scale: 1,
+        },
+        {
+          scale: 0.6,
+          delay: 0.5,
+        }
+      )
+    }
+  }, [menuIconRef, isMenuOpened, isMainContentScrolled])
 
   const animateOnMouseOver = contextSafe(() => {
     if (menuIconRef.current && !isMenuOpened) {
@@ -49,6 +74,18 @@ export const useMenuButtonAnimations = () => {
   const animateOnClick = contextSafe(() => {
     if (menuIconRef.current) {
       gsap.to(menuIconRef.current, { opacity: 0 })
+    }
+
+    if (isMainContentScrolled) {
+      gsap.fromTo(
+        getElementId(Element.LOGO),
+        {
+          scale: 0.6,
+        },
+        {
+          scale: 1,
+        }
+      )
     }
   })
 
