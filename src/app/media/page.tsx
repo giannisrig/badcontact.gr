@@ -37,7 +37,7 @@ export default function Page() {
           Official video footage of the Bad Contact from live performances, interviews and behind the scene videos of
           the band.
         </p>
-        {/*<VideosCarousel />*/}
+        <VideosCarousel />
       </ContentSection>
 
       <ContentSection>
