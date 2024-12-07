@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     icon: '/images/favicon.png',
   },
 }
+
 /**
  * Keep this as a Server Component
  * @constructor

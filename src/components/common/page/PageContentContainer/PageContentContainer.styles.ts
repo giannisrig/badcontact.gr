@@ -12,6 +12,6 @@ export const EyeFlamesSpacer = styled(StyledEyeWithFlames)`
   margin-bottom: 200px;
 
   @media only screen and (max-width: 666px) {
-    margin-bottom: 110px;
+    margin-bottom: 80px;
   }
 `

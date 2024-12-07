@@ -18,7 +18,7 @@ export interface IPhotoGalleryProps {
 export const PhotoGallery = ({ img, title, url, description, button }: IPhotoGalleryProps) => {
   return (
     <StyledProductItem>
-      <Link href={url}>
+      <Link href={url} className='w-full'>
         <Image src={img} alt={'Eightball CD - Merch - Bad Contact'} quality={100} width={700} height={463} />
         <StyledProductItemContent>
           <h2>{title}</h2>

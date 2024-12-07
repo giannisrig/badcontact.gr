@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const StyledPhotoGalleryContainer = styled.div`
   position: relative;
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 

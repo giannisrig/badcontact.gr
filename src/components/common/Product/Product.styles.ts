@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const StyledProductItem = styled.div`
   position: relative;
-  width: 500px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
 `
 
 export const StyledProductItemContent = styled.div`

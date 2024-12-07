@@ -19,34 +19,32 @@ export const metadata: Metadata = {
  */
 export default function Page() {
   return (
-    <>
-      <PageContentContainer>
-        <PageHeader
-          title='Band Media'
-          description='Official photos from band photo shootings and live performances, exclusive video footage, press releases and more media from Bad Contact.'
-        />
+    <PageContentContainer>
+      <PageHeader
+        title='Band Media'
+        description='Official photos from band photo shootings and live performances, exclusive video footage, press releases and more media from Bad Contact.'
+      />
 
-        <ContentSection>
-          <h3 className='mt-50px'>Photos</h3>
-          <p className='mb-50px'>Official band photo shootings, images from live performance at festivals.</p>
-          <MediaContent />
-        </ContentSection>
+      <ContentSection>
+        <h3 className='mt-50px'>Photos</h3>
+        <p className='mb-50px'>Official band photo shootings, images from live performance at festivals.</p>
+        <MediaContent />
+      </ContentSection>
 
-        <ContentSection fullWidth={true}>
-          <h3>Videos</h3>
-          <p className='w-full md:w-[70%]'>
-            Official video footage of the Bad Contact from live performances, interviews and behind the scene videos of
-            the band.
-          </p>
-          <VideosCarousel />
-        </ContentSection>
+      <ContentSection fullWidth={true}>
+        <h3>Videos</h3>
+        <p className='w-full md:w-[70%]'>
+          Official video footage of the Bad Contact from live performances, interviews and behind the scene videos of
+          the band.
+        </p>
+        {/*<VideosCarousel />*/}
+      </ContentSection>
 
-        <ContentSection>
-          <h3>Press Releases</h3>
-          <p className='w-full md:w-[70%]'>Interviews of Bad Contact and Album reviews from magazines and webzines.</p>
-          <PressReleases />
-        </ContentSection>
-      </PageContentContainer>
-    </>
+      <ContentSection>
+        <h3>Press Releases</h3>
+        <p className='w-full md:w-[70%]'>Interviews of Bad Contact and Album reviews from magazines and webzines.</p>
+        <PressReleases />
+      </ContentSection>
+    </PageContentContainer>
   )
 }

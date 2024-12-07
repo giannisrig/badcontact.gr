@@ -5,7 +5,7 @@ import { useImageLoader } from '@/hooks/useImageLoader'
 import Link from 'next/link'
 
 export const StyledArtWorkLogo = styled.div`
-  width: min(50%, 210px);
+  width: min(50%, 170px);
   position: relative;
   aspect-ratio: 520/293;
   max-height: 160px;

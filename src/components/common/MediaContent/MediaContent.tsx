@@ -20,15 +20,13 @@ export const MediaContent = () => {
         description={'Photos of Bad Contact performing at Rethymno Rocks festival 2024 by Antonis Pk.'}
         button='View Gallery...'
       />
-      <div className='col-span-2 flex justify-center pt-20px'>
-        <PhotoGallery
-          img={'/images/gallery/BeerFestival.png'}
-          url={'/media/live-photos'}
-          title={'Beer Factory Festival (2023)'}
-          description={'Bad Contact performing at Beer Factory Festival 2023 by Polymnia Manopoulou'}
-          button='View Gallery...'
-        />
-      </div>
+      <PhotoGallery
+        img={'/images/gallery/BeerFestival.png'}
+        url={'/media/live-photos'}
+        title={'Beer Factory Festival (2023)'}
+        description={'Bad Contact performing at Beer Factory Festival 2023 by Polymnia Manopoulou'}
+        button='View Gallery...'
+      />
     </StyledPhotoGalleryContainer>
   )
 }
