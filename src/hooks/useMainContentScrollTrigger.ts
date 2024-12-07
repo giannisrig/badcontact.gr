@@ -14,8 +14,8 @@ export const useMainContentScrollTrigger = () => {
 
   const mainContentScrollTrigger = {
     trigger: getElementId(Element.EYE_FLAMES_SPACER),
-    start: 'center 15%',
-    end: 'bottom 25%',
+    start: 'center 10%',
+    end: 'bottom 20%',
     scrub: 1,
     onEnter: () => {
       dispatch(setIsMainContentScrollTriggered(true))

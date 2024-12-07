@@ -14,7 +14,6 @@ export const StyledFullPageImage = styled(StyledAbsoluteImage)`
 
   @media only screen and (max-width: 666px) {
     max-width: 110%;
-    opacity: 0.25;
     top: 220px;
   }
 `
