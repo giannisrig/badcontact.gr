@@ -23,7 +23,7 @@ export const StyledMenuButton = styled.button<MenuButtonStyles>`
 `
 
 export const StyledMenuIcon = styled.div`
-  width: 50px;
+  width: 45px;
   aspect-ratio: 1;
   position: relative;
 
@@ -65,4 +65,8 @@ export const StyledMenuText = styled.h5`
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+
+  @media only screen and (max-width: 666px) {
+    font-size: 13px;
+  }
 `
