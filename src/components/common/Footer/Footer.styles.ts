@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledFooterText = styled.footer`
+export const StyledFooterText = styled.div`
   position: fixed;
   z-index: 8;
   bottom: max(10px, 0.5vw);

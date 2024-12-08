@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Product } from '@/components/common/Product/Product'
 
 export const metadata: Metadata = {
-  title: 'Bad Contact Home',
+  title: 'Bad Contact - 70s & 80s Heavy Metal and Hard Rock',
   description: 'Welcome to Next.js',
   icons: {
     icon: '/images/favicon.png',
