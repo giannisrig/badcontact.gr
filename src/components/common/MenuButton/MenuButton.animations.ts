@@ -18,28 +18,16 @@ export const useMenuButtonAnimations = () => {
     }
 
     if (isMainContentScrolled && isMenuOpened) {
-      gsap.fromTo(
-        getElementId(Element.LOGO),
-        {
-          scale: 0.6,
-        },
-        {
-          scale: 1,
-        }
-      )
+      gsap.to(getElementId(Element.LOGO), {
+        scale: 1,
+      })
     }
 
     if (isMainContentScrolled && !isMenuOpened) {
-      gsap.fromTo(
-        getElementId(Element.LOGO),
-        {
-          scale: 1,
-        },
-        {
-          scale: 0.6,
-          delay: 0.5,
-        }
-      )
+      gsap.to(getElementId(Element.LOGO), {
+        scale: 0.6,
+        delay: 0.5,
+      })
     }
   }, [menuIconRef, isMenuOpened, isMainContentScrolled])
 
@@ -77,15 +65,9 @@ export const useMenuButtonAnimations = () => {
     }
 
     if (isMainContentScrolled) {
-      gsap.fromTo(
-        getElementId(Element.LOGO),
-        {
-          scale: 0.6,
-        },
-        {
-          scale: 1,
-        }
-      )
+      gsap.to(getElementId(Element.LOGO), {
+        scale: 1,
+      })
     }
   })
 
