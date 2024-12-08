@@ -16,17 +16,8 @@ export const useMenuButtonAnimations = () => {
     if (menuIconRef.current && !isMenuOpened) {
       gsap.to(menuIconRef.current, { opacity: 1 })
     }
-
-    if (isMainContentScrolled && isMenuOpened) {
-      gsap.to(getElementId(Element.LOGO), {
-        scale: 1,
-      })
-    }
-
     if (isMainContentScrolled && !isMenuOpened) {
-      gsap.to(getElementId(Element.LOGO), {
-        scale: 1,
-      })
+      gsap.to(getElementId(Element.LOGO), { scale: 0.6 })
     }
   }, [menuIconRef, isMenuOpened, isMainContentScrolled])
 
