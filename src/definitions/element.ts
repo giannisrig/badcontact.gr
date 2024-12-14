@@ -13,6 +13,9 @@ export enum Element {
   MENU_ICON_FADER = 'menuIconFader',
   MENU_ICON_TEXT = 'menuIconText',
   MENU_LIST_IMAGE = 'menuListImage',
+  FOOTER_COPYRIGHT = 'footerCopyright',
+  FOOTER_DEVELOPED_BY = 'footerDevelopedBy',
+  SCROLL_INDICATOR = 'scrollIndicator',
 }
 
 export enum EImage {

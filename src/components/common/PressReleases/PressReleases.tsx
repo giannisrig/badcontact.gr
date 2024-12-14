@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const PressReleases = () => {
   return (
-    <div className='mt-20px grid grid-cols-2'>
+    <div className='mt-20px grid grid-cols-2 gap-15px'>
       <div className='center flex justify-center'>
         <div className='center flex w-full justify-center md:w-[70%]'>
           <Link href={'https://rockinathens.gr/bad-contact-eightball/'} target='_blank'>

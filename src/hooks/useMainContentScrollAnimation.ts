@@ -57,7 +57,7 @@ export const useMainContentScrollAnimation = () => {
         },
         {
           scale: 1.5,
-          yPercent: 10,
+          yPercent: 15,
           filter: 'brightness(0.3)',
         },
         0
@@ -79,6 +79,33 @@ export const useMainContentScrollAnimation = () => {
         },
         {
           opacity: 1,
+        }
+      )
+      .fromTo(
+        getElementId(Element.FOOTER_COPYRIGHT),
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
+      .fromTo(
+        getElementId(Element.FOOTER_DEVELOPED_BY),
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
+      .fromTo(
+        getElementId(Element.SCROLL_INDICATOR),
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
         }
       )
   })

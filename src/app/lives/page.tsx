@@ -6,7 +6,7 @@ import { posterGallery } from '@/constants/gallery/posterGallery'
 
 export const metadata: Metadata = {
   title: 'Live & Tour Dates and Info - Bad Contact',
-  description: 'Welcome to Next.js',
+  description: 'Official lives announcements, tour dates, posters and past gigs of Bad Contact.',
   icons: {
     icon: '/images/favicon.png',
   },
@@ -19,7 +19,10 @@ export default function Page() {
   return (
     <>
       <PageContentContainer>
-        <PageHeader title='Live Dates' description='Official live dates and posters of Bad Contact.' />
+        <PageHeader
+          title='Live Dates'
+          description='Official lives announcements, tour dates, posters and past gigs of Bad Contact.'
+        />
         <PhotoGrid images={posterGallery} />
       </PageContentContainer>
     </>
