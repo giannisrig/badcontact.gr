@@ -7,8 +7,9 @@ import { ContentSection } from '@/components/common/ContentSection/ContentSectio
 import { PressReleases } from '@/components/common/PressReleases/PressReleases'
 
 export const metadata: Metadata = {
-  title: 'Media',
-  description: 'Welcome to Next.js',
+  title: 'Media, Photos & Videos - Bad Contact',
+  description:
+    'Official photos from band photo shootings and live performances, exclusive video footage, press releases and more media from Bad Contact.',
   icons: {
     icon: '/images/favicon.png',
   },

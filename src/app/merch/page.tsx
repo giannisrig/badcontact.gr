@@ -6,7 +6,7 @@ import { ContentSection } from '@/components/common/ContentSection/ContentSectio
 
 export const metadata: Metadata = {
   title: 'Official Merchandise - Bad Contact',
-  description: 'Official Merchandise - Bad Contact',
+  description: 'Official merchandise of Bad Contact. Apparel, and music available for purchase.',
   icons: {
     icon: '/images/favicon.png',
   },

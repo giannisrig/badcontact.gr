@@ -7,7 +7,7 @@ import { PageContentContainer } from '@/components/common/PageContentContainer/P
 
 export const metadata: Metadata = {
   title: 'Official Band Photos - Bad Contact',
-  description: 'Welcome to Next.js',
+  description: 'Official photos of Bad Contact, band images from photo shootings of group and member photos.',
   icons: {
     icon: '/images/favicon.png',
   },

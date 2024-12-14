@@ -8,8 +8,8 @@ import { MembersGallery } from '@/components/common/MembersGallery/MembersGaller
 import { ContentSection } from '@/components/common/ContentSection/ContentSection'
 
 export const metadata: Metadata = {
-  title: 'Media',
-  description: 'Welcome to Next.js',
+  title: 'About the Band - Bad Contact ',
+  description: 'All you need to know about the band, our story and the current lineup.',
   icons: {
     icon: '/images/favicon.png',
   },
